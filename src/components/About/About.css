@@ -1,0 +1,614 @@
+/* =========================================================
+   ABOUT SERVEPRO
+========================================================= */
+
+.about-us-area {
+  width: 100%;
+  padding: 70px 0 80px;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-us-area .sec-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-us-area .sec-title h1 {
+  margin: 0 0 14px;
+  color: #1f3365;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.about-us-area .sec-title .border {
+  display: block;
+  width: 78px;
+  height: 3px;
+  margin: 0 auto;
+  background: #1f3365;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  width: 100%;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-left {
+  width: 100%;
+  min-width: 0;
+}
+
+.about-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 570px;
+  object-fit: cover;
+}
+
+.about-description {
+  width: 100%;
+  padding-top: 25px;
+}
+
+.about-description p {
+  margin: 0;
+  color: #1f3365;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.about-button {
+  margin-top: 22px;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.about-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 38px;
+  align-content: start;
+  min-width: 0;
+}
+
+.about-item {
+  width: 100%;
+  min-width: 0;
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 17px;
+}
+
+.about-icon img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.about-item-text h3 {
+  margin: 0 0 12px;
+  color: #1f3365;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.about-item-text p {
+  margin: 0;
+  color: #949494;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+/* =========================================================
+   ORIGINAL MISSION SPACING
+========================================================= */
+
+.mission-text {
+  margin-bottom: 9px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-button .thm-btn {
+  display: inline-block;
+
+  padding: 9px 25px;
+
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  border: 0;
+  background: #209fd6;
+
+  transition: background 0.2s ease;
+}
+
+.about-button .thm-btn:hover {
+  background: #1f3365;
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+   1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .about-layout {
+    gap: 45px;
+  }
+
+  .about-right {
+    column-gap: 28px;
+    row-gap: 35px;
+  }
+
+  .about-item-text h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .about-us-area {
+    padding: 60px 0 70px;
+  }
+
+  .about-us-area .sec-title {
+    margin-bottom: 42px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 31px;
+  }
+
+  .about-layout {
+    gap: 32px;
+  }
+
+  .about-right {
+    column-gap: 22px;
+    row-gap: 32px;
+  }
+
+  .about-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+  }
+
+  .about-icon img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .about-item-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .about-item-text p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .about-us-area {
+    padding: 55px 0 65px;
+  }
+
+  .about-us-area .sec-title {
+    margin-bottom: 40px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 30px;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-description {
+    padding-top: 22px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 35px;
+  }
+
+  .about-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .about-icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .about-item-text h3 {
+    font-size: 19px;
+  }
+
+  .about-item-text p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE LARGE
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .about-us-area {
+    padding: 50px 0 60px;
+  }
+
+  .about-us-area .sec-title {
+    margin-bottom: 35px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 28px;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-description {
+    padding-top: 20px;
+  }
+
+  .about-description p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 32px;
+  }
+
+  .about-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 15px;
+  }
+
+  .about-icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .about-item-text h3 {
+    font-size: 18px;
+  }
+
+  .about-item-text p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .about-us-area {
+    padding: 45px 0 55px;
+  }
+
+  .about-us-area .sec-title {
+    margin-bottom: 32px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-description {
+    padding-top: 20px;
+  }
+
+  .about-description p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about-button {
+    margin-top: 20px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 14px;
+  }
+
+  .about-icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .about-item-text h3 {
+    font-size: 19px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .about-item-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-us-area {
+    padding: 40px 0 50px;
+  }
+
+  .about-us-area .sec-title {
+    margin-bottom: 30px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 26px;
+  }
+
+  .about-layout {
+    gap: 32px;
+  }
+
+  .about-description {
+    padding-top: 18px;
+  }
+
+  .about-description p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about-right {
+    gap: 30px;
+  }
+
+  .about-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .about-icon img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .about-item-text h3 {
+    font-size: 18px;
+  }
+
+  .about-item-text p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .about-button .thm-btn {
+    padding: 9px 23px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .about-us-area {
+    padding: 35px 0 45px;
+  }
+
+  .about-us-area .sec-title h1 {
+    font-size: 24px;
+  }
+
+  .about-layout {
+    gap: 28px;
+  }
+
+  .about-description p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .about-right {
+    gap: 28px;
+  }
+
+  .about-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-item-text h3 {
+    font-size: 17px;
+  }
+
+  .about-item-text p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-button .thm-btn {
+    transition: none !important;
+  }
+}
+   /* ABOUT POINTS - CENTER ALIGN */
+/* =========================================================  */
+
+.about-right {
+  text-align: center;
+}
+
+.about-item {
+  text-align: center;
+}
+
+.about-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-item-text h3,
+.about-item-text p {
+  text-align: center;
+}
+/* =========================================================
+   RESPONSIVE ONLY - CENTER ABOUT POINTS + VIEW MORE
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .about-right {
+    text-align: center;
+  }
+
+  .about-item {
+    text-align: center;
+  }
+
+  .about-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-item-text h3,
+  .about-item-text p {
+    text-align: center;
+  }
+
+  .about-button {
+    text-align: center;
+  }
+
+  .about-button .thm-btn {
+    display: inline-block;
+  }
+}

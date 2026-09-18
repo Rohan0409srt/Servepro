@@ -1,0 +1,705 @@
+/* =========================================================
+   GARDEN MAINTENANCE PAGE
+   ========================================================= */
+
+.garden-maintenance-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.garden-maintenance-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.garden-maintenance-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.garden-maintenance-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #ffffff;
+}
+
+.garden-maintenance-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.garden-maintenance-intro {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.garden-maintenance-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.garden-maintenance-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 25px auto 28px;
+  background: #0b1957;
+}
+
+.garden-maintenance-intro p {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.garden-maintenance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   Desktop:
+   Text 55% | Image 45%
+   Reverse:
+   Image 45% | Text 55%
+   ========================================================= */
+
+.garden-maintenance-card {
+  display: flex;
+  width: 100%;
+  min-height: 490px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+}
+
+.garden-maintenance-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.garden-maintenance-text {
+  width: 55%;
+  padding: 65px 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.garden-maintenance-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 31px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.garden-maintenance-text ul {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+.garden-maintenance-text li {
+  margin-bottom: 15px;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.garden-maintenance-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.garden-maintenance-image {
+  width: 45%;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.garden-maintenance-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   1200 - 1439
+   Banner = 750px
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .garden-maintenance-banner {
+    height: 750px;
+  }
+
+  .garden-maintenance-section {
+    padding: 80px 0 95px;
+  }
+
+  .garden-maintenance-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .garden-maintenance-intro {
+    margin-bottom: 60px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 34px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 17px;
+  }
+
+  .garden-maintenance-card {
+    min-height: 400px;
+  }
+
+  .garden-maintenance-text {
+    padding: 50px 55px;
+  }
+
+  .garden-maintenance-image,
+  .garden-maintenance-image img {
+    min-height: 400px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 28px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .garden-maintenance-banner {
+    height: 750px;
+  }
+
+  .garden-maintenance-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .garden-maintenance-section {
+    padding: 90px 0 105px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 36px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 18px;
+  }
+
+  .garden-maintenance-card {
+    min-height: 430px;
+  }
+
+  .garden-maintenance-text {
+    padding: 55px 65px;
+  }
+
+  .garden-maintenance-image,
+  .garden-maintenance-image img {
+    min-height: 430px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .garden-maintenance-banner {
+    height: 750px;
+  }
+
+  .garden-maintenance-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .garden-maintenance-section {
+    padding: 100px 0 115px;
+  }
+
+  .garden-maintenance-intro {
+    max-width: 1250px;
+    margin-bottom: 75px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 40px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 19px;
+  }
+
+  .garden-maintenance-card {
+    min-height: 460px;
+  }
+
+  .garden-maintenance-text {
+    padding: 65px 75px;
+  }
+
+  .garden-maintenance-image,
+  .garden-maintenance-image img {
+    min-height: 460px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 32px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .garden-maintenance-banner {
+    height: 750px;
+  }
+
+  .garden-maintenance-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .garden-maintenance-section {
+    padding: 110px 0 125px;
+  }
+
+  .garden-maintenance-intro {
+    max-width: 1350px;
+    margin-bottom: 85px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 43px;
+  }
+
+  .garden-maintenance-border {
+    width: 80px;
+    height: 4px;
+    margin: 28px auto 32px;
+  }
+
+  .garden-maintenance-intro p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .garden-maintenance-list {
+    gap: 55px;
+  }
+
+  .garden-maintenance-card {
+    min-height: 490px;
+  }
+
+  .garden-maintenance-text {
+    padding: 70px 85px;
+  }
+
+  .garden-maintenance-image,
+  .garden-maintenance-image img {
+    min-height: 490px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 to 1199
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .garden-maintenance-banner {
+    height: 500px;
+  }
+
+  .garden-maintenance-section {
+    padding: 70px 0 80px;
+  }
+
+  .garden-maintenance-container {
+    width: calc(100% - 50px);
+  }
+
+  .garden-maintenance-intro {
+    margin-bottom: 55px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .garden-maintenance-list {
+    gap: 35px;
+  }
+
+  .garden-maintenance-card {
+    min-height: 320px;
+  }
+
+  .garden-maintenance-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .garden-maintenance-image {
+    width: 48%;
+    min-height: 320px;
+  }
+
+  .garden-maintenance-image img {
+    min-height: 320px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .garden-maintenance-text ul {
+    padding-left: 20px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 576 to 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .garden-maintenance-banner {
+    height: 260px;
+  }
+
+  .garden-maintenance-section {
+    padding: 50px 0 60px;
+  }
+
+  .garden-maintenance-container {
+    width: calc(100% - 30px);
+  }
+
+  .garden-maintenance-intro {
+    margin-bottom: 40px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .garden-maintenance-border {
+    margin: 18px auto 22px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .garden-maintenance-list {
+    gap: 25px;
+  }
+
+  .garden-maintenance-card,
+  .garden-maintenance-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  /* Image first on mobile */
+  .garden-maintenance-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .garden-maintenance-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    object-fit: cover;
+  }
+
+  .garden-maintenance-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 9px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400 to 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .garden-maintenance-banner {
+    height: 240px;
+  }
+
+  .garden-maintenance-section {
+    padding: 45px 0 55px;
+  }
+
+  .garden-maintenance-container {
+    width: calc(100% - 24px);
+  }
+
+  .garden-maintenance-intro {
+    margin-bottom: 35px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .garden-maintenance-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .garden-maintenance-list {
+    gap: 22px;
+  }
+
+  .garden-maintenance-card,
+  .garden-maintenance-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .garden-maintenance-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .garden-maintenance-image img {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    object-fit: cover;
+  }
+
+  .garden-maintenance-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .garden-maintenance-text ul {
+    padding-left: 19px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .garden-maintenance-banner {
+    height: 210px;
+  }
+
+  .garden-maintenance-section {
+    padding: 38px 0 45px;
+  }
+
+  .garden-maintenance-container {
+    width: calc(100% - 20px);
+  }
+
+  .garden-maintenance-intro {
+    margin-bottom: 30px;
+  }
+
+  .garden-maintenance-intro h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .garden-maintenance-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .garden-maintenance-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .garden-maintenance-list {
+    gap: 18px;
+  }
+
+  .garden-maintenance-card,
+  .garden-maintenance-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .garden-maintenance-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+  }
+
+  .garden-maintenance-image img {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+    object-fit: cover;
+  }
+
+  .garden-maintenance-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .garden-maintenance-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .garden-maintenance-text ul {
+    padding-left: 18px;
+  }
+
+  .garden-maintenance-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}

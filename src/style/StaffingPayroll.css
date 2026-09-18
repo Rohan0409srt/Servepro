@@ -1,0 +1,614 @@
+/* =========================================================
+   STAFFING & PAYROLL SERVICE PAGE
+   ========================================================= */
+
+.staffing-payroll-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.staffing-payroll-banner {
+  position: relative;
+  width: 100%;
+  height: 430px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staffing-payroll-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.staffing-payroll-section {
+  width: 100%;
+  padding: 75px 20px 90px;
+  background: #fff;
+}
+
+.staffing-payroll-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.staffing-payroll-intro {
+  max-width: 1050px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.staffing-payroll-intro h2 {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.staffing-payroll-border {
+  display: block;
+  width: 55px;
+  height: 3px;
+
+  margin: 20px auto 25px;
+
+  background: #0b1957;
+  border-radius: 3px;
+}
+
+.staffing-payroll-intro p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.staffing-payroll-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.staffing-payroll-card {
+  width: 100%;
+  min-height: 370px;
+
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  background: #fff;
+
+  border-radius: 4px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+}
+
+.staffing-payroll-card.reverse {
+  grid-template-columns: 45% 55%;
+}
+
+/*
+   Normal:
+   TEXT | IMAGE
+
+   Reverse:
+   IMAGE | TEXT
+*/
+
+.staffing-payroll-card.reverse .staffing-payroll-card-text {
+  order: 2;
+}
+
+.staffing-payroll-card.reverse .staffing-payroll-card-image {
+  order: 1;
+}
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.staffing-payroll-card-text {
+  min-width: 0;
+
+  padding: 48px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.staffing-payroll-card-text h3 {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: 27px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.staffing-payroll-card-text ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.staffing-payroll-card-text li {
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 25px;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.staffing-payroll-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+.staffing-payroll-card-text li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.staffing-payroll-card-image {
+  width: 100%;
+  height: 370px;
+
+  overflow: hidden;
+}
+
+.staffing-payroll-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .staffing-payroll-container {
+    max-width: 1200px;
+  }
+
+  .staffing-payroll-card {
+    grid-template-columns: 55% 45%;
+  }
+
+  .staffing-payroll-card.reverse {
+    grid-template-columns: 45% 55%;
+  }
+
+  .staffing-payroll-card-image {
+    height: 370px;
+  }
+}
+
+/* =========================================================
+   1440+
+   ========================================================= */
+
+@media (min-width: 1440px) {
+
+  .staffing-payroll-section {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+
+  .staffing-payroll-container {
+    max-width: 1280px;
+  }
+
+  .staffing-payroll-intro {
+    max-width: 1120px;
+  }
+
+  .staffing-payroll-intro h2 {
+    font-size: 32px;
+  }
+
+  .staffing-payroll-intro p {
+    font-size: 17px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 400px;
+  }
+
+  .staffing-payroll-card {
+    min-height: 400px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 50px 52px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 29px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1600+
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+  .staffing-payroll-container {
+    max-width: 1350px;
+  }
+
+  .staffing-payroll-card {
+    min-height: 420px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 420px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 55px 60px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media(min-width: 1000px)and (min-width: 1200px) {
+
+  .staffing-payroll-container {
+    max-width: 1450px;
+  }
+    .staffing-payroll-banner {
+    height: 750px;
+    min-height: 360px;
+  }
+
+
+  .staffing-payroll-section {
+    padding-top: 95px;
+    padding-bottom: 110px;
+  }
+
+  .staffing-payroll-card {
+    min-height: 440px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 440px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 60px 65px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 32px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 TO 999
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 999px) {
+
+  .staffing-payroll-banner {
+    height: 400px;
+  }
+
+  .staffing-payroll-section {
+    padding: 60px 25px 75px;
+  }
+
+  .staffing-payroll-container {
+    max-width: 950px;
+  }
+
+  .staffing-payroll-intro {
+    margin-bottom: 50px;
+  }
+
+  .staffing-payroll-intro h2 {
+    font-size: 26px;
+  }
+
+  .staffing-payroll-intro p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .staffing-payroll-list {
+    gap: 40px;
+  }
+
+  .staffing-payroll-card,
+  .staffing-payroll-card.reverse {
+    grid-template-columns: 52% 48%;
+  }
+
+  .staffing-payroll-card {
+    min-height: 300px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 300px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 35px 30px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 0 TO 767
+   Image first, content second
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .staffing-payroll-banner {
+    height: 270px;
+
+    background-position: center center;
+  }
+
+  .staffing-payroll-section {
+    padding: 45px 15px 60px;
+  }
+
+  .staffing-payroll-container {
+    max-width: 100%;
+  }
+
+  .staffing-payroll-intro {
+    margin-bottom: 40px;
+  }
+
+  .staffing-payroll-intro h2 {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .staffing-payroll-border {
+    margin: 16px auto 20px;
+  }
+
+  .staffing-payroll-intro p {
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .staffing-payroll-list {
+    gap: 30px;
+  }
+
+  /*
+    Mobile:
+    IMAGE
+    TEXT
+  */
+
+  .staffing-payroll-card,
+  .staffing-payroll-card.reverse {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+
+    grid-template-columns: none;
+  }
+
+  .staffing-payroll-card-image,
+  .staffing-payroll-card.reverse .staffing-payroll-card-image {
+    order: 1;
+
+    width: 100%;
+    height: 270px;
+  }
+
+  .staffing-payroll-card-text,
+  .staffing-payroll-card.reverse .staffing-payroll-card-text {
+    order: 2;
+
+    width: 100%;
+
+    padding: 28px 22px 32px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 21px;
+    line-height: 1.4;
+
+    margin-bottom: 18px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 14px;
+    line-height: 1.55;
+
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE - 576 TO 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .staffing-payroll-banner {
+    height: 260px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 270px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 30px 25px 35px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 22px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400 TO 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .staffing-payroll-banner {
+    height: 240px;
+  }
+
+  .staffing-payroll-section {
+    padding: 40px 14px 55px;
+  }
+
+  .staffing-payroll-intro h2 {
+    font-size: 21px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 230px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 26px 20px 30px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 20px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 13.5px;
+  }
+}
+
+/* =========================================================
+   EXTRA SMALL - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .staffing-payroll-banner {
+    height: 210px;
+  }
+
+  .staffing-payroll-section {
+    padding: 35px 12px 50px;
+  }
+
+  .staffing-payroll-intro h2 {
+    font-size: 19px;
+  }
+
+  .staffing-payroll-intro p {
+    font-size: 13px;
+  }
+
+  .staffing-payroll-card-image {
+    height: 205px;
+  }
+
+  .staffing-payroll-card-text {
+    padding: 24px 18px 28px;
+  }
+
+  .staffing-payroll-card-text h3 {
+    font-size: 19px;
+  }
+
+  .staffing-payroll-card-text li {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+}

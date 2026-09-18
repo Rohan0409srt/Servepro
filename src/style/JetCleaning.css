@@ -1,0 +1,555 @@
+.jet-cleaning-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.jet-cleaning-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.jet-cleaning-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.jet-cleaning-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.jet-cleaning-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.jet-cleaning-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.jet-cleaning-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.jet-cleaning-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.jet-cleaning-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.jet-cleaning-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.jet-cleaning-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.jet-cleaning-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.jet-cleaning-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jet-cleaning-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.jet-cleaning-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.jet-cleaning-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.jet-cleaning-text li:last-child {
+  margin-bottom: 0;
+}
+
+.jet-cleaning-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.jet-cleaning-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* 1600px - 1919px */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .jet-cleaning-section {
+    padding: 100px 0 115px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .jet-cleaning-intro {
+    max-width: 1250px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 40px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 19px;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 50px;
+  }
+
+  .jet-cleaning-card {
+    min-height: 460px;
+  }
+
+  .jet-cleaning-text {
+    padding: 65px 75px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 32px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 19px;
+  }
+
+  .jet-cleaning-image {
+    height: 460px;
+  }
+}
+
+
+/* 1440px - 1599px */
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .jet-cleaning-section {
+    padding: 90px 0 105px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 36px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 18px;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 48px;
+  }
+
+  .jet-cleaning-card {
+    min-height: 430px;
+  }
+
+  .jet-cleaning-text {
+    padding: 55px 65px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 30px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 18px;
+  }
+
+  .jet-cleaning-image {
+    height: 430px;
+  }
+}
+
+
+/* 1200px - 1439px */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .jet-cleaning-section {
+    padding: 80px 0 95px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 34px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 17px;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 45px;
+  }
+
+  .jet-cleaning-card {
+    min-height: 400px;
+  }
+
+  .jet-cleaning-text {
+    padding: 50px 55px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 28px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 17px;
+  }
+
+  .jet-cleaning-image {
+    height: 400px;
+  }
+}
+
+
+/* 768px - 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .jet-cleaning-banner {
+    height: 500px;
+  }
+
+  .jet-cleaning-section {
+    padding: 70px 0 80px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .jet-cleaning-intro {
+    margin-bottom: 55px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .jet-cleaning-border {
+    margin: 18px auto 22px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 35px;
+  }
+
+  .jet-cleaning-card,
+  .jet-cleaning-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .jet-cleaning-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .jet-cleaning-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .jet-cleaning-text ul {
+    padding-left: 19px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+
+/* 576px - 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .jet-cleaning-banner {
+    height: 260px;
+  }
+
+  .jet-cleaning-section {
+    padding: 50px 0 60px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 30px);
+  }
+
+  .jet-cleaning-intro {
+    margin-bottom: 40px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .jet-cleaning-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 25px;
+  }
+
+  .jet-cleaning-card,
+  .jet-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .jet-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .jet-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* 400px - 575px */
+@media (min-width: 400px) and (max-width: 575px) {
+  .jet-cleaning-banner {
+    height: 240px;
+  }
+
+  .jet-cleaning-section {
+    padding: 45px 0 55px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 24px);
+  }
+
+  .jet-cleaning-intro {
+    margin-bottom: 35px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .jet-cleaning-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 22px;
+  }
+
+  .jet-cleaning-card,
+  .jet-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .jet-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .jet-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .jet-cleaning-text ul {
+    padding-left: 18px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* Below 400px */
+@media (max-width: 399px) {
+  .jet-cleaning-banner {
+    height: 210px;
+  }
+
+  .jet-cleaning-section {
+    padding: 38px 0 45px;
+  }
+
+  .jet-cleaning-container {
+    width: calc(100% - 20px);
+  }
+
+  .jet-cleaning-intro {
+    margin-bottom: 30px;
+  }
+
+  .jet-cleaning-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .jet-cleaning-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .jet-cleaning-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .jet-cleaning-service-list {
+    gap: 18px;
+  }
+
+  .jet-cleaning-card,
+  .jet-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .jet-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .jet-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .jet-cleaning-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .jet-cleaning-text ul {
+    padding-left: 17px;
+  }
+
+  .jet-cleaning-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

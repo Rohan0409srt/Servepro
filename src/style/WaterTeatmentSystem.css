@@ -1,0 +1,525 @@
+.water-teatment-system-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #0b1957;
+}
+
+.water-teatment-system-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.water-teatment-system-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.water-teatment-system-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.water-teatment-system-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.water-teatment-system-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.water-teatment-system-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.water-teatment-system-border {
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.water-teatment-system-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.water-teatment-system-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.water-teatment-system-card {
+  width: 100%;
+  min-height: 490px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.1);
+}
+
+.water-teatment-system-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.water-teatment-system-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.water-teatment-system-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.water-teatment-system-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.water-teatment-system-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.water-teatment-system-text li:last-child {
+  margin-bottom: 0;
+}
+
+.water-teatment-system-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.water-teatment-system-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .water-teatment-system-section {
+    padding: 100px 0 115px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .water-teatment-system-intro {
+    max-width: 1250px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 40px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 19px;
+  }
+
+  .water-teatment-system-list {
+    gap: 50px;
+  }
+
+  .water-teatment-system-card {
+    min-height: 460px;
+  }
+
+  .water-teatment-system-text {
+    padding: 65px 75px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 32px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 19px;
+  }
+
+  .water-teatment-system-image {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .water-teatment-system-section {
+    padding: 90px 0 105px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 36px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 18px;
+  }
+
+  .water-teatment-system-list {
+    gap: 48px;
+  }
+
+  .water-teatment-system-card {
+    min-height: 430px;
+  }
+
+  .water-teatment-system-text {
+    padding: 55px 65px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 30px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 18px;
+  }
+
+  .water-teatment-system-image {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .water-teatment-system-section {
+    padding: 80px 0 95px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 34px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 17px;
+  }
+
+  .water-teatment-system-list {
+    gap: 45px;
+  }
+
+  .water-teatment-system-card {
+    min-height: 400px;
+  }
+
+  .water-teatment-system-text {
+    padding: 50px 55px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 28px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 17px;
+  }
+
+  .water-teatment-system-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .water-teatment-system-banner {
+    height: 500px;
+  }
+
+  .water-teatment-system-section {
+    padding: 70px 0 80px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 50px);
+  }
+
+  .water-teatment-system-intro {
+    margin-bottom: 55px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 30px;
+  }
+
+  .water-teatment-system-border {
+    margin: 18px auto 22px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .water-teatment-system-list {
+    gap: 35px;
+  }
+
+  .water-teatment-system-card,
+  .water-teatment-system-card.reverse {
+    flex-direction: row;
+    min-height: 320px;
+  }
+
+  .water-teatment-system-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .water-teatment-system-text li {
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .water-teatment-system-image {
+    width: 48%;
+    height: 320px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .water-teatment-system-banner {
+    height: 260px;
+  }
+
+  .water-teatment-system-section {
+    padding: 50px 0 60px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 30px);
+  }
+
+  .water-teatment-system-intro {
+    margin-bottom: 40px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 25px;
+  }
+
+  .water-teatment-system-border {
+    width: 60px;
+    height: 3px;
+    margin: 16px auto 20px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .water-teatment-system-list {
+    gap: 25px;
+  }
+
+  .water-teatment-system-card,
+  .water-teatment-system-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .water-teatment-system-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .water-teatment-system-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .water-teatment-system-banner {
+    height: 240px;
+  }
+
+  .water-teatment-system-section {
+    padding: 45px 0 55px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 24px);
+  }
+
+  .water-teatment-system-intro {
+    margin-bottom: 35px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 22px;
+  }
+
+  .water-teatment-system-border {
+    width: 55px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .water-teatment-system-list {
+    gap: 22px;
+  }
+
+  .water-teatment-system-card,
+  .water-teatment-system-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .water-teatment-system-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .water-teatment-system-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+
+  .water-teatment-system-text ul {
+    padding-left: 20px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 399px) {
+  .water-teatment-system-banner {
+    height: 210px;
+  }
+
+  .water-teatment-system-section {
+    padding: 38px 0 45px;
+  }
+
+  .water-teatment-system-container {
+    width: calc(100% - 20px);
+  }
+
+  .water-teatment-system-intro {
+    margin-bottom: 30px;
+  }
+
+  .water-teatment-system-intro h1 {
+    font-size: 20px;
+  }
+
+  .water-teatment-system-border {
+    width: 50px;
+    height: 2px;
+    margin: 12px auto 16px;
+  }
+
+  .water-teatment-system-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .water-teatment-system-list {
+    gap: 18px;
+  }
+
+  .water-teatment-system-card,
+  .water-teatment-system-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .water-teatment-system-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .water-teatment-system-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .water-teatment-system-text h2 {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .water-teatment-system-text ul {
+    padding-left: 18px;
+  }
+
+  .water-teatment-system-text li {
+    font-size: 13px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+}

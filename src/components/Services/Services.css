@@ -1,0 +1,739 @@
+/* =====================================================
+   SPECIAL SERVICES AREA
+===================================================== */
+
+.special-services-area {
+  width: 100%;
+  padding: 70px 0 75px;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.services-heading {
+  margin-bottom: 52px;
+}
+
+.services-heading .sec-title {
+  text-align: left;
+}
+
+.services-heading .sec-title h1 {
+  margin: 0 0 14px;
+  color: #1f3365;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.services-heading .border {
+  display: block;
+  width: 78px;
+  height: 3px;
+  background: #1f3365;
+}
+
+
+/* =====================================================
+   SLIDER AREA
+===================================================== */
+
+.services-slider {
+  position: relative;
+  width: 100%;
+  padding: 0 45px;
+}
+
+.services-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.services-track {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  will-change: transform;
+}
+
+.services-track-animate {
+  transition: transform 650ms ease-in-out;
+}
+
+.service-slide {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.service-card {
+  display: block;
+  position: relative;
+
+  width: 100%;
+  height: 400px;
+
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 20px;
+
+  text-decoration: none;
+  text-wrap: initial;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.service-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.service-image > img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 19px 19px 0 0;
+}
+
+
+/* =====================================================
+   SERVICE ICON
+===================================================== */
+
+.service-icon {
+  position: absolute;
+
+  left: 50%;
+  bottom: -34px;
+
+  width: 74px;
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateX(-50%);
+
+  background: #1f3365;
+  border-radius: 13px;
+
+  z-index: 2;
+}
+
+.service-icon img {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.service-content {
+  height: 116px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 34px 15px 12px;
+
+  text-align: center;
+  background: #fff;
+
+  border-radius: 0 0 19px 19px;
+}
+
+.service-content h3 {
+  max-width: 280px;
+
+  margin: 0;
+
+  color: #1f3365;
+
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   ARROWS
+===================================================== */
+
+.services-arrow {
+  position: absolute;
+  top: 50%;
+
+  width: 30px;
+  height: 55px;
+
+  padding: 0;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+  color: #1f3365;
+
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 50px;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.services-arrow-left {
+  left: 2px;
+}
+
+.services-arrow-right {
+  right: 2px;
+}
+
+
+/* NO HOVER COLOR CHANGE */
+
+.services-arrow:hover {
+  color: #1f3365;
+}
+
+.services-arrow:focus {
+  outline: none;
+}
+
+.services-arrow:focus-visible {
+  outline: 2px solid #f79827;
+  outline-offset: 3px;
+}
+
+
+/* =====================================================
+   LARGE LAPTOP
+   1200px - 1399px
+===================================================== */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .services-slider {
+    padding: 0 42px;
+  }
+
+  .service-slide {
+    padding: 0 9px;
+  }
+
+  .service-card {
+    height: 410px;
+  }
+
+  .service-image {
+    height: 305px;
+  }
+
+  .service-content {
+    height: 105px;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================================
+   LAPTOP
+   992px - 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .special-services-area {
+    padding: 60px 0 65px;
+  }
+
+  .services-heading {
+    margin-bottom: 45px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 31px;
+  }
+
+  .services-slider {
+    padding: 0 38px;
+  }
+
+  .service-slide {
+    padding: 0 8px;
+  }
+
+  .service-card {
+    height: 420px;
+  }
+
+  .service-image {
+    height: 315px;
+  }
+
+  .service-content {
+    height: 105px;
+    padding: 34px 12px 10px;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+  }
+
+  .services-arrow {
+    font-size: 44px;
+  }
+}
+
+
+/* =====================================================
+   TABLET
+   768px - 991px
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .special-services-area {
+    padding: 55px 0 60px;
+  }
+
+  .services-heading {
+    margin-bottom: 40px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 30px;
+  }
+
+  .services-slider {
+    padding: 0 38px;
+  }
+
+  .service-slide {
+    padding: 0 8px;
+  }
+
+  .service-card {
+    height: 430px;
+  }
+
+  .service-image {
+    height: 315px;
+  }
+
+  .service-content {
+    height: 115px;
+  }
+
+  .service-content h3 {
+    font-size: 19px;
+  }
+
+  .services-arrow {
+    width: 28px;
+    font-size: 43px;
+  }
+
+  .services-arrow-left {
+    left: 2px;
+  }
+
+  .services-arrow-right {
+    right: 2px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE LARGE
+   576px - 767px
+===================================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .special-services-area {
+    padding: 50px 0 55px;
+  }
+
+  .services-heading {
+    margin-bottom: 35px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 28px;
+  }
+
+  .services-slider {
+    padding: 0 32px;
+  }
+
+  .service-slide {
+    padding: 0 6px;
+  }
+
+  .service-card {
+    height: 425px;
+    border-radius: 18px;
+  }
+
+  .service-image {
+    height: 315px;
+  }
+
+  .service-image > img {
+    border-radius: 17px 17px 0 0;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    bottom: -32px;
+    border-radius: 12px;
+  }
+
+  .service-icon img {
+    width: 66px;
+    height: 66px;
+  }
+
+  .service-content {
+    height: 110px;
+    padding: 34px 14px 10px;
+    border-radius: 0 0 17px 17px;
+  }
+
+  .service-content h3 {
+    font-size: 19px;
+  }
+
+  .services-arrow {
+    width: 25px;
+    font-size: 40px;
+  }
+
+  .services-arrow-left {
+    left: 0;
+  }
+
+  .services-arrow-right {
+    right: 0;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   0 - 575px
+===================================================== */
+
+@media (max-width: 575px) {
+
+  .special-services-area {
+    padding: 45px 0 50px;
+  }
+
+  .services-heading {
+    margin-bottom: 32px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .services-slider {
+    padding: 0 30px;
+  }
+
+  .service-slide {
+    padding: 0 5px;
+  }
+
+  .service-card {
+    height: 425px;
+    border-radius: 16px;
+  }
+
+  .service-image {
+    height: 315px;
+  }
+
+  .service-image > img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .service-icon {
+    width: 68px;
+    height: 68px;
+
+    bottom: -31px;
+
+    border-radius: 12px;
+  }
+
+  .service-icon img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .service-content {
+    height: 110px;
+
+    padding: 34px 15px 12px;
+
+    border-radius: 0 0 15px 15px;
+  }
+
+  .service-content h3 {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+
+  .services-arrow {
+    width: 25px;
+    font-size: 40px;
+  }
+
+  .services-arrow-left {
+    left: 0;
+  }
+
+  .services-arrow-right {
+    right: 0;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   421px - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .special-services-area {
+    padding: 42px 0 48px;
+  }
+
+  .services-heading {
+    margin-bottom: 30px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 26px;
+  }
+
+  .services-slider {
+    padding: 0 28px;
+  }
+
+  .service-slide {
+    padding: 0 4px;
+  }
+
+  .service-card {
+    height: 415px;
+  }
+
+  .service-image {
+    height: 305px;
+  }
+
+  .service-content {
+    height: 110px;
+  }
+
+  .service-content h3 {
+    font-size: 18px;
+  }
+
+  .service-icon {
+    width: 66px;
+    height: 66px;
+    bottom: -30px;
+  }
+
+  .service-icon img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .services-arrow {
+    font-size: 37px;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+   <= 420px
+===================================================== */
+
+@media (max-width: 420px) {
+
+  .special-services-area {
+    padding: 40px 0 45px;
+  }
+
+  .services-heading {
+    margin-bottom: 28px;
+  }
+
+  .services-heading .sec-title h1 {
+    font-size: 25px;
+  }
+
+  .services-slider {
+    padding: 0 25px;
+  }
+
+  .service-slide {
+    padding: 0 3px;
+  }
+
+  .service-card {
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  .service-image {
+    height: 290px;
+  }
+
+  .service-image > img {
+    border-radius: 14px 14px 0 0;
+  }
+
+  .service-icon {
+    width: 62px;
+    height: 62px;
+    bottom: -29px;
+    border-radius: 11px;
+  }
+
+  .service-icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .service-content {
+    height: 110px;
+    padding: 32px 10px 10px;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .service-content h3 {
+    font-size: 17px;
+  }
+
+  .services-arrow {
+    width: 22px;
+    height: 45px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .services-arrow-left {
+    left: 0;
+  }
+
+  .services-arrow-right {
+    right: 0;
+  }
+}
+
+
+/* =====================================================
+   EXTRA SMALL DEVICES
+   <= 360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+  .services-slider {
+    padding: 0 22px;
+  }
+
+  .service-card {
+    height: 385px;
+  }
+
+  .service-image {
+    height: 275px;
+  }
+
+  .service-content {
+    height: 110px;
+  }
+
+  .service-content h3 {
+    font-size: 16px;
+  }
+
+  .service-icon {
+    width: 58px;
+    height: 58px;
+    bottom: -27px;
+  }
+
+  .service-icon img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .services-arrow {
+    font-size: 31px;
+  }
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .services-track-animate {
+    transition: none !important;
+  }
+
+  .services-arrow {
+    transition: none !important;
+  }
+}

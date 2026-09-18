@@ -1,0 +1,776 @@
+/* =========================================
+   OFFICE SUPPORT STAFF PAGE
+========================================= */
+
+.office-support-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* =========================================
+   BANNER
+========================================= */
+
+.office-support-banner {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.office-support-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.office-support-section {
+  width: 100%;
+  padding: 70px 20px 90px;
+}
+
+.office-support-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.office-support-intro {
+  max-width: 1050px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.office-support-intro h2 {
+  margin: 0 auto 20px;
+  color: #0b1957;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.office-support-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 0 auto 25px;
+  background: #0b1957;
+  border-radius: 5px;
+}
+
+.office-support-intro p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* =========================================
+   SERVICE LIST
+========================================= */
+
+.office-support-service-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.office-support-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  min-height: 390px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+}
+
+/* Normal:
+   Text | Image
+*/
+
+.office-support-card-text {
+  order: 1;
+  padding: 45px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.office-support-card-image {
+  order: 2;
+  width: 100%;
+  min-height: 390px;
+  overflow: hidden;
+}
+
+/* Reverse:
+   Image | Text
+*/
+
+.office-support-card.reverse .office-support-card-text {
+  order: 2;
+}
+
+.office-support-card.reverse .office-support-card-image {
+  order: 1;
+}
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.office-support-card-text h3 {
+  margin: 0 0 22px;
+  color: #0b1957;
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* =========================================
+   CARD LIST
+========================================= */
+
+.office-support-card-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.office-support-card-text li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.office-support-card-text li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0b1957;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.office-support-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.office-support-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.office-support-card:hover .office-support-card-image img {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .office-support-banner {
+    min-height: 320px;
+  }
+
+  .office-support-section {
+    padding: 55px 20px 70px;
+  }
+
+  .office-support-intro {
+    margin-bottom: 55px;
+  }
+
+  .office-support-intro h2 {
+    font-size: 26px;
+  }
+
+  .office-support-card {
+    min-height: 350px;
+  }
+
+  .office-support-card-text {
+    padding: 35px 30px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 22px;
+  }
+
+  .office-support-card-image,
+  .office-support-card-image img {
+    min-height: 350px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .office-support-banner {
+    min-height: 260px;
+  }
+
+  .office-support-section {
+    padding: 45px 15px 60px;
+  }
+
+  .office-support-container {
+    max-width: 100%;
+  }
+
+  .office-support-intro {
+    margin-bottom: 45px;
+  }
+
+  .office-support-intro h2 {
+    font-size: 23px;
+    line-height: 1.45;
+  }
+
+  .office-support-intro p {
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .office-support-service-list {
+    gap: 30px;
+  }
+
+  .office-support-card,
+  .office-support-card.reverse {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .office-support-card-text,
+  .office-support-card.reverse .office-support-card-text {
+    order: 2;
+    padding: 30px 25px;
+  }
+
+  .office-support-card-image,
+  .office-support-card.reverse .office-support-card-image {
+    order: 1;
+    min-height: 280px;
+  }
+
+  .office-support-card-image img {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+
+  .office-support-card-text li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .office-support-banner {
+    min-height: 220px;
+  }
+
+  .office-support-section {
+    padding: 35px 12px 50px;
+  }
+
+  .office-support-intro h2 {
+    font-size: 20px;
+  }
+
+  .office-support-intro p {
+    font-size: 14px;
+  }
+
+  .office-support-card-text,
+  .office-support-card.reverse .office-support-card-text {
+    padding: 25px 20px;
+  }
+
+  .office-support-card-image,
+  .office-support-card-image img {
+    min-height: 230px;
+    height: 230px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 19px;
+  }
+
+  .office-support-card-text li {
+    padding-left: 21px;
+    font-size: 13.5px;
+  }
+}
+
+/* =========================================
+   EXTRA SMALL
+========================================= */
+
+@media (max-width: 399px) {
+
+  .office-support-banner {
+    min-height: 190px;
+  }
+
+  .office-support-intro h2 {
+    font-size: 18px;
+  }
+
+  .office-support-card-image,
+  .office-support-card-image img {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   BIG DESKTOP
+========================================= */
+
+@media (min-width: 1440px) {
+
+  .office-support-banner {
+    min-height: 440px;
+    height: 750px;
+  }
+
+  .office-support-container {
+    max-width: 1280px;
+  }
+
+  .office-support-section {
+    padding-top: 85px;
+    padding-bottom: 110px;
+  }
+
+  .office-support-intro {
+    max-width: 1150px;
+  }
+
+  .office-support-intro h2 {
+    font-size: 34px;
+  }
+
+  .office-support-intro p {
+    font-size: 17px;
+  }
+
+  .office-support-card {
+    min-height: 430px;
+  }
+
+  .office-support-card-image,
+  .office-support-card-image img {
+    min-height: 430px;
+  }
+
+  .office-support-card-text {
+    padding: 55px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 28px;
+  }
+
+  .office-support-card-text li {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .office-support-container {
+    max-width: 1400px;
+  }
+
+  .office-support-banner {
+    min-height: 500px;
+  }
+
+  .office-support-card {
+    min-height: 460px;
+  }
+
+  .office-support-card-image,
+  .office-support-card-image img {
+    min-height: 460px;
+  }
+
+  .office-support-card-text h3 {
+    font-size: 30px;
+  }
+}
+/* =========================================================
+   FINAL IMAGE SIZE & ALIGNMENT
+   All Devices
+========================================================= */
+
+.mailroom-service-card {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.mailroom-service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.mailroom-service-image {
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+.mailroom-service-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   DESKTOP
+   1200px+
+========================================================= */
+
+@media (min-width: 1200px) {
+
+  .mailroom-service-card {
+    min-height: 370px;
+  }
+
+  .mailroom-service-content {
+    width: 55%;
+    padding: 50px 55px;
+  }
+
+  .mailroom-service-image {
+    width: 45%;
+    height: 370px;
+    min-height: 370px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 370px;
+    min-height: 370px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1440px+
+========================================================= */
+
+@media (min-width: 1440px) {
+
+  .mailroom-service-card {
+    min-height: 400px;
+  }
+
+  .mailroom-service-content {
+    width: 55%;
+    padding: 55px 60px;
+  }
+
+  .mailroom-service-image {
+    width: 45%;
+    height: 400px;
+    min-height: 400px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   WIDE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .mailroom-service-card {
+    min-height: 420px;
+  }
+
+  .mailroom-service-content {
+    width: 55%;
+    padding: 60px 65px;
+  }
+
+  .mailroom-service-image {
+    width: 45%;
+    height: 420px;
+    min-height: 420px;
+
+    /* IMPORTANT:
+       No external margins.
+       Keeps image perfectly aligned with card.
+    */
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 420px;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   ULTRA WIDE
+   1920px+
+========================================================= */
+
+@media (min-width: 1920px) {
+
+  .mailroom-container {
+    width: 1320px;
+  }
+
+  .mailroom-service-card {
+    min-height: 440px;
+  }
+
+  .mailroom-service-content {
+    width: 55%;
+    padding: 65px 75px;
+  }
+
+  .mailroom-service-image {
+    width: 45%;
+    height: 440px;
+    min-height: 440px;
+
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 440px;
+    min-height: 440px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 1199px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .mailroom-service-card {
+    min-height: 300px;
+  }
+
+  .mailroom-service-content {
+    width: 52%;
+    padding: 32px;
+  }
+
+  .mailroom-service-image {
+    width: 48%;
+    height: 300px;
+    min-height: 300px;
+
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 300px;
+    min-height: 300px;
+    border-radius: 10%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .mailroom-service-card,
+  .mailroom-service-card.mailroom-reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mailroom-service-image,
+  .mailroom-service-card.mailroom-reverse .mailroom-service-image {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+
+    order: 1;
+
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mailroom-service-content,
+  .mailroom-service-card.mailroom-reverse .mailroom-service-content {
+    width: 100%;
+    order: 2;
+
+    padding: 28px 24px 32px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .mailroom-service-image {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+
+    margin: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mailroom-service-content {
+    width: 100%;
+    padding: 24px 20px 28px;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+   <= 399px
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .mailroom-service-image {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+
+    margin: 0;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mailroom-service-content {
+    width: 100%;
+    padding: 22px 17px 25px;
+  }
+}

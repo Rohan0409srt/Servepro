@@ -1,0 +1,653 @@
+/* =========================================================
+   TERMITE CONTROL SERVICE
+   ========================================================= */
+
+.termite-control-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.termite-control-banner {
+  width: 100%;
+  height: 750px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.termite-control-section {
+  width: 100%;
+  padding: 80px 0 95px;
+  background: #fff;
+}
+
+.termite-control-container {
+  width: calc(100% - 80px);
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.termite-control-intro {
+  max-width: 1240px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.termite-control-intro h2 {
+  margin: 0;
+  color: #222;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.termite-control-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 22px auto 25px;
+  background: #222;
+}
+
+.termite-control-intro p {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: justify;
+  font-family: inherit;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.termite-control-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.termite-control-card {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.termite-control-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.termite-control-card-text {
+  width: 55%;
+  padding: 50px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.termite-control-card-text h3 {
+  margin: 0 0 25px;
+  color: #222;
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.termite-control-card-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.termite-control-card-text li {
+  position: relative;
+  margin: 0 0 13px;
+  padding-left: 25px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.termite-control-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+.termite-control-card-text li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.termite-control-card-image {
+  width: 45%;
+  height: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.termite-control-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .termite-control-banner {
+    height: 750px;
+  }
+
+  .termite-control-section {
+    padding: 90px 0 105px;
+  }
+
+  .termite-control-container {
+    max-width: 1340px;
+  }
+
+  .termite-control-intro {
+    max-width: 1340px;
+    margin-bottom: 60px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 36px;
+  }
+
+  .termite-control-intro p {
+    font-size: 18px;
+  }
+
+  .termite-control-services {
+    gap: 38px;
+  }
+
+  .termite-control-card {
+    min-height: 430px;
+  }
+
+  .termite-control-card-text {
+    padding: 55px 65px;
+  }
+
+  .termite-control-card-text h3 {
+    font-size: 30px;
+  }
+
+  .termite-control-card-text li {
+    font-size: 18px;
+  }
+
+  .termite-control-card-image {
+    height: 430px;
+  }
+}
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .termite-control-banner {
+    height: 750px;
+  }
+
+  .termite-control-section {
+    padding: 100px 0 115px;
+  }
+
+  .termite-control-container {
+    max-width: 1500px;
+  }
+
+  .termite-control-intro {
+    max-width: 1250px;
+    margin-bottom: 65px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 40px;
+  }
+
+  .termite-control-intro p {
+    font-size: 19px;
+    line-height: 1.85;
+  }
+
+  .termite-control-services {
+    gap: 40px;
+  }
+
+  .termite-control-card {
+    min-height: 460px;
+  }
+
+  .termite-control-card-text {
+    padding: 65px 75px;
+  }
+
+  .termite-control-card-text h3 {
+    font-size: 32px;
+  }
+
+  .termite-control-card-text li {
+    font-size: 19px;
+  }
+
+  .termite-control-card-image {
+    height: 460px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .termite-control-banner {
+    height: 750px;
+  }
+
+  .termite-control-section {
+    padding: 110px 0 125px;
+  }
+
+  .termite-control-container {
+    max-width: 1650px;
+  }
+
+  .termite-control-intro {
+    max-width: 1350px;
+    margin-bottom: 70px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 43px;
+    line-height: 1.35;
+  }
+
+  .termite-control-border {
+    width: 80px;
+    height: 4px;
+    margin: 24px auto 28px;
+  }
+
+  .termite-control-intro p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .termite-control-services {
+    gap: 55px;
+  }
+
+  .termite-control-card {
+    min-height: 490px;
+  }
+
+  .termite-control-card-text {
+    padding: 70px 85px;
+  }
+
+  .termite-control-card-text h3 {
+    font-size: 34px;
+  }
+
+  .termite-control-card-text li {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .termite-control-card-image {
+    height: 490px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 TO 1199
+   SIDE BY SIDE
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .termite-control-banner {
+    height: 500px;
+  }
+
+  .termite-control-section {
+    padding: 70px 0 80px;
+  }
+
+  .termite-control-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .termite-control-intro {
+    margin-bottom: 55px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .termite-control-border {
+    margin: 18px auto 22px;
+  }
+
+  .termite-control-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .termite-control-services {
+    gap: 35px;
+  }
+
+  .termite-control-card {
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .termite-control-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .termite-control-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .termite-control-card-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .termite-control-card-text h3 {
+    margin-bottom: 18px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .termite-control-card-text li {
+    margin-bottom: 9px;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================================================
+   576 - 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .termite-control-banner {
+    height: 260px;
+  }
+
+  .termite-control-section {
+    padding: 50px 0 60px;
+  }
+
+  .termite-control-container {
+    width: calc(100% - 30px);
+    max-width: none;
+  }
+
+  .termite-control-intro {
+    margin-bottom: 40px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .termite-control-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .termite-control-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .termite-control-services {
+    gap: 25px;
+  }
+
+  .termite-control-card,
+  .termite-control-card.reverse {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .termite-control-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .termite-control-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .termite-control-card-text h3 {
+    margin-bottom: 18px;
+    font-size: 23px;
+    line-height: 1.35;
+  }
+
+  .termite-control-card-text li {
+    margin-bottom: 9px;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================================================
+   400 - 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .termite-control-banner {
+    height: 240px;
+  }
+
+  .termite-control-section {
+    padding: 45px 0 55px;
+  }
+
+  .termite-control-container {
+    width: calc(100% - 24px);
+    max-width: none;
+  }
+
+  .termite-control-intro {
+    margin-bottom: 35px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .termite-control-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .termite-control-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .termite-control-services {
+    gap: 22px;
+  }
+
+  .termite-control-card,
+  .termite-control-card.reverse {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .termite-control-card-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .termite-control-card-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .termite-control-card-text h3 {
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .termite-control-card-text li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================================================
+   BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .termite-control-banner {
+    height: 210px;
+  }
+
+  .termite-control-section {
+    padding: 38px 0 45px;
+  }
+
+  .termite-control-container {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
+
+  .termite-control-intro {
+    margin-bottom: 30px;
+  }
+
+  .termite-control-intro h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .termite-control-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .termite-control-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .termite-control-services {
+    gap: 18px;
+  }
+
+  .termite-control-card,
+  .termite-control-card.reverse {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .termite-control-card-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .termite-control-card-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .termite-control-card-text h3 {
+    margin-bottom: 14px;
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .termite-control-card-text li {
+    margin-bottom: 7px;
+    padding-left: 19px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

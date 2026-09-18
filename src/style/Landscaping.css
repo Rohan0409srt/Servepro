@@ -1,0 +1,706 @@
+/* =========================================================
+   LANDSCAPING SERVICES PAGE
+   ========================================================= */
+
+.landscaping-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.landscaping-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.landscaping-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.landscaping-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #ffffff;
+}
+
+.landscaping-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.landscaping-intro {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.landscaping-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.landscaping-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 25px auto 28px;
+  background: #0b1957;
+}
+
+.landscaping-intro p {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.landscaping-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   Desktop:
+   Text 55% | Image 45%
+
+   Reverse:
+   Image 45% | Text 55%
+   ========================================================= */
+
+.landscaping-service-card {
+  display: flex;
+  width: 100%;
+  min-height: 490px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+}
+
+.landscaping-service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.landscaping-card-text {
+  width: 55%;
+  padding: 65px 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landscaping-card-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 31px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.landscaping-card-text ul {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+.landscaping-card-text li {
+  margin-bottom: 15px;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.landscaping-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.landscaping-card-image {
+  width: 45%;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.landscaping-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   1200 - 1439
+   Banner = 750px
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .landscaping-banner {
+    height: 750px;
+  }
+
+  .landscaping-section {
+    padding: 80px 0 95px;
+  }
+
+  .landscaping-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .landscaping-intro {
+    margin-bottom: 60px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 34px;
+  }
+
+  .landscaping-intro p {
+    font-size: 17px;
+  }
+
+  .landscaping-service-card {
+    min-height: 400px;
+  }
+
+  .landscaping-card-text {
+    padding: 50px 55px;
+  }
+
+  .landscaping-card-image,
+  .landscaping-card-image img {
+    min-height: 400px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 28px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .landscaping-banner {
+    height: 750px;
+  }
+
+  .landscaping-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .landscaping-section {
+    padding: 90px 0 105px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 36px;
+  }
+
+  .landscaping-intro p {
+    font-size: 18px;
+  }
+
+  .landscaping-service-card {
+    min-height: 430px;
+  }
+
+  .landscaping-card-text {
+    padding: 55px 65px;
+  }
+
+  .landscaping-card-image,
+  .landscaping-card-image img {
+    min-height: 430px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .landscaping-banner {
+    height: 750px;
+  }
+
+  .landscaping-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .landscaping-section {
+    padding: 100px 0 115px;
+  }
+
+  .landscaping-intro {
+    max-width: 1250px;
+    margin-bottom: 75px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 40px;
+  }
+
+  .landscaping-intro p {
+    font-size: 19px;
+  }
+
+  .landscaping-service-card {
+    min-height: 460px;
+  }
+
+  .landscaping-card-text {
+    padding: 65px 75px;
+  }
+
+  .landscaping-card-image,
+  .landscaping-card-image img {
+    min-height: 460px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 32px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .landscaping-banner {
+    height: 750px;
+  }
+
+  .landscaping-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .landscaping-section {
+    padding: 110px 0 125px;
+  }
+
+  .landscaping-intro {
+    max-width: 1350px;
+    margin-bottom: 85px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 43px;
+  }
+
+  .landscaping-border {
+    width: 80px;
+    height: 4px;
+    margin: 28px auto 32px;
+  }
+
+  .landscaping-intro p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .landscaping-service-list {
+    gap: 55px;
+  }
+
+  .landscaping-service-card {
+    min-height: 490px;
+  }
+
+  .landscaping-card-text {
+    padding: 70px 85px;
+  }
+
+  .landscaping-card-image,
+  .landscaping-card-image img {
+    min-height: 490px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 to 1199
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .landscaping-banner {
+    height: 500px;
+  }
+
+  .landscaping-section {
+    padding: 70px 0 80px;
+  }
+
+  .landscaping-container {
+    width: calc(100% - 50px);
+  }
+
+  .landscaping-intro {
+    margin-bottom: 55px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .landscaping-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .landscaping-service-list {
+    gap: 35px;
+  }
+
+  .landscaping-service-card {
+    min-height: 320px;
+  }
+
+  .landscaping-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .landscaping-card-image {
+    width: 48%;
+    min-height: 320px;
+  }
+
+  .landscaping-card-image img {
+    min-height: 320px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .landscaping-card-text ul {
+    padding-left: 20px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 576 to 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .landscaping-banner {
+    height: 260px;
+  }
+
+  .landscaping-section {
+    padding: 50px 0 60px;
+  }
+
+  .landscaping-container {
+    width: calc(100% - 30px);
+  }
+
+  .landscaping-intro {
+    margin-bottom: 40px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .landscaping-border {
+    margin: 18px auto 22px;
+  }
+
+  .landscaping-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .landscaping-service-list {
+    gap: 25px;
+  }
+
+  .landscaping-service-card,
+  .landscaping-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  /* Image first on mobile */
+  .landscaping-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .landscaping-card-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    object-fit: cover;
+  }
+
+  .landscaping-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 9px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400 to 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .landscaping-banner {
+    height: 240px;
+  }
+
+  .landscaping-section {
+    padding: 45px 0 55px;
+  }
+
+  .landscaping-container {
+    width: calc(100% - 24px);
+  }
+
+  .landscaping-intro {
+    margin-bottom: 35px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .landscaping-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .landscaping-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .landscaping-service-list {
+    gap: 22px;
+  }
+
+  .landscaping-service-card,
+  .landscaping-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .landscaping-card-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .landscaping-card-image img {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    object-fit: cover;
+  }
+
+  .landscaping-card-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .landscaping-card-text ul {
+    padding-left: 19px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .landscaping-banner {
+    height: 210px;
+  }
+
+  .landscaping-section {
+    padding: 38px 0 45px;
+  }
+
+  .landscaping-container {
+    width: calc(100% - 20px);
+  }
+
+  .landscaping-intro {
+    margin-bottom: 30px;
+  }
+
+  .landscaping-intro h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .landscaping-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .landscaping-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .landscaping-service-list {
+    gap: 18px;
+  }
+
+  .landscaping-service-card,
+  .landscaping-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .landscaping-card-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+  }
+
+  .landscaping-card-image img {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+    object-fit: cover;
+  }
+
+  .landscaping-card-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .landscaping-card-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .landscaping-card-text ul {
+    padding-left: 18px;
+  }
+
+  .landscaping-card-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}

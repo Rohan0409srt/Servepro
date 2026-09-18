@@ -1,0 +1,606 @@
+/* =========================================================
+   TRANSPORTATION MANAGEMENT SERVICE
+   ========================================================= */
+
+.transportation-management-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.transportation-management-banner {
+  position: relative;
+  width: 100%;
+  height: 430px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transportation-management-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.transportation-management-section {
+  width: 100%;
+  padding: 75px 20px 90px;
+  background: #fff;
+}
+
+.transportation-management-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.transportation-management-intro {
+  max-width: 1050px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.transportation-management-intro h2 {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.transportation-management-border {
+  display: block;
+  width: 55px;
+  height: 3px;
+
+  margin: 20px auto 25px;
+
+  background: #0b1957;
+  border-radius: 3px;
+}
+
+.transportation-management-intro p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.transportation-management-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.transportation-management-card {
+  width: 100%;
+  min-height: 370px;
+
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+}
+
+.transportation-management-card.reverse {
+  grid-template-columns: 45% 55%;
+}
+
+/* Reverse layout */
+
+.transportation-management-card.reverse
+  .transportation-management-card-text {
+  order: 2;
+}
+
+.transportation-management-card.reverse
+  .transportation-management-card-image {
+  order: 1;
+}
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.transportation-management-card-text {
+  min-width: 0;
+
+  padding: 48px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.transportation-management-card-text h3 {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: 27px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.transportation-management-card-text ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.transportation-management-card-text li {
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 25px;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.transportation-management-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+.transportation-management-card-text li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.transportation-management-card-image {
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+
+.transportation-management-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   1200+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .transportation-management-container {
+    max-width: 1200px;
+  }
+
+  .transportation-management-card {
+    grid-template-columns: 55% 45%;
+  }
+
+  .transportation-management-card.reverse {
+    grid-template-columns: 45% 55%;
+  }
+
+  .transportation-management-card-image {
+    height: 370px;
+  }
+}
+
+/* =========================================================
+   1440+
+   ========================================================= */
+
+@media (min-width: 1440px) {
+
+  .transportation-management-section {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+
+  .transportation-management-container {
+    max-width: 1280px;
+  }
+
+  .transportation-management-intro {
+    max-width: 1120px;
+  }
+
+  .transportation-management-intro h2 {
+    font-size: 32px;
+  }
+
+  .transportation-management-intro p {
+    font-size: 17px;
+  }
+
+  .transportation-management-card {
+    min-height: 400px;
+  }
+
+  .transportation-management-card-image {
+    height: 400px;
+  }
+
+  .transportation-management-card-text {
+    padding: 50px 52px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 29px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1600+
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+  .transportation-management-container {
+    max-width: 1350px;
+  }
+
+  .transportation-management-card {
+    min-height: 420px;
+  }
+
+  .transportation-management-card-image {
+    height: 420px;
+  }
+
+  .transportation-management-card-text {
+    padding: 55px 60px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .transportation-management-container {
+    max-width: 1450px;
+  }
+    .transportation-management-banner {
+    height: 660px;
+  }
+
+  .transportation-management-section {
+    padding-top: 95px;
+    padding-bottom: 110px;
+  }
+
+  .transportation-management-card {
+    min-height: 440px;
+  }
+
+  .transportation-management-card-image {
+    height: 440px;
+  }
+
+  .transportation-management-card-text {
+    padding: 60px 65px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 32px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 TO 1199
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .transportation-management-banner {
+    height: 560px;
+  }
+
+  .transportation-management-section {
+    padding: 60px 25px 75px;
+  }
+
+  .transportation-management-container {
+    max-width: 950px;
+  }
+
+  .transportation-management-intro {
+    margin-bottom: 50px;
+  }
+
+  .transportation-management-intro h2 {
+    font-size: 26px;
+  }
+
+  .transportation-management-intro p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .transportation-management-list {
+    gap: 40px;
+  }
+
+  .transportation-management-card,
+  .transportation-management-card.reverse {
+    grid-template-columns: 52% 48%;
+  }
+
+  .transportation-management-card {
+    min-height: 300px;
+  }
+
+  .transportation-management-card-image {
+    height: 300px;
+  }
+
+  .transportation-management-card-text {
+    padding: 35px 30px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+}
+
+/* =========================================================
+   MOBILE - BELOW 768
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .transportation-management-banner {
+    height: 270px;
+    background-position: center center;
+  }
+
+  .transportation-management-section {
+    padding: 45px 15px 60px;
+  }
+
+  .transportation-management-container {
+    max-width: 100%;
+  }
+
+  .transportation-management-intro {
+    margin-bottom: 40px;
+  }
+
+  .transportation-management-intro h2 {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .transportation-management-border {
+    margin: 16px auto 20px;
+  }
+
+  .transportation-management-intro p {
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .transportation-management-list {
+    gap: 30px;
+  }
+
+  /*
+     MOBILE ORDER:
+     IMAGE
+     TEXT
+  */
+
+  .transportation-management-card,
+  .transportation-management-card.reverse {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+    grid-template-columns: none;
+  }
+
+  .transportation-management-card-image,
+  .transportation-management-card.reverse
+    .transportation-management-card-image {
+    order: 1;
+
+    width: 100%;
+    height: 270px;
+  }
+
+  .transportation-management-card-text,
+  .transportation-management-card.reverse
+    .transportation-management-card-text {
+    order: 2;
+
+    width: 100%;
+
+    padding: 28px 22px 32px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 21px;
+    line-height: 1.4;
+
+    margin-bottom: 18px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 14px;
+    line-height: 1.55;
+
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+}
+
+/* =========================================================
+   576 TO 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .transportation-management-banner {
+    height: 260px;
+  }
+
+  .transportation-management-card-image {
+    height: 270px;
+  }
+
+  .transportation-management-card-text {
+    padding: 30px 25px 35px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 22px;
+  }
+}
+
+/* =========================================================
+   400 TO 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .transportation-management-banner {
+    height: 240px;
+  }
+
+  .transportation-management-section {
+    padding: 40px 14px 55px;
+  }
+
+  .transportation-management-intro h2 {
+    font-size: 21px;
+  }
+
+  .transportation-management-card-image {
+    height: 230px;
+  }
+
+  .transportation-management-card-text {
+    padding: 26px 20px 30px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 20px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 13.5px;
+  }
+}
+
+/* =========================================================
+   BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .transportation-management-banner {
+    height: 210px;
+  }
+
+  .transportation-management-section {
+    padding: 35px 12px 50px;
+  }
+
+  .transportation-management-intro h2 {
+    font-size: 19px;
+  }
+
+  .transportation-management-intro p {
+    font-size: 13px;
+  }
+
+  .transportation-management-card-image {
+    height: 205px;
+  }
+
+  .transportation-management-card-text {
+    padding: 24px 18px 28px;
+  }
+
+  .transportation-management-card-text h3 {
+    font-size: 19px;
+  }
+
+  .transportation-management-card-text li {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,541 @@
+.technical-service-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.technical-service-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.technical-service-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.technical-service-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.technical-service-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.technical-service-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.technical-service-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.technical-service-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.technical-service-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.technical-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.technical-service-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.technical-service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.technical-service-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.technical-service-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.technical-service-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.technical-service-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.technical-service-text li:last-child {
+  margin-bottom: 0;
+}
+
+.technical-service-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.technical-service-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .technical-service-section {
+    padding: 100px 0 115px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .technical-service-intro {
+    max-width: 1250px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 40px;
+  }
+
+  .technical-service-intro p {
+    font-size: 19px;
+  }
+
+  .technical-service-list {
+    gap: 50px;
+  }
+
+  .technical-service-card {
+    min-height: 460px;
+  }
+
+  .technical-service-text {
+    padding: 65px 75px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 32px;
+  }
+
+  .technical-service-text li {
+    font-size: 19px;
+  }
+
+  .technical-service-image {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .technical-service-section {
+    padding: 90px 0 105px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 36px;
+  }
+
+  .technical-service-intro p {
+    font-size: 18px;
+  }
+
+  .technical-service-list {
+    gap: 48px;
+  }
+
+  .technical-service-card {
+    min-height: 430px;
+  }
+
+  .technical-service-text {
+    padding: 55px 65px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 30px;
+  }
+
+  .technical-service-text li {
+    font-size: 18px;
+  }
+
+  .technical-service-image {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .technical-service-section {
+    padding: 80px 0 95px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 34px;
+  }
+
+  .technical-service-intro p {
+    font-size: 17px;
+  }
+
+  .technical-service-list {
+    gap: 45px;
+  }
+
+  .technical-service-card {
+    min-height: 400px;
+  }
+
+  .technical-service-text {
+    padding: 50px 55px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 28px;
+  }
+
+  .technical-service-text li {
+    font-size: 17px;
+  }
+
+  .technical-service-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .technical-service-banner {
+    height: 500px;
+  }
+
+  .technical-service-section {
+    padding: 70px 0 80px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .technical-service-intro {
+    margin-bottom: 55px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .technical-service-border {
+    margin: 18px auto 22px;
+  }
+
+  .technical-service-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .technical-service-list {
+    gap: 35px;
+  }
+
+  .technical-service-card,
+  .technical-service-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .technical-service-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .technical-service-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .technical-service-text ul {
+    padding-left: 19px;
+  }
+
+  .technical-service-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .technical-service-banner {
+    height: 260px;
+  }
+
+  .technical-service-section {
+    padding: 50px 0 60px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 30px);
+  }
+
+  .technical-service-intro {
+    margin-bottom: 40px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .technical-service-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .technical-service-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .technical-service-list {
+    gap: 25px;
+  }
+
+  .technical-service-card,
+  .technical-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .technical-service-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .technical-service-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .technical-service-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .technical-service-banner {
+    height: 240px;
+  }
+
+  .technical-service-section {
+    padding: 45px 0 55px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 24px);
+  }
+
+  .technical-service-intro {
+    margin-bottom: 35px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .technical-service-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .technical-service-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .technical-service-list {
+    gap: 22px;
+  }
+
+  .technical-service-card,
+  .technical-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .technical-service-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .technical-service-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .technical-service-text ul {
+    padding-left: 18px;
+  }
+
+  .technical-service-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 399px) {
+  .technical-service-banner {
+    height: 210px;
+  }
+
+  .technical-service-section {
+    padding: 38px 0 45px;
+  }
+
+  .technical-service-container {
+    width: calc(100% - 20px);
+  }
+
+  .technical-service-intro {
+    margin-bottom: 30px;
+  }
+
+  .technical-service-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .technical-service-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .technical-service-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .technical-service-list {
+    gap: 18px;
+  }
+
+  .technical-service-card,
+  .technical-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .technical-service-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .technical-service-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .technical-service-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .technical-service-text ul {
+    padding-left: 17px;
+  }
+
+  .technical-service-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

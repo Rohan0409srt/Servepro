@@ -1,0 +1,706 @@
+/* =========================================================
+   VERTICAL GARDEN SERVICE PAGE
+   ========================================================= */
+
+.vertical-garden-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.vertical-garden-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.vertical-garden-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.vertical-garden-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #ffffff;
+}
+
+.vertical-garden-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.vertical-garden-intro {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.vertical-garden-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.vertical-garden-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 25px auto 28px;
+  background: #0b1957;
+}
+
+.vertical-garden-intro p {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.vertical-garden-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   Desktop:
+   Text 55% | Image 45%
+
+   Reverse:
+   Image 45% | Text 55%
+   ========================================================= */
+
+.vertical-garden-card {
+  display: flex;
+  width: 100%;
+  min-height: 490px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+}
+
+.vertical-garden-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.vertical-garden-card-text {
+  width: 55%;
+  padding: 65px 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-garden-card-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 31px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.vertical-garden-card-text ul {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+.vertical-garden-card-text li {
+  margin-bottom: 15px;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.vertical-garden-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.vertical-garden-card-image {
+  width: 45%;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.vertical-garden-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   1200 - 1439
+   Banner = 750px
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .vertical-garden-banner {
+    height: 750px;
+  }
+
+  .vertical-garden-section {
+    padding: 80px 0 95px;
+  }
+
+  .vertical-garden-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .vertical-garden-intro {
+    margin-bottom: 60px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 34px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 17px;
+  }
+
+  .vertical-garden-card {
+    min-height: 400px;
+  }
+
+  .vertical-garden-card-text {
+    padding: 50px 55px;
+  }
+
+  .vertical-garden-card-image,
+  .vertical-garden-card-image img {
+    min-height: 400px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 28px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .vertical-garden-banner {
+    height: 750px;
+  }
+
+  .vertical-garden-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .vertical-garden-section {
+    padding: 90px 0 105px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 36px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 18px;
+  }
+
+  .vertical-garden-card {
+    min-height: 430px;
+  }
+
+  .vertical-garden-card-text {
+    padding: 55px 65px;
+  }
+
+  .vertical-garden-card-image,
+  .vertical-garden-card-image img {
+    min-height: 430px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .vertical-garden-banner {
+    height: 750px;
+  }
+
+  .vertical-garden-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .vertical-garden-section {
+    padding: 100px 0 115px;
+  }
+
+  .vertical-garden-intro {
+    max-width: 1250px;
+    margin-bottom: 75px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 40px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 19px;
+  }
+
+  .vertical-garden-card {
+    min-height: 460px;
+  }
+
+  .vertical-garden-card-text {
+    padding: 65px 75px;
+  }
+
+  .vertical-garden-card-image,
+  .vertical-garden-card-image img {
+    min-height: 460px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 32px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .vertical-garden-banner {
+    height: 750px;
+  }
+
+  .vertical-garden-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .vertical-garden-section {
+    padding: 110px 0 125px;
+  }
+
+  .vertical-garden-intro {
+    max-width: 1350px;
+    margin-bottom: 85px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 43px;
+  }
+
+  .vertical-garden-border {
+    width: 80px;
+    height: 4px;
+    margin: 28px auto 32px;
+  }
+
+  .vertical-garden-intro p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .vertical-garden-service-list {
+    gap: 55px;
+  }
+
+  .vertical-garden-card {
+    min-height: 490px;
+  }
+
+  .vertical-garden-card-text {
+    padding: 70px 85px;
+  }
+
+  .vertical-garden-card-image,
+  .vertical-garden-card-image img {
+    min-height: 490px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 to 1199
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .vertical-garden-banner {
+    height: 500px;
+  }
+
+  .vertical-garden-section {
+    padding: 70px 0 80px;
+  }
+
+  .vertical-garden-container {
+    width: calc(100% - 50px);
+  }
+
+  .vertical-garden-intro {
+    margin-bottom: 55px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .vertical-garden-service-list {
+    gap: 35px;
+  }
+
+  .vertical-garden-card {
+    min-height: 320px;
+  }
+
+  .vertical-garden-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .vertical-garden-card-image {
+    width: 48%;
+    min-height: 320px;
+  }
+
+  .vertical-garden-card-image img {
+    min-height: 320px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .vertical-garden-card-text ul {
+    padding-left: 20px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 576 to 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .vertical-garden-banner {
+    height: 260px;
+  }
+
+  .vertical-garden-section {
+    padding: 50px 0 60px;
+  }
+
+  .vertical-garden-container {
+    width: calc(100% - 30px);
+  }
+
+  .vertical-garden-intro {
+    margin-bottom: 40px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .vertical-garden-border {
+    margin: 18px auto 22px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .vertical-garden-service-list {
+    gap: 25px;
+  }
+
+  .vertical-garden-card,
+  .vertical-garden-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  /* Image first on mobile */
+  .vertical-garden-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .vertical-garden-card-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    object-fit: cover;
+  }
+
+  .vertical-garden-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 9px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400 to 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .vertical-garden-banner {
+    height: 240px;
+  }
+
+  .vertical-garden-section {
+    padding: 45px 0 55px;
+  }
+
+  .vertical-garden-container {
+    width: calc(100% - 24px);
+  }
+
+  .vertical-garden-intro {
+    margin-bottom: 35px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .vertical-garden-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .vertical-garden-service-list {
+    gap: 22px;
+  }
+
+  .vertical-garden-card,
+  .vertical-garden-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .vertical-garden-card-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .vertical-garden-card-image img {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    object-fit: cover;
+  }
+
+  .vertical-garden-card-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .vertical-garden-card-text ul {
+    padding-left: 19px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .vertical-garden-banner {
+    height: 210px;
+  }
+
+  .vertical-garden-section {
+    padding: 38px 0 45px;
+  }
+
+  .vertical-garden-container {
+    width: calc(100% - 20px);
+  }
+
+  .vertical-garden-intro {
+    margin-bottom: 30px;
+  }
+
+  .vertical-garden-intro h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .vertical-garden-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .vertical-garden-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .vertical-garden-service-list {
+    gap: 18px;
+  }
+
+  .vertical-garden-card,
+  .vertical-garden-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .vertical-garden-card-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+  }
+
+  .vertical-garden-card-image img {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+    object-fit: cover;
+  }
+
+  .vertical-garden-card-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .vertical-garden-card-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .vertical-garden-card-text ul {
+    padding-left: 18px;
+  }
+
+  .vertical-garden-card-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}

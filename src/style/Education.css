@@ -1,0 +1,1226 @@
+/* =========================================================
+   EDUCATION INDUSTRY PAGE
+   Font Color: #0b1957
+========================================================= */
+
+.education-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #0b1957;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-page *,
+.education-page *::before,
+.education-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.education-banner {
+  width: 100%;
+  height: 750px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+
+.education-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.education-content-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #ffffff;
+}
+
+.education-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.education-intro {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto 70px;
+}
+
+.education-title {
+  width: 100%;
+  text-align: center;
+}
+
+.education-title h1 {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.education-title-border {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+  margin: 22px auto 25px;
+
+  background: #0b1957;
+}
+
+.education-description {
+  width: 100%;
+  text-align: center;
+}
+
+.education-description p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+
+  text-align: justify;
+}
+
+
+/* =========================================================
+   EDUCATION IMAGES
+========================================================= */
+
+.education-images {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.education-image-item {
+  width: 100%;
+}
+
+.education-image-holder {
+  width: 100%;
+  height: 312px;
+
+  overflow: hidden;
+}
+
+.education-image-holder img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.4s ease;
+}
+
+.education-image-holder:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.education-services {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.education-section-header {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.education-section-header h2 {
+  margin: 0 0 14px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.education-section-divider {
+  width: 80px;
+  height: 4px;
+
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   SERVICE CATEGORY
+========================================================= */
+
+.education-category {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.education-category-title {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.education-service-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.education-service-card {
+  width: 100%;
+  min-height: 190px;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border-radius: 4px;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.education-service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.education-service-icon {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+
+  object-fit: contain;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.education-service-text {
+  width: 100%;
+}
+
+.education-service-text h4 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.education-service-text p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRIES
+========================================================= */
+
+.education-other-industries {
+  width: 100%;
+
+  margin-top: 80px;
+}
+
+.education-other-title {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.education-other-title h2 {
+  margin: 0 0 20px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.education-other-title span {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+
+  margin: 0 auto;
+
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRY GRID
+========================================================= */
+
+.education-industry-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRY CARD
+========================================================= */
+
+.education-industry-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.education-industry-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   INDUSTRY IMAGE
+========================================================= */
+
+.education-industry-image {
+  width: 100%;
+  height: 216px;
+
+  overflow: hidden;
+}
+
+.education-industry-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   INDUSTRY TEXT
+========================================================= */
+
+.education-industry-text {
+  width: 100%;
+
+  padding: 25px 20px 30px;
+
+  text-align: center;
+}
+
+.education-industry-text h3 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.education-industry-text p {
+  margin: 0;
+
+  min-height: 68px;
+
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.education-industry-border {
+  width: 50px;
+  height: 2px;
+
+  display: block;
+
+  margin: 18px auto 16px;
+
+  background: #0b1957;
+}
+
+.education-industry-text a {
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.education-industry-text a:hover {
+  color: #0b1957;
+}
+
+.education-industry-text a i {
+  margin-left: 5px;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .education-content-section {
+    padding: 100px 0 115px;
+  }
+
+  .education-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .education-intro {
+    max-width: 1250px;
+  }
+
+  .education-title h1 {
+    font-size: 40px;
+  }
+
+  .education-description p {
+    font-size: 19px;
+  }
+
+  .education-images {
+    gap: 25px;
+  }
+
+  .education-image-holder {
+    height: 290px;
+  }
+
+  .education-service-grid {
+    gap: 22px;
+  }
+
+  .education-service-card {
+    padding: 28px 25px;
+  }
+
+  .education-industry-grid {
+    gap: 22px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .education-content-section {
+    padding: 90px 0 105px;
+  }
+
+  .education-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .education-title h1 {
+    font-size: 36px;
+  }
+
+  .education-description p {
+    font-size: 18px;
+  }
+
+  .education-images {
+    gap: 22px;
+  }
+
+  .education-image-holder {
+    height: 280px;
+  }
+
+  .education-section-header h2 {
+    font-size: 30px;
+  }
+
+  .education-category-title {
+    font-size: 25px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .education-service-card {
+    padding: 25px 22px;
+  }
+
+  .education-service-text h4 {
+    font-size: 19px;
+  }
+
+  .education-service-text p {
+    font-size: 15px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .education-content-section {
+    padding: 80px 0 95px;
+  }
+
+  .education-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .education-title h1 {
+    font-size: 34px;
+  }
+
+  .education-description p {
+    font-size: 17px;
+  }
+
+  .education-images {
+    gap: 20px;
+  }
+
+  .education-image-holder {
+    height: 260px;
+  }
+
+  .education-section-header h2 {
+    font-size: 28px;
+  }
+
+  .education-category-title {
+    font-size: 24px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .education-service-card {
+    min-height: 180px;
+    padding: 23px 20px;
+  }
+
+  .education-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .education-service-text h4 {
+    font-size: 18px;
+  }
+
+  .education-service-text p {
+    font-size: 15px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .education-industry-text {
+    padding: 22px 17px 27px;
+  }
+
+  .education-industry-text h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   992 - 1199
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .education-banner {
+    height: 500px;
+  }
+
+  .education-content-section {
+    padding: 70px 0 80px;
+  }
+
+  .education-container {
+    width: calc(100% - 50px);
+    max-width: 1100px;
+  }
+
+  .education-intro {
+    margin-bottom: 55px;
+  }
+
+  .education-title h1 {
+    font-size: 30px;
+  }
+
+  .education-title-border {
+    width: 65px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .education-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .education-images {
+    gap: 18px;
+    margin-top: 45px;
+  }
+
+  .education-image-holder {
+    height: 230px;
+  }
+
+  .education-section-header h2 {
+    font-size: 27px;
+  }
+
+  .education-category-title {
+    font-size: 23px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .education-service-card {
+    min-height: 175px;
+    padding: 22px 20px;
+  }
+
+  .education-service-text h4 {
+    font-size: 18px;
+  }
+
+  .education-service-text p {
+    font-size: 15px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .education-industry-image {
+    height: 240px;
+  }
+}
+
+
+/* =========================================================
+   768 - 991
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .education-banner {
+    height: 430px;
+  }
+
+  .education-content-section {
+    padding: 60px 0 70px;
+  }
+
+  .education-container {
+    width: calc(100% - 40px);
+  }
+
+  .education-intro {
+    margin-bottom: 50px;
+  }
+
+  .education-title h1 {
+    font-size: 29px;
+  }
+
+  .education-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .education-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .education-image-holder {
+    height: 210px;
+  }
+
+  .education-section-header {
+    margin-bottom: 38px;
+  }
+
+  .education-section-header h2 {
+    font-size: 26px;
+  }
+
+  .education-category {
+    margin-bottom: 45px;
+  }
+
+  .education-category-title {
+    font-size: 22px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .education-service-card {
+    min-height: 170px;
+    padding: 22px 18px;
+  }
+
+  .education-service-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .education-service-text h4 {
+    font-size: 17px;
+  }
+
+  .education-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .education-other-industries {
+    margin-top: 60px;
+  }
+
+  .education-other-title h2 {
+    font-size: 28px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .education-banner {
+    height: 260px;
+  }
+
+  .education-content-section {
+    padding: 50px 0 60px;
+  }
+
+  .education-container {
+    width: calc(100% - 30px);
+  }
+
+  .education-intro {
+    margin-bottom: 40px;
+  }
+
+  .education-title h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .education-title-border {
+    width: 60px;
+    height: 3px;
+    margin: 16px auto 20px;
+  }
+
+  .education-description p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .education-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .education-image-holder {
+    height: 270px;
+  }
+
+  .education-services {
+    margin-top: 20px;
+  }
+
+  .education-section-header {
+    margin-bottom: 35px;
+  }
+
+  .education-section-header h2 {
+    font-size: 25px;
+  }
+
+  .education-section-divider {
+    width: 60px;
+    height: 3px;
+  }
+
+  .education-category {
+    margin-bottom: 38px;
+  }
+
+  .education-category-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .education-service-card {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .education-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .education-service-text h4 {
+    font-size: 18px;
+  }
+
+  .education-service-text p {
+    font-size: 15px;
+  }
+
+  .education-other-industries {
+    margin-top: 55px;
+  }
+
+  .education-other-title {
+    margin-bottom: 35px;
+  }
+
+  .education-other-title h2 {
+    font-size: 25px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .education-industry-image {
+    height: 270px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .education-banner {
+    height: 240px;
+  }
+
+  .education-content-section {
+    padding: 45px 0 55px;
+  }
+
+  .education-container {
+    width: calc(100% - 24px);
+  }
+
+  .education-title h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .education-title-border {
+    width: 55px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .education-description p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .education-images {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .education-image-holder {
+    height: 230px;
+  }
+
+  .education-section-header {
+    margin-bottom: 30px;
+  }
+
+  .education-section-header h2 {
+    font-size: 23px;
+  }
+
+  .education-section-divider {
+    width: 55px;
+    height: 2px;
+  }
+
+  .education-category {
+    margin-bottom: 32px;
+  }
+
+  .education-category-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .education-service-card {
+    min-height: auto;
+    padding: 22px 18px;
+  }
+
+  .education-service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+  }
+
+  .education-service-text h4 {
+    font-size: 17px;
+  }
+
+  .education-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .education-other-industries {
+    margin-top: 45px;
+  }
+
+  .education-other-title {
+    margin-bottom: 28px;
+  }
+
+  .education-other-title h2 {
+    font-size: 22px;
+  }
+
+  .education-other-title span {
+    width: 55px;
+    height: 2px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .education-industry-image {
+    height: 230px;
+  }
+
+  .education-industry-text {
+    padding: 22px 18px 27px;
+  }
+
+  .education-industry-text h3 {
+    font-size: 18px;
+  }
+
+  .education-industry-text p {
+    min-height: auto;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   <= 399
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .education-banner {
+    height: 210px;
+  }
+
+  .education-content-section {
+    padding: 38px 0 45px;
+  }
+
+  .education-container {
+    width: calc(100% - 20px);
+  }
+
+  .education-title h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .education-title-border {
+    width: 50px;
+    height: 2px;
+    margin: 12px auto 16px;
+  }
+
+  .education-description p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .education-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .education-image-holder {
+    height: 205px;
+  }
+
+  .education-section-header {
+    margin-bottom: 27px;
+  }
+
+  .education-section-header h2 {
+    font-size: 21px;
+  }
+
+  .education-section-divider {
+    width: 50px;
+    height: 2px;
+  }
+
+  .education-category {
+    margin-bottom: 28px;
+  }
+
+  .education-category-title {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .education-service-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .education-service-card {
+    min-height: auto;
+    padding: 20px 16px;
+  }
+
+  .education-service-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+  }
+
+  .education-service-text h4 {
+    font-size: 16px;
+  }
+
+  .education-service-text p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .education-other-industries {
+    margin-top: 38px;
+  }
+
+  .education-other-title {
+    margin-bottom: 25px;
+  }
+
+  .education-other-title h2 {
+    font-size: 20px;
+  }
+
+  .education-other-title span {
+    width: 50px;
+    height: 2px;
+  }
+
+  .education-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .education-industry-image {
+    height: 205px;
+  }
+
+  .education-industry-text {
+    padding: 20px 15px 25px;
+  }
+
+  .education-industry-text h3 {
+    font-size: 17px;
+  }
+
+  .education-industry-text p {
+    min-height: auto;
+    font-size: 13px;
+  }
+
+  .education-industry-border {
+    margin: 15px auto 13px;
+  }
+}

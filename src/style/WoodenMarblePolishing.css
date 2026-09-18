@@ -1,0 +1,541 @@
+.wooden-marble-polishing-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.wooden-marble-polishing-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.wooden-marble-polishing-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.wooden-marble-polishing-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.wooden-marble-polishing-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.wooden-marble-polishing-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.wooden-marble-polishing-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.wooden-marble-polishing-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.wooden-marble-polishing-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.wooden-marble-polishing-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.wooden-marble-polishing-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.wooden-marble-polishing-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.wooden-marble-polishing-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wooden-marble-polishing-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.wooden-marble-polishing-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.wooden-marble-polishing-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.wooden-marble-polishing-text li:last-child {
+  margin-bottom: 0;
+}
+
+.wooden-marble-polishing-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.wooden-marble-polishing-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .wooden-marble-polishing-section {
+    padding: 100px 0 115px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .wooden-marble-polishing-intro {
+    max-width: 1250px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 40px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 19px;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 50px;
+  }
+
+  .wooden-marble-polishing-card {
+    min-height: 460px;
+  }
+
+  .wooden-marble-polishing-text {
+    padding: 65px 75px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 32px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 19px;
+  }
+
+  .wooden-marble-polishing-image {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .wooden-marble-polishing-section {
+    padding: 90px 0 105px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 36px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 18px;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 48px;
+  }
+
+  .wooden-marble-polishing-card {
+    min-height: 430px;
+  }
+
+  .wooden-marble-polishing-text {
+    padding: 55px 65px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 30px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 18px;
+  }
+
+  .wooden-marble-polishing-image {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .wooden-marble-polishing-section {
+    padding: 80px 0 95px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 34px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 17px;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 45px;
+  }
+
+  .wooden-marble-polishing-card {
+    min-height: 400px;
+  }
+
+  .wooden-marble-polishing-text {
+    padding: 50px 55px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 28px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 17px;
+  }
+
+  .wooden-marble-polishing-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .wooden-marble-polishing-banner {
+    height: 500px;
+  }
+
+  .wooden-marble-polishing-section {
+    padding: 70px 0 80px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .wooden-marble-polishing-intro {
+    margin-bottom: 55px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .wooden-marble-polishing-border {
+    margin: 18px auto 22px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 35px;
+  }
+
+  .wooden-marble-polishing-card,
+  .wooden-marble-polishing-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .wooden-marble-polishing-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .wooden-marble-polishing-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .wooden-marble-polishing-text ul {
+    padding-left: 19px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .wooden-marble-polishing-banner {
+    height: 260px;
+  }
+
+  .wooden-marble-polishing-section {
+    padding: 50px 0 60px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 30px);
+  }
+
+  .wooden-marble-polishing-intro {
+    margin-bottom: 40px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .wooden-marble-polishing-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 25px;
+  }
+
+  .wooden-marble-polishing-card,
+  .wooden-marble-polishing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .wooden-marble-polishing-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .wooden-marble-polishing-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .wooden-marble-polishing-banner {
+    height: 240px;
+  }
+
+  .wooden-marble-polishing-section {
+    padding: 45px 0 55px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 24px);
+  }
+
+  .wooden-marble-polishing-intro {
+    margin-bottom: 35px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .wooden-marble-polishing-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 22px;
+  }
+
+  .wooden-marble-polishing-card,
+  .wooden-marble-polishing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .wooden-marble-polishing-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .wooden-marble-polishing-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .wooden-marble-polishing-text ul {
+    padding-left: 18px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 399px) {
+  .wooden-marble-polishing-banner {
+    height: 210px;
+  }
+
+  .wooden-marble-polishing-section {
+    padding: 38px 0 45px;
+  }
+
+  .wooden-marble-polishing-container {
+    width: calc(100% - 20px);
+  }
+
+  .wooden-marble-polishing-intro {
+    margin-bottom: 30px;
+  }
+
+  .wooden-marble-polishing-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .wooden-marble-polishing-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .wooden-marble-polishing-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .wooden-marble-polishing-service-list {
+    gap: 18px;
+  }
+
+  .wooden-marble-polishing-card,
+  .wooden-marble-polishing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .wooden-marble-polishing-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .wooden-marble-polishing-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .wooden-marble-polishing-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .wooden-marble-polishing-text ul {
+    padding-left: 17px;
+  }
+
+  .wooden-marble-polishing-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

@@ -1,0 +1,1222 @@
+/* =========================================================
+   HEALTHCARE INDUSTRY PAGE
+   FONT COLOR: #0b1957
+========================================================= */
+
+.healthcare-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #0b1957;
+  font-family: "Poppins", sans-serif;
+}
+
+.healthcare-page *,
+.healthcare-page *::before,
+.healthcare-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.healthcare-banner {
+  width: 100%;
+  height: 750px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+
+.healthcare-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.healthcare-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #ffffff;
+}
+
+.healthcare-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.healthcare-intro {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto 70px;
+}
+
+.healthcare-title {
+  width: 100%;
+  text-align: center;
+}
+
+.healthcare-title h1 {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.healthcare-title-border {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+
+  margin: 22px auto 25px;
+
+  background: #0b1957;
+}
+
+.healthcare-description {
+  width: 100%;
+}
+
+.healthcare-description p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+
+  text-align: justify;
+}
+
+
+/* =========================================================
+   MAIN IMAGES
+========================================================= */
+
+.healthcare-images {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.healthcare-image-item {
+  width: 100%;
+}
+
+.healthcare-image-holder {
+  width: 100%;
+  height: 312px;
+
+  overflow: hidden;
+}
+
+.healthcare-image-holder img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.4s ease;
+}
+
+.healthcare-image-holder:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.healthcare-services {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.healthcare-section-header {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.healthcare-section-header h2 {
+  margin: 0 0 14px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.healthcare-section-divider {
+  width: 80px;
+  height: 4px;
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.healthcare-category {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.healthcare-category-title {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.healthcare-service-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.healthcare-service-card {
+  width: 100%;
+  min-height: 190px;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border-radius: 4px;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.healthcare-service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.healthcare-service-icon {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+
+  object-fit: contain;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.healthcare-service-text {
+  width: 100%;
+}
+
+.healthcare-service-text h4 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.healthcare-service-text p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRIES
+========================================================= */
+
+.healthcare-other-industries {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.healthcare-other-title {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.healthcare-other-title h2 {
+  margin: 0 0 20px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.healthcare-other-title span {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+
+  margin: 0 auto;
+
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRIES GRID
+========================================================= */
+
+.healthcare-industry-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   INDUSTRY CARD
+========================================================= */
+
+.healthcare-industry-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.healthcare-industry-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   INDUSTRY IMAGE
+========================================================= */
+
+.healthcare-industry-image {
+  width: 100%;
+  height: 216px;
+
+  overflow: hidden;
+}
+
+.healthcare-industry-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   INDUSTRY TEXT
+========================================================= */
+
+.healthcare-industry-text {
+  width: 100%;
+
+  padding: 25px 20px 30px;
+
+  text-align: center;
+}
+
+.healthcare-industry-text h3 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.healthcare-industry-text p {
+  margin: 0;
+
+  min-height: 68px;
+
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.healthcare-industry-border {
+  width: 50px;
+  height: 2px;
+
+  display: block;
+
+  margin: 18px auto 16px;
+
+  background: #0b1957;
+}
+
+.healthcare-industry-text a {
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.healthcare-industry-text a:hover {
+  color: #0b1957;
+}
+
+.healthcare-industry-text a i {
+  margin-left: 5px;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .healthcare-section {
+    padding: 100px 0 115px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .healthcare-intro {
+    max-width: 1250px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 40px;
+  }
+
+  .healthcare-description p {
+    font-size: 19px;
+  }
+
+  .healthcare-images {
+    gap: 25px;
+  }
+
+  .healthcare-image-holder {
+    height: 290px;
+  }
+
+  .healthcare-service-grid {
+    gap: 22px;
+  }
+
+  .healthcare-service-card {
+    padding: 28px 25px;
+  }
+
+  .healthcare-industry-grid {
+    gap: 22px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .healthcare-section {
+    padding: 90px 0 105px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 36px;
+  }
+
+  .healthcare-description p {
+    font-size: 18px;
+  }
+
+  .healthcare-images {
+    gap: 22px;
+  }
+
+  .healthcare-image-holder {
+    height: 280px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 30px;
+  }
+
+  .healthcare-category-title {
+    font-size: 25px;
+  }
+
+  .healthcare-service-grid {
+    gap: 20px;
+  }
+
+  .healthcare-service-card {
+    padding: 25px 22px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 19px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 15px;
+  }
+
+  .healthcare-industry-grid {
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .healthcare-section {
+    padding: 80px 0 95px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 34px;
+  }
+
+  .healthcare-description p {
+    font-size: 17px;
+  }
+
+  .healthcare-images {
+    gap: 20px;
+  }
+
+  .healthcare-image-holder {
+    height: 260px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 28px;
+  }
+
+  .healthcare-category-title {
+    font-size: 24px;
+  }
+
+  .healthcare-service-grid {
+    gap: 18px;
+  }
+
+  .healthcare-service-card {
+    min-height: 180px;
+    padding: 23px 20px;
+  }
+
+  .healthcare-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 18px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 15px;
+  }
+
+  .healthcare-industry-grid {
+    gap: 18px;
+  }
+
+  .healthcare-industry-text {
+    padding: 22px 17px 27px;
+  }
+
+  .healthcare-industry-text h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   992 - 1199
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .healthcare-banner {
+    height: 500px;
+  }
+
+  .healthcare-section {
+    padding: 70px 0 80px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 50px);
+    max-width: 1100px;
+  }
+
+  .healthcare-intro {
+    margin-bottom: 55px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 30px;
+  }
+
+  .healthcare-title-border {
+    width: 65px;
+    height: 3px;
+
+    margin: 18px auto 22px;
+  }
+
+  .healthcare-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .healthcare-images {
+    gap: 18px;
+    margin-top: 45px;
+  }
+
+  .healthcare-image-holder {
+    height: 230px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 27px;
+  }
+
+  .healthcare-category-title {
+    font-size: 23px;
+  }
+
+  .healthcare-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .healthcare-service-card {
+    min-height: 175px;
+    padding: 22px 20px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 18px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 15px;
+  }
+
+  .healthcare-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .healthcare-industry-image {
+    height: 240px;
+  }
+}
+
+
+/* =========================================================
+   768 - 991
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .healthcare-banner {
+    height: 430px;
+  }
+
+  .healthcare-section {
+    padding: 60px 0 70px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 40px);
+  }
+
+  .healthcare-intro {
+    margin-bottom: 50px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 29px;
+  }
+
+  .healthcare-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .healthcare-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .healthcare-image-holder {
+    height: 210px;
+  }
+
+  .healthcare-section-header {
+    margin-bottom: 38px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 26px;
+  }
+
+  .healthcare-category {
+    margin-bottom: 45px;
+  }
+
+  .healthcare-category-title {
+    font-size: 22px;
+  }
+
+  .healthcare-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .healthcare-service-card {
+    min-height: 170px;
+    padding: 22px 18px;
+  }
+
+  .healthcare-service-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 17px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .healthcare-other-industries {
+    margin-top: 60px;
+  }
+
+  .healthcare-other-title h2 {
+    font-size: 28px;
+  }
+
+  .healthcare-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .healthcare-banner {
+    height: 260px;
+  }
+
+  .healthcare-section {
+    padding: 50px 0 60px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 30px);
+  }
+
+  .healthcare-intro {
+    margin-bottom: 40px;
+  }
+
+  .healthcare-title h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .healthcare-title-border {
+    width: 60px;
+    height: 3px;
+
+    margin: 16px auto 20px;
+  }
+
+  .healthcare-description p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .healthcare-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .healthcare-image-holder {
+    height: 270px;
+  }
+
+  .healthcare-services {
+    margin-top: 20px;
+  }
+
+  .healthcare-section-header {
+    margin-bottom: 35px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 25px;
+  }
+
+  .healthcare-section-divider {
+    width: 60px;
+    height: 3px;
+  }
+
+  .healthcare-category {
+    margin-bottom: 38px;
+  }
+
+  .healthcare-category-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .healthcare-service-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .healthcare-service-card {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .healthcare-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 18px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 15px;
+  }
+
+  .healthcare-other-industries {
+    margin-top: 55px;
+  }
+
+  .healthcare-other-title {
+    margin-bottom: 35px;
+  }
+
+  .healthcare-other-title h2 {
+    font-size: 25px;
+  }
+
+  .healthcare-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .healthcare-industry-image {
+    height: 270px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .healthcare-banner {
+    height: 240px;
+  }
+
+  .healthcare-section {
+    padding: 45px 0 55px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 24px);
+  }
+
+  .healthcare-title h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .healthcare-title-border {
+    width: 55px;
+    height: 2px;
+
+    margin: 14px auto 18px;
+  }
+
+  .healthcare-description p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .healthcare-images {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .healthcare-image-holder {
+    height: 230px;
+  }
+
+  .healthcare-section-header {
+    margin-bottom: 30px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 23px;
+  }
+
+  .healthcare-section-divider {
+    width: 55px;
+    height: 2px;
+  }
+
+  .healthcare-category {
+    margin-bottom: 32px;
+  }
+
+  .healthcare-category-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .healthcare-service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .healthcare-service-card {
+    min-height: auto;
+    padding: 22px 18px;
+  }
+
+  .healthcare-service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 17px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .healthcare-other-industries {
+    margin-top: 45px;
+  }
+
+  .healthcare-other-title {
+    margin-bottom: 28px;
+  }
+
+  .healthcare-other-title h2 {
+    font-size: 22px;
+  }
+
+  .healthcare-other-title span {
+    width: 55px;
+    height: 2px;
+  }
+
+  .healthcare-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .healthcare-industry-image {
+    height: 230px;
+  }
+
+  .healthcare-industry-text {
+    padding: 22px 18px 27px;
+  }
+
+  .healthcare-industry-text h3 {
+    font-size: 18px;
+  }
+
+  .healthcare-industry-text p {
+    min-height: auto;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   <= 399
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .healthcare-banner {
+    height: 210px;
+  }
+
+  .healthcare-section {
+    padding: 38px 0 45px;
+  }
+
+  .healthcare-container {
+    width: calc(100% - 20px);
+  }
+
+  .healthcare-title h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .healthcare-title-border {
+    width: 50px;
+    height: 2px;
+
+    margin: 12px auto 16px;
+  }
+
+  .healthcare-description p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .healthcare-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .healthcare-image-holder {
+    height: 205px;
+  }
+
+  .healthcare-section-header {
+    margin-bottom: 27px;
+  }
+
+  .healthcare-section-header h2 {
+    font-size: 21px;
+  }
+
+  .healthcare-section-divider {
+    width: 50px;
+    height: 2px;
+  }
+
+  .healthcare-category {
+    margin-bottom: 28px;
+  }
+
+  .healthcare-category-title {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .healthcare-service-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .healthcare-service-card {
+    min-height: auto;
+    padding: 20px 16px;
+  }
+
+  .healthcare-service-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+  }
+
+  .healthcare-service-text h4 {
+    font-size: 16px;
+  }
+
+  .healthcare-service-text p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .healthcare-other-industries {
+    margin-top: 38px;
+  }
+
+  .healthcare-other-title {
+    margin-bottom: 25px;
+  }
+
+  .healthcare-other-title h2 {
+    font-size: 20px;
+  }
+
+  .healthcare-other-title span {
+    width: 50px;
+    height: 2px;
+  }
+
+  .healthcare-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .healthcare-industry-image {
+    height: 205px;
+  }
+
+  .healthcare-industry-text {
+    padding: 20px 15px 25px;
+  }
+
+  .healthcare-industry-text h3 {
+    font-size: 17px;
+  }
+
+  .healthcare-industry-text p {
+    min-height: auto;
+    font-size: 13px;
+  }
+
+  .healthcare-industry-border {
+    margin: 15px auto 13px;
+  }
+}

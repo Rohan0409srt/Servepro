@@ -1,0 +1,611 @@
+/* =========================================
+   PANTRY SERVICE PAGE
+   ========================================= */
+
+.pantry-service-page {
+  width: 100%;
+  overflow: hidden;
+  color: #0b1957;
+}
+
+/* =========================================
+   BANNER
+   ========================================= */
+
+.pantry-banner {
+  width: 100%;
+  height: 750px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.pantry-banner-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* =========================================
+   MAIN SECTION
+   ========================================= */
+
+.pantry-service-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.pantry-container {
+  width: calc(100% - 60px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.pantry-section-title {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.pantry-section-title h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.pantry-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0b1957;
+  margin: 25px auto 30px;
+}
+
+.pantry-section-title p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* =========================================
+   SERVICE LIST
+   ========================================= */
+
+.pantry-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* =========================================
+   SERVICE CARD
+   ========================================= */
+
+.pantry-service-card {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.pantry-service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================
+   CARD TEXT
+   ========================================= */
+
+.pantry-card-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.pantry-card-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.pantry-card-text ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.pantry-card-text li {
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.pantry-card-text li::marker {
+  color: #0b1957;
+}
+
+/* =========================================
+   CARD IMAGE
+   ========================================= */
+
+.pantry-card-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.pantry-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================
+   1600px - 1919px
+   ========================================= */
+
+@media (max-width: 1919px) {
+  .pantry-service-section {
+    padding: 100px 0 115px;
+  }
+
+  .pantry-container {
+    max-width: 1500px;
+  }
+
+  .pantry-section-title {
+    max-width: 1250px;
+    margin-bottom: 60px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 40px;
+  }
+
+  .pantry-section-title p {
+    font-size: 19px;
+  }
+
+  .pantry-service-list {
+    gap: 50px;
+  }
+
+  .pantry-service-card {
+    min-height: 460px;
+  }
+
+  .pantry-card-text {
+    padding: 65px 75px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 32px;
+  }
+
+  .pantry-card-text li {
+    font-size: 19px;
+  }
+
+  .pantry-card-image {
+    height: 460px;
+  }
+}
+
+/* =========================================
+   1440px - 1599px
+   ========================================= */
+
+@media (max-width: 1599px) {
+  .pantry-service-section {
+    padding: 90px 0 105px;
+  }
+
+  .pantry-container {
+    max-width: 1340px;
+  }
+
+  .pantry-section-title {
+    max-width: 1200px;
+    margin-bottom: 55px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 36px;
+  }
+
+  .pantry-section-title p {
+    font-size: 18px;
+  }
+
+  .pantry-border {
+    width: 75px;
+    height: 4px;
+    margin: 22px auto 27px;
+  }
+
+  .pantry-service-list {
+    gap: 48px;
+  }
+
+  .pantry-service-card {
+    min-height: 430px;
+  }
+
+  .pantry-card-text {
+    padding: 55px 65px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .pantry-card-text li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .pantry-card-image {
+    height: 430px;
+  }
+}
+
+/* =========================================
+   1200px - 1439px
+   ========================================= */
+
+@media (max-width: 1439px) {
+  .pantry-service-section {
+    padding: 80px 0 95px;
+  }
+
+  .pantry-container {
+    max-width: 1240px;
+  }
+
+  .pantry-section-title {
+    max-width: 1100px;
+    margin-bottom: 50px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 34px;
+  }
+
+  .pantry-section-title p {
+    font-size: 17px;
+  }
+
+  .pantry-border {
+    width: 70px;
+    height: 3px;
+    margin: 20px auto 25px;
+  }
+
+  .pantry-service-list {
+    gap: 45px;
+  }
+
+  .pantry-service-card {
+    min-height: 400px;
+  }
+
+  .pantry-card-text {
+    padding: 50px 55px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .pantry-card-text li {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .pantry-card-image {
+    height: 400px;
+  }
+}
+
+/* =========================================
+   TABLET
+   768px - 1199px
+   ========================================= */
+
+@media (max-width: 1199px) {
+  .pantry-banner {
+    height: 650px;
+  }
+
+  .pantry-service-section {
+    padding: 70px 0 80px;
+  }
+
+  .pantry-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .pantry-section-title {
+    max-width: 950px;
+    margin-bottom: 55px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .pantry-border {
+    width: 65px;
+    height: 3px;
+    margin: 18px auto 24px;
+  }
+
+  .pantry-section-title p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .pantry-service-list {
+    gap: 35px;
+  }
+
+  .pantry-service-card,
+  .pantry-service-card.reverse {
+    flex-direction: row;
+    min-height: 320px;
+  }
+
+  .pantry-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .pantry-card-text ul {
+    padding-left: 20px;
+  }
+
+  .pantry-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .pantry-card-image {
+    width: 48%;
+    height: 320px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   576px - 767px
+   ========================================= */
+
+@media (max-width: 767px) {
+  .pantry-banner {
+    height: 260px;
+  }
+
+  .pantry-service-section {
+    padding: 50px 0 60px;
+  }
+
+  .pantry-container {
+    width: calc(100% - 30px);
+  }
+
+  .pantry-section-title {
+    margin-bottom: 40px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .pantry-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .pantry-section-title p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .pantry-service-list {
+    gap: 25px;
+  }
+
+  .pantry-service-card,
+  .pantry-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .pantry-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .pantry-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .pantry-card-text ul {
+    padding-left: 20px;
+  }
+
+  .pantry-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}
+
+/* =========================================
+   400px - 575px
+   ========================================= */
+
+@media (max-width: 575px) {
+  .pantry-banner {
+    height: 240px;
+  }
+
+  .pantry-service-section {
+    padding: 45px 0 55px;
+  }
+
+  .pantry-container {
+    width: calc(100% - 24px);
+  }
+
+  .pantry-section-title {
+    margin-bottom: 35px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .pantry-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .pantry-section-title p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .pantry-service-list {
+    gap: 22px;
+  }
+
+  .pantry-card-image {
+    height: 230px;
+  }
+
+  .pantry-card-text {
+    padding: 26px 20px 30px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .pantry-card-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+}
+
+/* =========================================
+   BELOW 400px
+   ========================================= */
+
+@media (max-width: 399px) {
+  .pantry-banner {
+    height: 210px;
+  }
+
+  .pantry-service-section {
+    padding: 38px 0 45px;
+  }
+
+  .pantry-container {
+    width: calc(100% - 20px);
+  }
+
+  .pantry-section-title {
+    margin-bottom: 30px;
+  }
+
+  .pantry-section-title h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .pantry-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .pantry-section-title p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .pantry-service-list {
+    gap: 18px;
+  }
+
+  .pantry-card-image {
+    height: 205px;
+  }
+
+  .pantry-card-text {
+    padding: 23px 17px 27px;
+  }
+
+  .pantry-card-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .pantry-card-text ul {
+    padding-left: 18px;
+  }
+
+  .pantry-card-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+}

@@ -1,0 +1,502 @@
+/* =====================================================
+   SERVEPRO - GLOBAL APP CSS
+===================================================== */
+
+/* =====================================================
+   CSS RESET
+===================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff;
+
+  color: #949494;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 26px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =====================================================
+   COMMON CONTAINER
+===================================================== */
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 30px);
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+section {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+}
+
+
+/* =====================================================
+   COMMON SECTION TITLE
+===================================================== */
+
+.sec-title {
+  position: relative;
+
+  margin: 0 0 40px;
+
+  text-align: center;
+}
+
+.sec-title h1,
+.sec-title h2,
+.sec-title h3 {
+  margin-top: 0;
+
+  color: #1f3365;
+
+  font-family: "Poppins", sans-serif;
+
+  line-height: 1.25;
+}
+
+.sec-title h1 {
+  margin-bottom: 15px;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sec-title h2 {
+  margin-bottom: 15px;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.sec-title h3 {
+  margin-bottom: 12px;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sec-title p {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: #949494;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+
+/* =====================================================
+   COMMON COLORS
+===================================================== */
+
+.text-navy {
+  color: #1f3365;
+}
+
+.text-blue {
+  color: #209fd6;
+}
+
+.text-orange {
+  color: #f79827;
+}
+
+.bg-navy {
+  background: #1f3365;
+}
+
+.bg-blue {
+  background: #209fd6;
+}
+
+.bg-orange {
+  background: #f79827;
+}
+
+
+/* =====================================================
+   COMMON BUTTON
+===================================================== */
+
+.thm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 45px;
+
+  padding: 0 25px;
+
+  color: #ffffff;
+
+  background: #1f3365;
+
+  border: 1px solid #1f3365;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.thm-btn:hover {
+  color: #ffffff;
+
+  background: #209fd6;
+
+  border-color: #209fd6;
+}
+
+
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+input,
+textarea,
+select {
+  width: 100%;
+
+  border-radius: 0;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+
+/* =====================================================
+   VISUALLY HIDDEN
+===================================================== */
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+
+/* =====================================================
+   CLEARFIX
+===================================================== */
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+
+  clear: both;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1199px) {
+
+  .container {
+    width: 970px;
+    max-width: calc(100% - 30px);
+  }
+
+  .sec-title h1 {
+    font-size: 30px;
+  }
+
+  .sec-title h2 {
+    font-size: 26px;
+  }
+}
+
+
+/* =====================================================
+   TABLET / MOBILE
+===================================================== */
+
+@media (max-width: 991px) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .container {
+    width: 750px;
+    max-width: calc(100% - 30px);
+  }
+
+  .sec-title {
+    margin-bottom: 30px;
+  }
+
+  .sec-title h1 {
+    font-size: 28px;
+  }
+
+  .sec-title h2 {
+    font-size: 24px;
+  }
+
+  .sec-title p {
+    max-width: 100%;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  body {
+    font-size: 13px;
+
+    line-height: 24px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: calc(100% - 30px);
+  }
+
+  .sec-title {
+    margin-bottom: 25px;
+  }
+
+  .sec-title h1 {
+    margin-bottom: 10px;
+
+    font-size: 25px;
+  }
+
+  .sec-title h2 {
+    margin-bottom: 10px;
+
+    font-size: 23px;
+  }
+
+  .sec-title h3 {
+    font-size: 20px;
+  }
+
+  .sec-title p {
+    font-size: 13px;
+
+    line-height: 24px;
+  }
+
+  .thm-btn {
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 575px) {
+
+  .container {
+    max-width: calc(100% - 24px);
+  }
+
+  .sec-title h1 {
+    font-size: 23px;
+  }
+
+  .sec-title h2 {
+    font-size: 21px;
+  }
+
+  .sec-title h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .container {
+    max-width: calc(100% - 20px);
+  }
+
+  .sec-title h1 {
+    font-size: 22px;
+  }
+
+  .sec-title h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #f79827;
+
+  outline-offset: 2px;
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

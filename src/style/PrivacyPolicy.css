@@ -1,0 +1,355 @@
+/* =========================================================
+   PRIVACY POLICY PAGE
+   ========================================================= */
+
+.privacy-policy-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0b1957;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.privacy-policy-main {
+  width: 100%;
+}
+
+.privacy-policy-section {
+  width: 100%;
+  padding: 90px 20px 100px;
+  background: #ffffff;
+}
+
+.privacy-policy-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.privacy-policy-header {
+  text-align: center;
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #0b1957;
+}
+
+.privacy-policy-header h1 {
+  margin: 0 0 15px;
+  color: #0b1957;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.privacy-policy-updated {
+  margin: 0;
+  color: #0b1957;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.privacy-policy-content {
+  width: 100%;
+}
+
+.privacy-policy-content p {
+  margin: 0 0 20px;
+  color: #0b1957;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.privacy-policy-block {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.privacy-policy-block h2 {
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  color: #0b1957;
+  font-size: 27px;
+  line-height: 1.35;
+  font-weight: 700;
+  border-bottom: 2px solid #0b1957;
+}
+
+.privacy-policy-block p {
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+.privacy-policy-content ul {
+  margin: 0 0 22px;
+  padding-left: 28px;
+}
+
+.privacy-policy-content li {
+  margin-bottom: 10px;
+  padding-left: 6px;
+  color: #0b1957;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.privacy-policy-content li::marker {
+  color: #0b1957;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   LAST BLOCK
+   ========================================================= */
+
+.privacy-policy-last-block {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1600px) {
+  .privacy-policy-section {
+    padding: 110px 30px 120px;
+  }
+
+  .privacy-policy-container {
+    max-width: 1250px;
+  }
+
+  .privacy-policy-header {
+    margin-bottom: 65px;
+  }
+
+  .privacy-policy-header h1 {
+    font-size: 46px;
+  }
+
+  .privacy-policy-updated {
+    font-size: 17px;
+  }
+
+  .privacy-policy-content p,
+  .privacy-policy-content li {
+    font-size: 18px;
+  }
+
+  .privacy-policy-block {
+    margin-top: 48px;
+  }
+
+  .privacy-policy-block h2 {
+    font-size: 29px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .privacy-policy-section {
+    padding: 90px 30px 100px;
+  }
+
+  .privacy-policy-container {
+    max-width: 1200px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .privacy-policy-section {
+    padding: 75px 30px 85px;
+  }
+
+  .privacy-policy-container {
+    max-width: 900px;
+  }
+
+  .privacy-policy-header {
+    margin-bottom: 45px;
+  }
+
+  .privacy-policy-header h1 {
+    font-size: 36px;
+  }
+
+  .privacy-policy-updated {
+    font-size: 15px;
+  }
+
+  .privacy-policy-content p,
+  .privacy-policy-content li {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .privacy-policy-block {
+    margin-top: 36px;
+  }
+
+  .privacy-policy-block h2 {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .privacy-policy-section {
+    padding: 55px 18px 65px;
+  }
+
+  .privacy-policy-header {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+  }
+
+  .privacy-policy-header h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .privacy-policy-updated {
+    font-size: 14px;
+  }
+
+  .privacy-policy-content p {
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 17px;
+  }
+
+  .privacy-policy-block {
+    margin-top: 32px;
+  }
+
+  .privacy-policy-block h2 {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+
+  .privacy-policy-content ul {
+    padding-left: 23px;
+    margin-bottom: 20px;
+  }
+
+  .privacy-policy-content li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .privacy-policy-section {
+    padding: 45px 15px 55px;
+  }
+
+  .privacy-policy-header {
+    margin-bottom: 30px;
+  }
+
+  .privacy-policy-header h1 {
+    font-size: 26px;
+  }
+
+  .privacy-policy-updated {
+    font-size: 13px;
+  }
+
+  .privacy-policy-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .privacy-policy-block {
+    margin-top: 28px;
+  }
+
+  .privacy-policy-block h2 {
+    font-size: 19px;
+  }
+
+  .privacy-policy-content li {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .privacy-policy-section {
+    padding: 40px 12px 50px;
+  }
+
+  .privacy-policy-header h1 {
+    font-size: 23px;
+  }
+
+  .privacy-policy-content p,
+  .privacy-policy-content li {
+    font-size: 13.5px;
+  }
+
+  .privacy-policy-block h2 {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .privacy-policy-page * {
+    scroll-behavior: auto;
+  }
+}

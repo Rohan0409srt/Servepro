@@ -1,0 +1,2091 @@
+/* =========================================================
+   SERVEPRO NAVBAR
+   Responsive: Mobile / Tablet / Laptop / Desktop
+========================================================= */
+
+.mainmenu-area,
+.mainmenu-area *,
+.mainmenu-bottom-area,
+.mainmenu-bottom-area * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADER
+========================================================= */
+
+.mainmenu-area {
+  position: relative;
+  z-index: 9999;
+
+  width: 100%;
+  height: 94px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+  transition:
+    height 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =========================================================
+   STICKY HEADER
+   IMPORTANT:
+   Your JSX puts sticky-header directly on .mainmenu-area
+========================================================= */
+
+.mainmenu-area.sticky-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 82px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.header-container {
+  position: relative;
+
+  width: min(1170px, calc(100% - 30px));
+  height: 94px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   STICKY CONTAINER
+========================================================= */
+
+.mainmenu-area.sticky-header .header-container {
+  height: 82px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.header-logo {
+  width: 150px;
+  height: 94px;
+
+  flex: 0 0 150px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.header-logo a {
+  width: 100%;
+  height: 94px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-logo img {
+  display: block;
+
+  width: 150px;
+  height: 65px;
+
+  max-width: 100%;
+
+  object-fit: contain;
+}
+
+
+/* Sticky logo */
+
+.mainmenu-area.sticky-header .header-logo,
+.mainmenu-area.sticky-header .header-logo a {
+  height: 82px;
+}
+
+
+/* =========================================================
+   MAIN MENU
+========================================================= */
+
+.main-menu {
+  position: relative;
+
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  height: 94px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: visible;
+
+  z-index: 20;
+}
+
+.mainmenu-area.sticky-header .main-menu {
+  height: 82px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation {
+  width: 100%;
+  height: 94px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  overflow: visible;
+}
+
+.mainmenu-area.sticky-header .navigation {
+  height: 82px;
+}
+
+
+/* =========================================================
+   NAV ITEM
+========================================================= */
+
+.navigation > li {
+  position: relative;
+
+  height: 94px;
+
+  margin: 0;
+  padding: 0;
+
+  flex: 0 0 auto;
+}
+
+.mainmenu-area.sticky-header .navigation > li {
+  height: 82px;
+}
+
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.navigation > li > a {
+  width: auto;
+  height: 94px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 16px;
+
+  color: #1f3365;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.mainmenu-area.sticky-header
+.navigation > li > a {
+  height: 82px;
+}
+
+
+.navigation > li > a:hover,
+.navigation > li > a.current,
+.navigation > li > a[aria-current="page"] {
+  color: #ee962f;
+}
+
+
+/* =========================================================
+   VERTICAL SEPARATORS
+========================================================= */
+
+.navigation > li:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+
+  width: 1px;
+  height: 22px;
+
+  background: #e4e4e4;
+
+  transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   DROPDOWN BUTTON
+   HIDDEN ON DESKTOP
+========================================================= */
+
+.dropdown-toggle {
+  display: none;
+}
+
+
+/* =========================================================
+   SERVICES PARENT
+========================================================= */
+
+.services-dropdown-parent {
+  position: relative;
+}
+
+
+/* =========================================================
+   SERVICES MEGA DROPDOWN
+   DESKTOP
+========================================================= */
+
+@media (min-width: 992px) {
+
+  .services-mega-dropdown {
+    position: absolute;
+
+    /*
+      Anchor from left.
+      This prevents vibration/jumping.
+    */
+
+    top: 100%;
+    left: 0;
+
+    width: 330px;
+    min-width: 330px;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    background: #f3fbff;
+
+    border: 1px solid #dceaf1;
+
+    box-shadow:
+      0 12px 30px rgba(31, 51, 101, 0.14);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translate3d(0, 7px, 0);
+
+    overflow: visible;
+
+    z-index: 999999;
+
+    transition:
+      opacity 0.16s ease,
+      visibility 0.16s ease,
+      transform 0.16s ease,
+      width 0.16s ease;
+  }
+
+
+  /* Open Services */
+
+  .services-dropdown-parent:hover
+  > .services-mega-dropdown {
+
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  /*
+    When a main service is hovered:
+    expand ONLY toward right.
+  */
+
+  .services-mega-dropdown.has-active-service {
+    width: 660px;
+  }
+
+
+  /* =======================================================
+     LEFT SERVICE PANEL
+  ======================================================= */
+
+  .services-mega-left {
+    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
+
+    flex: 0 0 330px;
+
+    background: #f3fbff;
+  }
+
+
+  /* =======================================================
+     RIGHT SUBMENU
+     
+     Hidden by default.
+     This removes blank rectangle.
+  ======================================================= */
+
+  .services-mega-right {
+    display: none;
+
+    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
+
+    flex: 0 0 330px;
+
+    background: #f3fbff;
+
+    border-left: 1px solid #dceaf1;
+  }
+
+
+  .services-mega-dropdown.has-active-service
+  .services-mega-right {
+    display: block;
+  }
+
+
+  /* =======================================================
+     SERVICE ITEM
+  ======================================================= */
+
+  .services-mega-item {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #dceaf1;
+  }
+
+  .services-mega-item:last-child {
+    border-bottom: 0;
+  }
+
+
+  /* =======================================================
+     SERVICE LINK
+  ======================================================= */
+
+  .services-mega-item > a {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0 21px;
+
+    color: #1f3365;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 20px;
+
+    text-decoration: none;
+
+    transition:
+      color 0.16s ease,
+      background-color 0.16s ease;
+  }
+
+
+  /*
+    NO transform.
+    NO padding change.
+    Therefore no vibration.
+  */
+
+  .services-mega-item:hover > a,
+  .services-mega-item.active > a {
+    color: #ffffff;
+
+    background: #50b1d2;
+  }
+
+
+  /* =======================================================
+     SERVICE TEXT
+  ======================================================= */
+
+  .service-menu-text {
+    display: block;
+
+    min-width: 0;
+
+    flex: 1 1 auto;
+  }
+
+
+  /* =======================================================
+     SERVICE ARROW
+  ======================================================= */
+
+  .services-mega-arrow {
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 8px;
+
+    color: #1f3365;
+
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition: color 0.16s ease;
+  }
+
+  .services-mega-item:hover
+  .services-mega-arrow,
+  .services-mega-item.active
+  .services-mega-arrow {
+    color: #ffffff;
+  }
+
+
+  /* =======================================================
+     RIGHT SUBMENU LINK
+  ======================================================= */
+
+  .services-submenu-link {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 22px;
+
+    color: #1f3365;
+
+    background: transparent;
+
+    border-bottom: 1px solid #dceaf1;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 20px;
+
+    text-decoration: none;
+
+    transition:
+      color 0.16s ease,
+      background-color 0.16s ease;
+  }
+
+  .services-submenu-link:last-child {
+    border-bottom: 0;
+  }
+
+  .services-submenu-link:hover {
+    color: #ffffff;
+
+    background: #50b1d2;
+  }
+
+
+  /* Mobile submenu never appears on desktop */
+
+  .mobile-service-submenu {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   INDUSTRIES DROPDOWN
+   DESKTOP
+========================================================= */
+
+@media (min-width: 992px) {
+
+  .industries-dropdown-parent {
+    position: relative;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu {
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    width: 297px;
+    min-width: 297px;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: #f3fbff;
+
+    border: 0;
+
+    box-shadow:
+      0 10px 25px rgba(31, 51, 101, 0.14);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform:
+      translate3d(-50%, 7px, 0);
+
+    z-index: 999999;
+
+    transition:
+      opacity 0.16s ease,
+      visibility 0.16s ease,
+      transform 0.16s ease;
+  }
+
+
+  .industries-dropdown-parent:hover
+  > .dropdown-menu {
+
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform:
+      translate3d(-50%, 0, 0);
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li {
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #dceaf1;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li:last-child {
+    border-bottom: 0;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li > a {
+
+    display: block;
+
+    width: 100%;
+    min-height: 51px;
+
+    padding: 12px 22px;
+
+    color: #1f3365;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 24px;
+
+    text-decoration: none;
+
+    transition:
+      color 0.16s ease,
+      background-color 0.16s ease;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li > a:hover {
+
+    color: #ee962f;
+
+    background: #e9f7fd;
+  }
+
+}
+
+
+/* =========================================================
+   CALL US
+========================================================= */
+
+.header-call {
+
+  position: relative;
+
+  width: 285px;
+  min-width: 240px;
+
+  height: 70px;
+
+  flex: 0 1 285px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 40px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+
+  z-index: 5;
+}
+
+
+.call-icon {
+
+  position: absolute;
+
+  left: -21px;
+  top: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+}
+
+
+.call-icon span {
+
+  color: #1f3365;
+
+  font-size: 17px;
+}
+
+
+.call-content {
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+
+.call-content > span {
+
+  color: #1f3365;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 24px;
+}
+
+
+.call-content a {
+
+  color: #209fd6;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 24px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.call-content a:hover {
+  color: #ee962f;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION BAR
+========================================================= */
+
+.mainmenu-bottom-area {
+
+  width: 100%;
+  min-height: 58px;
+
+  background: #eeeeee;
+}
+
+
+.contact-container {
+
+  width: min(1170px, calc(100% - 30px));
+
+  min-height: 58px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contact-item {
+
+  min-height: 34px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 35px;
+
+  border-right: 1px solid #555555;
+}
+
+
+.contact-item:first-child {
+  padding-left: 0;
+}
+
+
+.contact-item:last-child {
+  padding-right: 0;
+
+  border-right: 0;
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-icon {
+
+  width: 40px;
+  height: 30px;
+
+  flex: 0 0 40px;
+
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid #333333;
+}
+
+
+.contact-icon a,
+.contact-icon span {
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.contact-icon img {
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+========================================================= */
+
+.contact-text {
+  min-width: 0;
+
+  padding-left: 15px;
+}
+
+
+.contact-text a,
+.contact-text span {
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  color: #111111;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.contact-text a:hover {
+  color: #ee962f;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   Hidden desktop
+========================================================= */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   <= 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+  /* -------------------------------------------------------
+     GLOBAL MOBILE SAFETY
+  ------------------------------------------------------- */
+
+  html,
+  body {
+    max-width: 100%;
+
+    overflow-x: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADER
+  ------------------------------------------------------- */
+
+  .mainmenu-area,
+  .mainmenu-area.sticky-header {
+
+    position: relative;
+
+    top: auto;
+    left: auto;
+    right: auto;
+
+    width: 100%;
+    height: 74px;
+
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+
+  /* -------------------------------------------------------
+     HEADER CONTAINER
+  ------------------------------------------------------- */
+
+  .header-container {
+
+    position: relative;
+
+    width: 100%;
+    height: 74px;
+
+    margin: 0;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .mainmenu-area.sticky-header
+  .header-container {
+
+    height: 74px;
+  }
+
+
+  /* -------------------------------------------------------
+     LOGO
+     
+     Exact viewport center.
+  ------------------------------------------------------- */
+
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 145px;
+    height: 64px;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10002;
+  }
+
+
+  .header-logo a,
+  .mainmenu-area.sticky-header
+  .header-logo a {
+
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .header-logo img {
+
+    display: block;
+
+    width: 145px;
+    height: 58px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+  }
+
+
+  /* -------------------------------------------------------
+     MAIN MENU
+     Hamburger stays LEFT.
+  ------------------------------------------------------- */
+
+  .main-menu,
+  .mainmenu-area.sticky-header .main-menu {
+
+    position: static;
+
+    width: auto;
+    height: 74px;
+
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 10003;
+  }
+
+
+  /* -------------------------------------------------------
+     HAMBURGER
+  ------------------------------------------------------- */
+
+  .mobile-menu-btn {
+
+    width: 44px;
+    height: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #1f3365;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    z-index: 10005;
+  }
+
+
+  .mobile-menu-btn span {
+
+    display: block;
+
+    width: 23px;
+    height: 2px;
+
+    background: #1f3365;
+
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+
+  /* Hamburger -> X */
+
+  .mobile-menu-btn.active
+  span:nth-child(1) {
+
+    transform:
+      translateY(7px)
+      rotate(45deg);
+  }
+
+
+  .mobile-menu-btn.active
+  span:nth-child(2) {
+
+    opacity: 0;
+  }
+
+
+  .mobile-menu-btn.active
+  span:nth-child(3) {
+
+    transform:
+      translateY(-7px)
+      rotate(-45deg);
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE NAVIGATION
+     
+     Fixed below header.
+     Covers page.
+  ------------------------------------------------------- */
+
+  .navigation {
+
+    position: fixed;
+
+    top: 74px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: auto;
+
+    max-height: none;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.14);
+
+    -webkit-overflow-scrolling: touch;
+
+    z-index: 10001;
+  }
+
+
+  .navigation.mobile-open {
+    display: flex;
+  }
+
+
+  /*
+    Lock page behind menu.
+  */
+
+  body:has(.navigation.mobile-open) {
+    overflow: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     NAV ITEMS
+  ------------------------------------------------------- */
+
+  .navigation > li {
+
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    flex: 0 0 auto;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+
+  .navigation > li::after {
+    display: none !important;
+  }
+
+
+  .navigation > li > a {
+
+    width: 100%;
+    height: 52px;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding:
+      0 55px 0 20px;
+
+    color: #1f3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 20px;
+
+    white-space: nowrap;
+  }
+
+
+  .navigation > li > a:hover,
+  .navigation > li > a.current,
+  .navigation > li > a[aria-current="page"] {
+
+    color: #ee962f;
+
+    background: #ffffff;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE DROPDOWN TOGGLE
+  ------------------------------------------------------- */
+
+  .dropdown-toggle {
+
+    position: absolute;
+
+    top: 7px;
+    right: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+
+    border: 0;
+
+    cursor: pointer;
+
+    z-index: 100;
+  }
+
+
+  .dropdown-toggle span {
+
+    display: block;
+
+    width: 9px;
+    height: 9px;
+
+    border-right: 1px solid #1f3365;
+    border-bottom: 1px solid #1f3365;
+
+    transform: rotate(45deg);
+
+    transition:
+      transform 0.2s ease;
+  }
+
+
+  .dropdown-toggle[aria-expanded="true"]
+  span {
+
+    transform: rotate(225deg);
+  }
+
+
+  /* =======================================================
+     SERVICES MOBILE
+  ======================================================= */
+
+  .services-mega-dropdown {
+
+    position: static;
+
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto;
+
+    display: none;
+
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    background: #f3fbff;
+
+    border: 0;
+
+    box-shadow: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: none;
+
+    overflow: visible;
+  }
+
+
+  .services-mega-dropdown.mobile-services-open {
+
+    display: flex;
+  }
+
+
+  /* -------------------------------------------------------
+     LEFT SERVICES PANEL
+  ------------------------------------------------------- */
+
+  .services-mega-left {
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    flex: none;
+
+    background: #f3fbff;
+  }
+
+
+  /* -------------------------------------------------------
+     RIGHT PANEL
+     Never use on mobile.
+  ------------------------------------------------------- */
+
+  .services-mega-right {
+
+    display: none !important;
+  }
+
+
+  /* -------------------------------------------------------
+     MAIN SERVICE
+  ------------------------------------------------------- */
+
+  .services-mega-item {
+
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #dceaf1;
+  }
+
+
+  .services-mega-item > a {
+
+    width: 100%;
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0 20px;
+
+    color: #1f3365;
+
+    background: #f3fbff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 20px;
+
+    text-decoration: none;
+  }
+
+
+  .services-mega-item:hover > a,
+  .services-mega-item.active > a {
+
+    color: #1f3365;
+
+    background: #f3fbff;
+  }
+
+
+  .services-mega-arrow {
+
+    color: #1f3365;
+
+    flex: 0 0 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE SUBMENU
+  ------------------------------------------------------- */
+
+  .mobile-service-submenu {
+
+    display: none;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+  }
+
+
+  .services-mega-item.active
+  .mobile-service-submenu {
+
+    display: block;
+  }
+
+
+  .mobile-service-submenu a {
+
+    width: 100%;
+    min-height: 44px;
+
+    display: block;
+
+    margin: 0;
+    padding: 11px 35px;
+
+    color: #1f3365;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5edf2;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 20px;
+
+    text-decoration: none;
+
+    transition:
+      color 0.16s ease,
+      background-color 0.16s ease;
+  }
+
+
+  .mobile-service-submenu a:hover {
+
+    color: #ee962f;
+
+    background: #f3fbff;
+  }
+
+
+  /* =======================================================
+     INDUSTRIES MOBILE
+  ======================================================= */
+
+  .industries-dropdown-parent
+  > .dropdown-menu {
+
+    position: static;
+
+    width: 100%;
+
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: #f3fbff;
+
+    border: 0;
+
+    box-shadow: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: none;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu.open {
+
+    display: block;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li {
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-top: 1px solid #dceaf1;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li > a {
+
+    width: 100%;
+    min-height: 46px;
+
+    display: block;
+
+    padding: 11px 30px;
+
+    color: #1f3365;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 22px;
+
+    text-decoration: none;
+  }
+
+
+  .industries-dropdown-parent
+  > .dropdown-menu > li > a:hover {
+
+    color: #ee962f;
+
+    background: #e9f7fd;
+  }
+
+
+  /* =======================================================
+     MOBILE CALL HIDDEN
+  ======================================================= */
+
+  .header-call {
+    display: none;
+  }
+
+
+  /* =======================================================
+     MOBILE CONTACT BAR HIDDEN
+  ======================================================= */
+
+  .mainmenu-bottom-area {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .mainmenu-area,
+  .mainmenu-area.sticky-header {
+
+    height: 82px;
+  }
+
+
+  .header-container {
+
+    height: 82px;
+
+    padding:
+      0 24px;
+  }
+
+
+  .mainmenu-area.sticky-header
+  .header-container {
+
+    height: 82px;
+  }
+
+
+  .main-menu {
+
+    height: 82px;
+  }
+
+
+  .navigation {
+
+    top: 82px;
+  }
+
+
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+
+    width: 165px;
+    height: 70px;
+  }
+
+
+  .header-logo a {
+
+    height: 70px;
+  }
+
+
+  .header-logo img {
+
+    width: 165px;
+    height: 65px;
+  }
+
+
+  .mobile-menu-btn {
+
+    width: 46px;
+    height: 42px;
+  }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .header-container {
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+
+    width: 155px;
+  }
+
+
+  .header-logo img {
+
+    width: 155px;
+    height: 61px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .header-container {
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+
+    width: 135px;
+  }
+
+
+  .header-logo img {
+
+    width: 135px;
+    height: 56px;
+  }
+
+
+  .mobile-menu-btn {
+
+    width: 42px;
+    height: 38px;
+  }
+
+
+  .mobile-menu-btn span {
+
+    width: 21px;
+  }
+
+
+  .navigation > li > a {
+
+    padding-left: 17px;
+
+    font-size: 13px;
+  }
+
+
+  .services-mega-item > a {
+
+    padding-left: 17px;
+    padding-right: 17px;
+
+    font-size: 13px;
+  }
+
+
+  .mobile-service-submenu a {
+
+    padding-left: 30px;
+    padding-right: 20px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .header-container {
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+
+    width: 125px;
+  }
+
+
+  .header-logo img {
+
+    width: 125px;
+    height: 53px;
+  }
+
+
+  .mobile-menu-btn {
+
+    width: 40px;
+    height: 36px;
+  }
+
+
+  .navigation > li > a {
+
+    font-size: 12.5px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .header-container {
+
+    width: calc(100% - 30px);
+    max-width: 1140px;
+  }
+
+
+  .header-logo {
+
+    width: 135px;
+    flex-basis: 135px;
+  }
+
+
+  .header-logo img {
+
+    width: 135px;
+  }
+
+
+  .navigation > li > a {
+
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-size: 12.5px;
+  }
+
+
+  .header-call {
+
+    width: 230px;
+    min-width: 230px;
+
+    flex-basis: 230px;
+
+    padding-left: 30px;
+  }
+
+
+  .call-content {
+
+    gap: 3px;
+  }
+
+
+  .call-content > span {
+
+    font-size: 15px;
+  }
+
+
+  .call-content a {
+
+    font-size: 14px;
+  }
+
+
+  /* -------------------------------------------------------
+     Services dropdown stays within viewport.
+  ------------------------------------------------------- */
+
+  .services-mega-dropdown {
+
+    width: 300px;
+    min-width: 300px;
+  }
+
+
+  .services-mega-dropdown.has-active-service {
+
+    width: 600px;
+  }
+
+
+  .services-mega-left {
+
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+
+    flex-basis: 300px;
+  }
+
+
+  .services-mega-right {
+
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+
+    flex-basis: 300px;
+  }
+
+
+  .services-mega-item > a,
+  .services-submenu-link {
+
+    font-size: 13px;
+  }
+
+
+  /* Contact bar */
+
+  .contact-container {
+
+    width: calc(100% - 30px);
+  }
+
+
+  .contact-item {
+
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   1200px - 1439px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .header-container {
+
+    width: calc(100% - 40px);
+    max-width: 1200px;
+  }
+
+
+  .navigation > li > a {
+
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+
+  .header-call {
+
+    width: 260px;
+    flex-basis: 260px;
+
+    padding-left: 35px;
+  }
+
+
+  .call-content > span {
+
+    font-size: 16px;
+  }
+
+
+  .call-content a {
+
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1440px+
+========================================================= */
+
+@media (min-width: 1440px) {
+
+  .header-container {
+
+    width: 1170px;
+  }
+
+
+  .navigation > li > a {
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
+
+
+/* =========================================================
+   ULTRA WIDE
+   1920px+
+========================================================= */
+
+@media (min-width: 1920px) {
+
+  .header-container {
+
+    width: 1170px;
+  }
+
+}
+.header-logo {
+  animation: headerLogoZoom 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@keyframes headerLogoZoom {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  35% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+
+  55% {
+    transform: scale(0.92);
+  }
+
+  72% {
+    transform: scale(1.10);
+  }
+
+  88% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

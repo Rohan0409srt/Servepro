@@ -1,0 +1,705 @@
+/* =========================================================
+   GARDEN DEVELOPMENT PAGE
+   ========================================================= */
+
+.gardening-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.gardening-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.gardening-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.gardening-service-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #ffffff;
+}
+
+.gardening-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.gardening-section-title {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.gardening-section-title h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.gardening-title-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 25px auto 28px;
+  background: #0b1957;
+}
+
+.gardening-section-title p {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICE LIST
+   ========================================================= */
+
+.gardening-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================================================
+   SERVICE CARD
+   Desktop:
+   Text 55% | Image 45%
+   Reverse:
+   Image 45% | Text 55%
+   ========================================================= */
+
+.gardening-service-card {
+  display: flex;
+  width: 100%;
+  min-height: 490px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+}
+
+.gardening-service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.gardening-card-text {
+  width: 55%;
+  padding: 65px 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gardening-card-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 31px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.gardening-card-text ul {
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+.gardening-card-text li {
+  margin-bottom: 15px;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.gardening-card-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.gardening-card-image {
+  width: 45%;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.gardening-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* =========================================================
+   1200 - 1439
+   Banner = 750px
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .gardening-banner {
+    height: 750px;
+  }
+
+  .gardening-service-section {
+    padding: 80px 0 95px;
+  }
+
+  .gardening-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .gardening-section-title {
+    margin-bottom: 60px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 34px;
+  }
+
+  .gardening-section-title p {
+    font-size: 17px;
+  }
+
+  .gardening-service-card {
+    min-height: 400px;
+  }
+
+  .gardening-card-text {
+    padding: 50px 55px;
+  }
+
+  .gardening-card-image,
+  .gardening-card-image img {
+    min-height: 400px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 28px;
+  }
+
+  .gardening-card-text li {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .gardening-banner {
+    height: 750px;
+  }
+
+  .gardening-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .gardening-service-section {
+    padding: 90px 0 105px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 36px;
+  }
+
+  .gardening-section-title p {
+    font-size: 18px;
+  }
+
+  .gardening-service-card {
+    min-height: 430px;
+  }
+
+  .gardening-card-text {
+    padding: 55px 65px;
+  }
+
+  .gardening-card-image,
+  .gardening-card-image img {
+    min-height: 430px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .gardening-banner {
+    height: 750px;
+  }
+
+  .gardening-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .gardening-service-section {
+    padding: 100px 0 115px;
+  }
+
+  .gardening-section-title {
+    max-width: 1250px;
+    margin-bottom: 75px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 40px;
+  }
+
+  .gardening-section-title p {
+    font-size: 19px;
+  }
+
+  .gardening-service-card {
+    min-height: 460px;
+  }
+
+  .gardening-card-text {
+    padding: 65px 75px;
+  }
+
+  .gardening-card-image,
+  .gardening-card-image img {
+    min-height: 460px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 32px;
+  }
+
+  .gardening-card-text li {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .gardening-banner {
+    height: 750px;
+  }
+
+  .gardening-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .gardening-service-section {
+    padding: 110px 0 125px;
+  }
+
+  .gardening-section-title {
+    max-width: 1350px;
+    margin-bottom: 85px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 43px;
+  }
+
+  .gardening-title-border {
+    width: 80px;
+    height: 4px;
+    margin: 28px auto 32px;
+  }
+
+  .gardening-section-title p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .gardening-service-list {
+    gap: 55px;
+  }
+
+  .gardening-service-card {
+    min-height: 490px;
+  }
+
+  .gardening-card-text {
+    padding: 70px 85px;
+  }
+
+  .gardening-card-image,
+  .gardening-card-image img {
+    min-height: 490px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .gardening-card-text li {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET - 768 to 1199
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .gardening-banner {
+    height: 500px;
+  }
+
+  .gardening-service-section {
+    padding: 70px 0 80px;
+  }
+
+  .gardening-container {
+    width: calc(100% - 50px);
+  }
+
+  .gardening-section-title {
+    margin-bottom: 55px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .gardening-section-title p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .gardening-service-list {
+    gap: 35px;
+  }
+
+  .gardening-service-card {
+    min-height: 320px;
+  }
+
+  .gardening-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .gardening-card-image {
+    width: 48%;
+    min-height: 320px;
+  }
+
+  .gardening-card-image img {
+    min-height: 320px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .gardening-card-text ul {
+    padding-left: 20px;
+  }
+
+  .gardening-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 576 to 767
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .gardening-banner {
+    height: 260px;
+  }
+
+  .gardening-service-section {
+    padding: 50px 0 60px;
+  }
+
+  .gardening-container {
+    width: calc(100% - 30px);
+  }
+
+  .gardening-section-title {
+    margin-bottom: 40px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .gardening-title-border {
+    margin: 18px auto 22px;
+  }
+
+  .gardening-section-title p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .gardening-service-list {
+    gap: 25px;
+  }
+
+  .gardening-service-card,
+  .gardening-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  /* Image first on mobile */
+  .gardening-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .gardening-card-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    object-fit: cover;
+  }
+
+  .gardening-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .gardening-card-text li {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 9px;
+  }
+}
+
+/* =========================================================
+   MOBILE - 400 to 575
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .gardening-banner {
+    height: 240px;
+  }
+
+  .gardening-service-section {
+    padding: 45px 0 55px;
+  }
+
+  .gardening-container {
+    width: calc(100% - 24px);
+  }
+
+  .gardening-section-title {
+    margin-bottom: 35px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .gardening-title-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .gardening-section-title p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .gardening-service-list {
+    gap: 22px;
+  }
+
+  .gardening-service-card,
+  .gardening-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .gardening-card-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .gardening-card-image img {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    object-fit: cover;
+  }
+
+  .gardening-card-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .gardening-card-text ul {
+    padding-left: 19px;
+  }
+
+  .gardening-card-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .gardening-banner {
+    height: 210px;
+  }
+
+  .gardening-service-section {
+    padding: 38px 0 45px;
+  }
+
+  .gardening-container {
+    width: calc(100% - 20px);
+  }
+
+  .gardening-section-title {
+    margin-bottom: 30px;
+  }
+
+  .gardening-section-title h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .gardening-title-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .gardening-section-title p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .gardening-service-list {
+    gap: 18px;
+  }
+
+  .gardening-service-card,
+  .gardening-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .gardening-card-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+  }
+
+  .gardening-card-image img {
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+    object-fit: cover;
+  }
+
+  .gardening-card-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .gardening-card-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .gardening-card-text ul {
+    padding-left: 18px;
+  }
+
+  .gardening-card-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}

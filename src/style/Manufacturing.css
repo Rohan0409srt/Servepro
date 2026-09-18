@@ -1,0 +1,1227 @@
+/* =========================================================
+   MANUFACTURING INDUSTRY PAGE
+   FONT COLOR: #0b1957
+========================================================= */
+
+.manufacturing-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #0b1957;
+  font-family: "Poppins", sans-serif;
+}
+
+.manufacturing-page *,
+.manufacturing-page *::before,
+.manufacturing-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.manufacturing-banner {
+  width: 100%;
+  height: 750px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+
+.manufacturing-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.manufacturing-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #ffffff;
+}
+
+.manufacturing-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.manufacturing-intro {
+  width: 100%;
+  max-width: 1350px;
+
+  margin: 0 auto 70px;
+}
+
+.manufacturing-title {
+  width: 100%;
+  text-align: center;
+}
+
+.manufacturing-title h1 {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.manufacturing-title-border {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+
+  margin: 22px auto 25px;
+
+  background: #0b1957;
+}
+
+.manufacturing-description {
+  width: 100%;
+}
+
+.manufacturing-description p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+
+  text-align: justify;
+}
+
+
+/* =========================================================
+   MAIN IMAGES
+========================================================= */
+
+.manufacturing-images {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+
+  margin-top: 55px;
+}
+
+.manufacturing-image-item {
+  width: 100%;
+}
+
+.manufacturing-image-holder {
+  width: 100%;
+  height: 312px;
+
+  overflow: hidden;
+}
+
+.manufacturing-image-holder img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.4s ease;
+}
+
+.manufacturing-image-holder:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.manufacturing-services {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.manufacturing-section-header {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.manufacturing-section-header h2 {
+  margin: 0 0 14px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+.manufacturing-section-divider {
+  width: 80px;
+  height: 4px;
+
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.manufacturing-category {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.manufacturing-category-title {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.manufacturing-service-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.manufacturing-service-card {
+  width: 100%;
+  min-height: 190px;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border-radius: 4px;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.manufacturing-service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.manufacturing-service-icon {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+
+  object-fit: contain;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.manufacturing-service-text {
+  width: 100%;
+}
+
+.manufacturing-service-text h4 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.manufacturing-service-text p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRIES
+========================================================= */
+
+.manufacturing-other-industries {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.manufacturing-other-title {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.manufacturing-other-title h2 {
+  margin: 0 0 20px;
+
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.manufacturing-other-title span {
+  width: 80px;
+  height: 4px;
+
+  display: block;
+
+  margin: 0 auto;
+
+  background: #0b1957;
+}
+
+
+/* =========================================================
+   OTHER INDUSTRIES GRID
+========================================================= */
+
+.manufacturing-industry-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   INDUSTRY CARD
+========================================================= */
+
+.manufacturing-industry-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.manufacturing-industry-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   INDUSTRY IMAGE
+========================================================= */
+
+.manufacturing-industry-image {
+  width: 100%;
+  height: 216px;
+
+  overflow: hidden;
+}
+
+.manufacturing-industry-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   INDUSTRY TEXT
+========================================================= */
+
+.manufacturing-industry-text {
+  width: 100%;
+
+  padding: 25px 20px 30px;
+
+  text-align: center;
+}
+
+.manufacturing-industry-text h3 {
+  margin: 0 0 12px;
+
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.manufacturing-industry-text p {
+  margin: 0;
+
+  min-height: 68px;
+
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.manufacturing-industry-border {
+  width: 50px;
+  height: 2px;
+
+  display: block;
+
+  margin: 18px auto 16px;
+
+  background: #0b1957;
+}
+
+.manufacturing-industry-text a {
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.manufacturing-industry-text a:hover {
+  color: #0b1957;
+}
+
+.manufacturing-industry-text a i {
+  margin-left: 5px;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .manufacturing-section {
+    padding: 100px 0 115px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .manufacturing-intro {
+    max-width: 1250px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 40px;
+  }
+
+  .manufacturing-description p {
+    font-size: 19px;
+  }
+
+  .manufacturing-images {
+    gap: 25px;
+  }
+
+  .manufacturing-image-holder {
+    height: 290px;
+  }
+
+  .manufacturing-service-grid {
+    gap: 22px;
+  }
+
+  .manufacturing-service-card {
+    padding: 28px 25px;
+  }
+
+  .manufacturing-industry-grid {
+    gap: 22px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .manufacturing-section {
+    padding: 90px 0 105px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 36px;
+  }
+
+  .manufacturing-description p {
+    font-size: 18px;
+  }
+
+  .manufacturing-images {
+    gap: 22px;
+  }
+
+  .manufacturing-image-holder {
+    height: 280px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 30px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 25px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .manufacturing-service-card {
+    padding: 25px 22px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 19px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 15px;
+  }
+
+  .manufacturing-industry-grid {
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .manufacturing-section {
+    padding: 80px 0 95px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 34px;
+  }
+
+  .manufacturing-description p {
+    font-size: 17px;
+  }
+
+  .manufacturing-images {
+    gap: 20px;
+  }
+
+  .manufacturing-image-holder {
+    height: 260px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 28px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 24px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .manufacturing-service-card {
+    min-height: 180px;
+    padding: 23px 20px;
+  }
+
+  .manufacturing-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 18px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 15px;
+  }
+
+  .manufacturing-industry-grid {
+    gap: 18px;
+  }
+
+  .manufacturing-industry-text {
+    padding: 22px 17px 27px;
+  }
+
+  .manufacturing-industry-text h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   992 - 1199
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .manufacturing-banner {
+    height: 500px;
+  }
+
+  .manufacturing-section {
+    padding: 70px 0 80px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 50px);
+    max-width: 1100px;
+  }
+
+  .manufacturing-intro {
+    margin-bottom: 55px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 30px;
+  }
+
+  .manufacturing-title-border {
+    width: 65px;
+    height: 3px;
+
+    margin: 18px auto 22px;
+  }
+
+  .manufacturing-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .manufacturing-images {
+    gap: 18px;
+    margin-top: 45px;
+  }
+
+  .manufacturing-image-holder {
+    height: 230px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 27px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 23px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .manufacturing-service-card {
+    min-height: 175px;
+    padding: 22px 20px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 18px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 15px;
+  }
+
+  .manufacturing-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .manufacturing-industry-image {
+    height: 240px;
+  }
+}
+
+
+/* =========================================================
+   768 - 991
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .manufacturing-banner {
+    height: 430px;
+  }
+
+  .manufacturing-section {
+    padding: 60px 0 70px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 40px);
+  }
+
+  .manufacturing-intro {
+    margin-bottom: 50px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 29px;
+  }
+
+  .manufacturing-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .manufacturing-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .manufacturing-image-holder {
+    height: 210px;
+  }
+
+  .manufacturing-section-header {
+    margin-bottom: 38px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 26px;
+  }
+
+  .manufacturing-category {
+    margin-bottom: 45px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 22px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .manufacturing-service-card {
+    min-height: 170px;
+    padding: 22px 18px;
+  }
+
+  .manufacturing-service-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 17px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .manufacturing-other-industries {
+    margin-top: 60px;
+  }
+
+  .manufacturing-other-title h2 {
+    font-size: 28px;
+  }
+
+  .manufacturing-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .manufacturing-banner {
+    height: 260px;
+  }
+
+  .manufacturing-section {
+    padding: 50px 0 60px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 30px);
+  }
+
+  .manufacturing-intro {
+    margin-bottom: 40px;
+  }
+
+  .manufacturing-title h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .manufacturing-title-border {
+    width: 60px;
+    height: 3px;
+
+    margin: 16px auto 20px;
+  }
+
+  .manufacturing-description p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .manufacturing-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .manufacturing-image-holder {
+    height: 270px;
+  }
+
+  .manufacturing-services {
+    margin-top: 20px;
+  }
+
+  .manufacturing-section-header {
+    margin-bottom: 35px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 25px;
+  }
+
+  .manufacturing-section-divider {
+    width: 60px;
+    height: 3px;
+  }
+
+  .manufacturing-category {
+    margin-bottom: 38px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .manufacturing-service-card {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .manufacturing-service-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 18px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 15px;
+  }
+
+  .manufacturing-other-industries {
+    margin-top: 55px;
+  }
+
+  .manufacturing-other-title {
+    margin-bottom: 35px;
+  }
+
+  .manufacturing-other-title h2 {
+    font-size: 25px;
+  }
+
+  .manufacturing-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .manufacturing-industry-image {
+    height: 270px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .manufacturing-banner {
+    height: 240px;
+  }
+
+  .manufacturing-section {
+    padding: 45px 0 55px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 24px);
+  }
+
+  .manufacturing-title h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .manufacturing-title-border {
+    width: 55px;
+    height: 2px;
+
+    margin: 14px auto 18px;
+  }
+
+  .manufacturing-description p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .manufacturing-images {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .manufacturing-image-holder {
+    height: 230px;
+  }
+
+  .manufacturing-section-header {
+    margin-bottom: 30px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 23px;
+  }
+
+  .manufacturing-section-divider {
+    width: 55px;
+    height: 2px;
+  }
+
+  .manufacturing-category {
+    margin-bottom: 32px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .manufacturing-service-card {
+    min-height: auto;
+    padding: 22px 18px;
+  }
+
+  .manufacturing-service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 17px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .manufacturing-other-industries {
+    margin-top: 45px;
+  }
+
+  .manufacturing-other-title {
+    margin-bottom: 28px;
+  }
+
+  .manufacturing-other-title h2 {
+    font-size: 22px;
+  }
+
+  .manufacturing-other-title span {
+    width: 55px;
+    height: 2px;
+  }
+
+  .manufacturing-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .manufacturing-industry-image {
+    height: 230px;
+  }
+
+  .manufacturing-industry-text {
+    padding: 22px 18px 27px;
+  }
+
+  .manufacturing-industry-text h3 {
+    font-size: 18px;
+  }
+
+  .manufacturing-industry-text p {
+    min-height: auto;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   <= 399
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .manufacturing-banner {
+    height: 210px;
+  }
+
+  .manufacturing-section {
+    padding: 38px 0 45px;
+  }
+
+  .manufacturing-container {
+    width: calc(100% - 20px);
+  }
+
+  .manufacturing-title h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .manufacturing-title-border {
+    width: 50px;
+    height: 2px;
+    margin: 12px auto 16px;
+  }
+
+  .manufacturing-description p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .manufacturing-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .manufacturing-image-holder {
+    height: 205px;
+  }
+
+  .manufacturing-section-header {
+    margin-bottom: 27px;
+  }
+
+  .manufacturing-section-header h2 {
+    font-size: 21px;
+  }
+
+  .manufacturing-section-divider {
+    width: 50px;
+    height: 2px;
+  }
+
+  .manufacturing-category {
+    margin-bottom: 28px;
+  }
+
+  .manufacturing-category-title {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .manufacturing-service-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .manufacturing-service-card {
+    min-height: auto;
+    padding: 20px 16px;
+  }
+
+  .manufacturing-service-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+  }
+
+  .manufacturing-service-text h4 {
+    font-size: 16px;
+  }
+
+  .manufacturing-service-text p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .manufacturing-other-industries {
+    margin-top: 38px;
+  }
+
+  .manufacturing-other-title {
+    margin-bottom: 25px;
+  }
+
+  .manufacturing-other-title h2 {
+    font-size: 20px;
+  }
+
+  .manufacturing-other-title span {
+    width: 50px;
+    height: 2px;
+  }
+
+  .manufacturing-industry-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .manufacturing-industry-image {
+    height: 205px;
+  }
+
+  .manufacturing-industry-text {
+    padding: 20px 15px 25px;
+  }
+
+  .manufacturing-industry-text h3 {
+    font-size: 17px;
+  }
+
+  .manufacturing-industry-text p {
+    min-height: auto;
+    font-size: 13px;
+  }
+
+  .manufacturing-industry-border {
+    margin: 15px auto 13px;
+  }
+}

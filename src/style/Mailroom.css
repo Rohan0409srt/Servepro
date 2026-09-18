@@ -1,0 +1,868 @@
+/* =========================================================
+   MAILROOM SERVICE PAGE
+========================================================= */
+
+.mailroom-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.mailroom-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.mailroom-banner {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.mailroom-banner-overlay {
+  width: 100%;
+  min-height: 330px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.mailroom-banner .mailroom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailroom-banner h1 {
+  margin: 20px 0 0;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.mailroom-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mailroom-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.mailroom-breadcrumb a:hover {
+  opacity: 0.75;
+}
+
+.mailroom-breadcrumb span {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.mailroom-section {
+  padding: 70px 0 90px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.mailroom-section-title {
+  max-width: 1050px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.mailroom-section-title h2 {
+  margin: 0 auto 20px;
+
+  color: #0b1957;
+
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.mailroom-title-border {
+  display: block;
+
+  width: 55px;
+  height: 3px;
+
+  margin: 0 auto 25px;
+
+  background: #0b1957;
+
+  border-radius: 10px;
+}
+
+.mailroom-section-title p {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.mailroom-service-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 55px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.mailroom-service-card {
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mailroom-service-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.mailroom-service-content {
+  width: 55%;
+
+  padding: 45px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mailroom-service-content h3 {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: clamp(23px, 2.5vw, 31px);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.mailroom-service-content ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.mailroom-service-content li {
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 25px;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mailroom-service-content li:last-child {
+  margin-bottom: 0;
+}
+
+.mailroom-service-content li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.mailroom-service-image {
+  width: 45%;
+
+  min-height: 330px;
+
+  overflow: hidden;
+
+  background: #f4f4f4;
+}
+
+.mailroom-service-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.mailroom-service-card:hover
+.mailroom-service-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   REVERSE
+========================================================= */
+
+.mailroom-service-card.mailroom-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .mailroom-container {
+    width: min(1100px, calc(100% - 40px));
+  }
+
+  .mailroom-section {
+    padding: 60px 0 75px;
+  }
+
+  .mailroom-service-content {
+    padding: 38px 40px;
+  }
+
+  .mailroom-service-image {
+    min-height: 300px;
+  }
+
+  .mailroom-service-image img {
+    min-height: 300px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 290px;
+  }
+
+  .mailroom-section {
+    padding: 55px 0 65px;
+  }
+
+  .mailroom-section-title {
+    margin-bottom: 50px;
+  }
+
+  .mailroom-section-title p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .mailroom-service-list {
+    gap: 35px;
+  }
+
+  .mailroom-service-content {
+    width: 52%;
+
+    padding: 32px;
+  }
+
+  .mailroom-service-content h3 {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .mailroom-service-image {
+    width: 48%;
+    min-height: 290px;
+  }
+
+  .mailroom-service-image img {
+    min-height: 290px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .mailroom-container {
+    width: calc(100% - 30px);
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 250px;
+  }
+
+  .mailroom-banner h1 {
+    margin: 0;
+
+    font-size: 32px;
+  }
+
+  .mailroom-breadcrumb {
+    display: none;
+  }
+
+  .mailroom-section {
+    padding: 45px 0 55px;
+  }
+
+  .mailroom-section-title {
+    margin-bottom: 40px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .mailroom-section-title p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+  .mailroom-service-list {
+    gap: 28px;
+  }
+
+  /* Mobile: image first, content second */
+  .mailroom-service-card,
+  .mailroom-service-card.mailroom-reverse {
+    flex-direction: column;
+  }
+
+  .mailroom-service-content {
+    width: 100%;
+
+    order: 2;
+
+    padding: 28px 24px 32px;
+  }
+
+  .mailroom-service-image {
+    width: 100%;
+
+    order: 1;
+
+    min-height: 0;
+    height: 270px;
+  }
+
+  .mailroom-service-image img {
+    width: 100%;
+    height: 270px;
+
+    min-height: 0;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .mailroom-container {
+    width: calc(100% - 24px);
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 220px;
+  }
+
+  .mailroom-banner h1 {
+    font-size: 29px;
+  }
+
+  .mailroom-section {
+    padding: 38px 0 45px;
+  }
+
+  .mailroom-section-title {
+    margin-bottom: 32px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 21px;
+  }
+
+  .mailroom-title-border {
+    margin-bottom: 20px;
+  }
+
+  .mailroom-section-title p {
+    font-size: 14px;
+  }
+
+  .mailroom-service-list {
+    gap: 24px;
+  }
+
+  .mailroom-service-card {
+    border-radius: 8px;
+  }
+
+  .mailroom-service-image,
+  .mailroom-service-image img {
+    height: 230px;
+  }
+
+  .mailroom-service-content {
+    padding: 24px 20px 28px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    margin-bottom: 18px;
+  }
+
+  .mailroom-service-content li {
+    padding-left: 22px;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+   <= 399px
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 195px;
+  }
+
+  .mailroom-banner h1 {
+    font-size: 26px;
+  }
+
+  .mailroom-section {
+    padding: 32px 0 40px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 20px;
+  }
+
+  .mailroom-section-title p {
+    font-size: 13.5px;
+  }
+
+  .mailroom-service-image,
+  .mailroom-service-image img {
+    height: 205px;
+  }
+
+  .mailroom-service-content {
+    padding: 22px 17px 25px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 19px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 13.5px;
+  }
+
+}
+
+
+/* =========================================================
+   BIG DESKTOP
+   Add this section at the END
+========================================================= */
+
+@media (min-width: 1199px) {
+
+  .mailroom-container {
+    width: min(1200px, calc(100% - 60px));
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 360px;
+    height: 750px;
+  }
+
+  .mailroom-banner h1 {
+    font-size: 52px;
+  }
+
+  .mailroom-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .mailroom-section-title {
+    max-width: 1080px;
+    margin-bottom: 70px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 36px;
+  }
+
+  .mailroom-section-title p {
+    max-width: 1020px;
+
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .mailroom-service-list {
+    gap: 60px;
+  }
+
+  .mailroom-service-card {
+    min-height: 370px;
+  }
+
+  .mailroom-service-content {
+    width: 55%;
+    padding: 50px 55px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 31px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .mailroom-service-image {
+    width: 45%;
+    min-height: 370px;
+  }
+
+  .mailroom-service-image img {
+    height: 370px;
+    min-height: 370px;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA LARGE DESKTOP
+   1440px+
+========================================================= */
+
+@media (min-width: 1440px) {
+
+  .mailroom-container {
+    width: 1240px;
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 390px;
+  }
+
+  .mailroom-section {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .mailroom-section-title {
+    max-width: 1120px;
+    margin-bottom: 75px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 38px;
+  }
+
+  .mailroom-section-title p {
+    font-size: 17px;
+  }
+
+  .mailroom-service-list {
+    gap: 65px;
+  }
+
+  .mailroom-service-card {
+    min-height: 400px;
+  }
+
+  .mailroom-service-content {
+    padding: 55px 60px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 33px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 17px;
+  }
+
+  .mailroom-service-image,
+  .mailroom-service-image img {
+    height: 400px;
+    min-height: 400px;
+  }
+
+}
+
+
+/* =========================================================
+   WIDE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .mailroom-container {
+    width: 1280px;
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 420px;
+  }
+
+  .mailroom-banner h1 {
+    font-size: 56px;
+  }
+
+  .mailroom-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 40px;
+  }
+
+  .mailroom-service-card {
+    min-height: 420px;
+  }
+
+  .mailroom-service-content {
+    padding: 60px 65px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 35px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 17px;
+  }
+
+  .mailroom-service-image {
+    height: 420px;
+    min-height: 420px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+  }
+
+}
+
+
+/* =========================================================
+   ULTRA WIDE
+   1920px+
+========================================================= */
+
+@media (min-width: 1200px)and(mix-width: 1920px) {
+
+  .mailroom-container {
+    width: 1320px;
+  }
+
+  .mailroom-banner,
+  .mailroom-banner-overlay {
+    min-height: 450px;
+  }
+
+  .mailroom-banner h1 {
+    font-size: 60px;
+  }
+
+  .mailroom-section {
+    padding-top: 110px;
+    padding-bottom: 130px;
+  }
+
+  .mailroom-section-title {
+    max-width: 1180px;
+  }
+
+  .mailroom-section-title h2 {
+    font-size: 42px;
+  }
+
+  .mailroom-section-title p {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  .mailroom-service-list {
+    gap: 75px;
+  }
+
+  .mailroom-service-card {
+    min-height: 440px;
+  }
+
+  .mailroom-service-content {
+    padding: 65px 75px;
+  }
+
+  .mailroom-service-content h3 {
+    font-size: 37px;
+  }
+
+  .mailroom-service-content li {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .mailroom-service-image {
+    height: 440px;
+    min-height: 440px;
+    margin-top: 100px;
+  }
+
+}

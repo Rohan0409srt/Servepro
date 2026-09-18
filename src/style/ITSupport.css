@@ -1,0 +1,694 @@
+/* =========================================================
+   IT SUPPORT OVERVIEW PAGE
+   UNIQUE CLASSES - it-overview-*
+   ========================================================= */
+
+.it-overview-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  color: #0b1957;
+}
+
+.it-overview-page *,
+.it-overview-page *::before,
+.it-overview-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BANNER
+   ========================================================= */
+
+.it-overview-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.it-overview-banner-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.it-overview-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #ffffff;
+}
+
+.it-overview-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.it-overview-intro {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.it-overview-intro h1 {
+  margin: 0;
+  padding: 0;
+  color: #0b1957;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.it-overview-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 25px auto 28px;
+  background: #0b1957;
+}
+
+.it-overview-intro p {
+  max-width: 1150px;
+  margin: 0 auto;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+   DESKTOP - 3 COLUMNS
+   ========================================================= */
+
+.it-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.it-overview-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.it-overview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(11, 25, 87, 0.16);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.it-overview-card-image {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.it-overview-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: transform 0.4s ease;
+}
+
+.it-overview-card:hover
+.it-overview-card-image img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.it-overview-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding: 30px 32px 34px;
+}
+
+.it-overview-card-content h2 {
+  margin: 0 0 16px;
+  color: #0b1957;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.it-overview-card-content ul {
+  flex: 1;
+  margin: 0;
+  padding-left: 23px;
+}
+
+.it-overview-card-content li {
+  margin: 0 0 8px;
+  color: #0b1957;
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.it-overview-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+.it-overview-card-content li::marker {
+  color: #0b1957;
+}
+
+
+/* =========================================================
+   1200 - 1439
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .it-overview-banner {
+    height: 750px;
+  }
+
+  .it-overview-section {
+    padding: 80px 0 95px;
+  }
+
+  .it-overview-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .it-overview-intro {
+    margin-bottom: 60px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 34px;
+  }
+
+  .it-overview-intro p {
+    font-size: 17px;
+  }
+
+  .it-overview-grid {
+    gap: 34px;
+  }
+
+  .it-overview-card-image {
+    height: 230px;
+  }
+
+  .it-overview-card-content {
+    padding: 26px 26px 30px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 21px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 14.5px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+   ========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .it-overview-banner {
+    height: 750px;
+  }
+
+  .it-overview-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .it-overview-section {
+    padding: 90px 0 105px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 36px;
+  }
+
+  .it-overview-intro p {
+    font-size: 18px;
+  }
+
+  .it-overview-grid {
+    gap: 38px;
+  }
+
+  .it-overview-card-image {
+    height: 250px;
+  }
+
+  .it-overview-card-content {
+    padding: 28px 28px 32px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 22px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   1600 - 1919
+   ========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .it-overview-banner {
+    height: 750px;
+  }
+
+  .it-overview-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .it-overview-section {
+    padding: 100px 0 115px;
+  }
+
+  .it-overview-intro {
+    max-width: 1250px;
+    margin-bottom: 75px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 40px;
+  }
+
+  .it-overview-intro p {
+    font-size: 19px;
+  }
+
+  .it-overview-grid {
+    gap: 44px;
+  }
+
+  .it-overview-card-image {
+    height: 280px;
+  }
+
+  .it-overview-card-content {
+    padding: 32px 34px 36px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 24px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+
+/* =========================================================
+   1920+
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+  .it-overview-banner {
+    height: 750px;
+  }
+
+  .it-overview-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .it-overview-section {
+    padding: 110px 0 125px;
+  }
+
+  .it-overview-intro {
+    max-width: 1350px;
+    margin-bottom: 85px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 43px;
+  }
+
+  .it-overview-border {
+    width: 80px;
+    height: 4px;
+    margin: 28px auto 32px;
+  }
+
+  .it-overview-intro p {
+    max-width: 1250px;
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .it-overview-grid {
+    gap: 50px;
+  }
+
+  .it-overview-card-image {
+    height: 300px;
+  }
+
+  .it-overview-card-content {
+    padding: 36px 38px 40px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 9px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 768 to 1199
+   2 COLUMNS
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .it-overview-banner {
+    height: 500px;
+  }
+
+  .it-overview-section {
+    padding: 70px 0 80px;
+  }
+
+  .it-overview-container {
+    width: calc(100% - 50px);
+  }
+
+  .it-overview-intro {
+    margin-bottom: 55px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .it-overview-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .it-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .it-overview-card-image {
+    height: 230px;
+  }
+
+  .it-overview-card-content {
+    padding: 26px 24px 30px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 21px;
+    margin-bottom: 14px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 14.5px;
+    line-height: 1.55;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 576 to 767
+   1 COLUMN
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .it-overview-banner {
+    height: 260px;
+  }
+
+  .it-overview-section {
+    padding: 50px 0 60px;
+  }
+
+  .it-overview-container {
+    width: calc(100% - 30px);
+  }
+
+  .it-overview-intro {
+    margin-bottom: 40px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .it-overview-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .it-overview-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .it-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .it-overview-card-image {
+    height: 270px;
+  }
+
+  .it-overview-card-content {
+    padding: 30px 25px 35px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 400 to 575
+   1 COLUMN
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .it-overview-banner {
+    height: 240px;
+  }
+
+  .it-overview-section {
+    padding: 45px 0 55px;
+  }
+
+  .it-overview-container {
+    width: calc(100% - 24px);
+  }
+
+  .it-overview-intro {
+    margin-bottom: 35px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .it-overview-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .it-overview-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .it-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .it-overview-card-image {
+    height: 230px;
+  }
+
+  .it-overview-card-content {
+    padding: 26px 20px 30px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - BELOW 400
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+  .it-overview-banner {
+    height: 210px;
+  }
+
+  .it-overview-section {
+    padding: 38px 0 45px;
+  }
+
+  .it-overview-container {
+    width: calc(100% - 20px);
+  }
+
+  .it-overview-intro {
+    margin-bottom: 30px;
+  }
+
+  .it-overview-intro h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .it-overview-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .it-overview-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .it-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .it-overview-card-image {
+    height: 205px;
+  }
+
+  .it-overview-card-content {
+    padding: 23px 17px 27px;
+  }
+
+  .it-overview-card-content h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .it-overview-card-content li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) {
+
+  .it-overview-card:hover {
+    transform: none;
+    box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+  }
+
+  .it-overview-card:hover
+  .it-overview-card-image img {
+    transform: none;
+  }
+}

@@ -1,0 +1,649 @@
+/* =========================================================
+   OTHER SERVICES
+========================================================= */
+
+.other-service-section {
+  width: 100%;
+  padding: 55px 0 60px;
+  background: #f3fbff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.other-service-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.other-service-heading h2 {
+  margin: 0;
+  color: #1f3365;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.other-service-heading span {
+  display: block;
+  width: 55px;
+  height: 2px;
+  margin: 14px auto 0;
+  background: #f79827;
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.other-service-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.other-service-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.other-service-track {
+  display: flex;
+  align-items: stretch;
+  width: max-content;
+  will-change: transform;
+}
+
+.other-service-slide {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.other-service-card {
+  width: 60%;
+  min-height: 145px;
+  margin-left: 80px;
+
+  padding: 25px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+  text-decoration: none;
+
+  background: #fff;
+  border: 1px solid #e8eef3;
+
+  box-sizing: border-box;
+
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.other-service-card:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(31, 51, 101, 0.1);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.other-service-icon {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #1f3365;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.other-service-icon img {
+  width: 62px;
+  height: 62px;
+
+  display: block;
+
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.other-service-content {
+  width: 100%;
+}
+
+.other-service-content h3 {
+  margin: 0;
+
+  color: #1f3365;
+
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.other-service-content p {
+  margin: 3px 0 0;
+
+  color: #949494;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.other-service-controls {
+  margin-top: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 22px;
+}
+
+.other-service-arrow {
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  border: 1px solid #1f3365;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #1f3365;
+
+  font-size: 27px;
+  line-height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.other-service-arrow:hover {
+  background: #1f3365;
+  color: #fff;
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.other-service-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.other-service-dot {
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #c8d3df;
+
+  cursor: pointer;
+
+  transition:
+    width 0.2s ease,
+    background 0.2s ease;
+}
+
+.other-service-dot.active {
+  width: 22px;
+
+  border-radius: 10px;
+
+  background: #f79827;
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+   1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .other-service-section {
+    padding: 55px 0 60px;
+  }
+
+  .other-service-card {
+    min-height: 145px;
+    padding: 23px 16px;
+  }
+
+  .other-service-icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .other-service-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .other-service-content h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .other-service-section {
+    padding: 50px 0 55px;
+  }
+
+  .other-service-heading {
+    margin-bottom: 32px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 27px;
+  }
+
+  .other-service-card {
+    min-height: 140px;
+    padding: 22px 14px;
+  }
+
+  .other-service-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .other-service-icon img {
+    width: 57px;
+    height: 57px;
+  }
+
+  .other-service-content h3 {
+    font-size: 15px;
+  }
+
+  .other-service-content p {
+    font-size: 13px;
+  }
+
+  .other-service-controls {
+    margin-top: 25px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .other-service-section {
+    padding: 45px 0 50px;
+  }
+
+  .other-service-heading {
+    margin-bottom: 30px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 26px;
+  }
+
+  .other-service-card {
+    min-height: 140px;
+    padding: 20px 12px;
+  }
+
+  .other-service-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
+  .other-service-icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .other-service-content h3 {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .other-service-content p {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .other-service-controls {
+    margin-top: 23px;
+    gap: 18px;
+  }
+
+  .other-service-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE LARGE
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .other-service-section {
+    padding: 42px 0 48px;
+  }
+
+  .other-service-heading {
+    margin-bottom: 27px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 25px;
+  }
+
+  .other-service-card {
+    min-height: 150px;
+    padding: 19px 10px;
+  }
+
+  .other-service-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 9px;
+  }
+
+  .other-service-icon img {
+    width: 53px;
+    height: 53px;
+  }
+
+  .other-service-content h3 {
+    font-size: 14px;
+  }
+
+  .other-service-content p {
+    font-size: 13px;
+  }
+
+  .other-service-controls {
+    margin-top: 22px;
+    gap: 15px;
+  }
+
+  .other-service-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .other-service-section {
+    padding: 40px 0 45px;
+  }
+
+  .other-service-heading {
+    margin-bottom: 25px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .other-service-heading span {
+    width: 50px;
+    margin-top: 12px;
+  }
+
+  .other-service-card {
+    min-height: 150px;
+    padding: 18px 8px;
+  }
+
+  .other-service-icon {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 9px;
+  }
+
+  .other-service-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .other-service-content h3 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .other-service-content p {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .other-service-controls {
+    margin-top: 22px;
+    gap: 15px;
+  }
+
+  .other-service-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 24px;
+  }
+
+  .other-service-dots {
+    gap: 6px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .other-service-section {
+    padding: 38px 0 43px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 23px;
+  }
+
+  .other-service-card {
+    min-height: 145px;
+    padding: 17px 7px;
+  }
+
+  .other-service-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .other-service-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .other-service-content h3 {
+    font-size: 13px;
+  }
+
+  .other-service-content p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .other-service-section {
+    padding: 35px 0 40px;
+  }
+
+  .other-service-heading {
+    margin-bottom: 22px;
+  }
+
+  .other-service-heading h2 {
+    font-size: 22px;
+  }
+
+  .other-service-card {
+    min-height: 140px;
+    padding: 15px 6px;
+  }
+
+  .other-service-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+  }
+
+  .other-service-icon img {
+    width: 47px;
+    height: 47px;
+  }
+
+  .other-service-content h3 {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .other-service-content p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .other-service-controls {
+    margin-top: 20px;
+  }
+
+  .other-service-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   <= 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .other-service-card {
+    min-height: 135px;
+    padding: 14px 5px;
+  }
+
+  .other-service-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .other-service-icon img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .other-service-content h3 {
+    font-size: 12px;
+  }
+
+  .other-service-content p {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .other-service-card,
+  .other-service-arrow,
+  .other-service-dot {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,898 @@
+/* =========================================================
+   GENERAL DISINFECTION PAGE
+========================================================= */
+
+.general-disinfection-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.general-disinfection-banner {
+  position: relative;
+
+  width: 100%;
+  height: 750px;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.general-disinfection-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.general-disinfection-section {
+  width: 100%;
+
+  padding: 90px 0 110px;
+
+  background: #ffffff;
+}
+
+.general-disinfection-container {
+  width: min(1400px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.general-disinfection-intro {
+  max-width: 1180px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+.general-disinfection-intro h1 {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.general-disinfection-border {
+  display: block;
+
+  width: 70px;
+  height: 3px;
+
+  margin: 25px auto 28px;
+
+  background: #0b1957;
+}
+
+.general-disinfection-intro p {
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  color: #0b1957;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.general-disinfection-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 45px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.general-disinfection-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  height: 490px;
+  min-height: 490px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 3px;
+
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   REVERSE CARD
+========================================================= */
+
+.general-disinfection-card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.general-disinfection-text {
+  flex: 0 0 55%;
+
+  width: 55%;
+  max-width: 55%;
+
+  height: 100%;
+
+  padding: 65px 70px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.general-disinfection-text h2 {
+  margin: 0 0 28px;
+
+  color: #0b1957;
+
+  font-size: 31px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.general-disinfection-text ul {
+  margin: 0;
+
+  padding-left: 24px;
+}
+
+.general-disinfection-text li {
+  margin-bottom: 15px;
+
+  color: #0b1957;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.general-disinfection-text li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.general-disinfection-image {
+  flex: 0 0 45%;
+
+  width: 45%;
+  max-width: 45%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.general-disinfection-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   1200 - 1439 PX
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .general-disinfection-banner {
+    height: 750px;
+  }
+
+  .general-disinfection-section {
+    padding: 80px 0 95px;
+  }
+
+  .general-disinfection-container {
+    width: min(1240px, calc(100% - 60px));
+  }
+
+  .general-disinfection-intro {
+    margin-bottom: 60px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 34px;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 17px;
+  }
+
+  .general-disinfection-card {
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .general-disinfection-text {
+    height: 400px;
+    padding: 50px 55px;
+  }
+
+  .general-disinfection-image {
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .general-disinfection-image img {
+    height: 400px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 28px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599 PX
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .general-disinfection-banner {
+    height: 750px;
+  }
+
+  .general-disinfection-section {
+    padding: 90px 0 105px;
+  }
+
+  .general-disinfection-container {
+    width: min(1340px, calc(100% - 70px));
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 36px;
+  }
+
+  .general-disinfection-card {
+    height: 430px;
+    min-height: 430px;
+  }
+
+  .general-disinfection-text {
+    height: 430px;
+    padding: 55px 65px;
+  }
+
+  .general-disinfection-image {
+    height: 430px;
+    min-height: 430px;
+  }
+
+  .general-disinfection-image img {
+    height: 430px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 30px;
+  }
+}
+
+
+/* =========================================================
+   1600 - 1919 PX
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .general-disinfection-banner {
+    height: 750px;
+  }
+
+  .general-disinfection-section {
+    padding: 100px 0 115px;
+  }
+
+  .general-disinfection-container {
+    width: min(1500px, calc(100% - 90px));
+  }
+
+  .general-disinfection-intro {
+    max-width: 1250px;
+
+    margin-bottom: 75px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 40px;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 19px;
+  }
+
+  .general-disinfection-card {
+    height: 460px;
+    min-height: 460px;
+  }
+
+  .general-disinfection-text {
+    height: 460px;
+    padding: 65px 75px;
+  }
+
+  .general-disinfection-image {
+    height: 460px;
+    min-height: 460px;
+  }
+
+  .general-disinfection-image img {
+    height: 460px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 32px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   1920 PX+
+========================================================= */
+
+@media (min-width: 1920px) {
+
+  .general-disinfection-banner {
+    height: 750px;
+  }
+
+  .general-disinfection-section {
+    padding: 110px 0 125px;
+  }
+
+  .general-disinfection-container {
+    width: min(1650px, calc(100% - 120px));
+  }
+
+  .general-disinfection-intro {
+    max-width: 1350px;
+
+    margin-bottom: 85px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 43px;
+  }
+
+  .general-disinfection-border {
+    width: 80px;
+    height: 4px;
+
+    margin: 28px auto 32px;
+  }
+
+  .general-disinfection-intro p {
+    max-width: 1250px;
+
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  .general-disinfection-list {
+    gap: 55px;
+  }
+
+  .general-disinfection-card {
+    height: 490px;
+    min-height: 490px;
+  }
+
+  .general-disinfection-text {
+    height: 490px;
+
+    padding: 70px 85px;
+  }
+
+  .general-disinfection-image {
+    height: 490px;
+    min-height: 490px;
+  }
+
+  .general-disinfection-image img {
+    height: 490px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 34px;
+
+    margin-bottom: 30px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 20px;
+
+    margin-bottom: 16px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768 - 1199 PX
+   SIDE BY SIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .general-disinfection-banner {
+    height: 500px;
+  }
+
+  .general-disinfection-section {
+    padding: 70px 0 80px;
+  }
+
+  .general-disinfection-container {
+    width: calc(100% - 50px);
+  }
+
+  .general-disinfection-intro {
+    margin-bottom: 55px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 30px;
+
+    line-height: 1.35;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  .general-disinfection-list {
+    gap: 35px;
+  }
+
+  .general-disinfection-card {
+    flex-direction: row;
+
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .general-disinfection-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .general-disinfection-text,
+  .general-disinfection-card.reverse .general-disinfection-text {
+    flex: 0 0 52%;
+
+    width: 52%;
+    max-width: 52%;
+
+    height: 320px;
+
+    padding: 40px 38px;
+  }
+
+  .general-disinfection-image,
+  .general-disinfection-card.reverse .general-disinfection-image {
+    flex: 0 0 48%;
+
+    width: 48%;
+    max-width: 48%;
+
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .general-disinfection-image img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+  }
+
+  .general-disinfection-text ul {
+    padding-left: 20px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   576 - 767 PX
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .general-disinfection-banner {
+    height: 260px;
+  }
+
+  .general-disinfection-section {
+    padding: 50px 0 60px;
+  }
+
+  .general-disinfection-container {
+    width: calc(100% - 30px);
+  }
+
+  .general-disinfection-intro {
+    margin-bottom: 40px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 25px;
+
+    line-height: 1.4;
+  }
+
+  .general-disinfection-border {
+    margin: 18px auto 22px;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+  }
+
+  .general-disinfection-list {
+    gap: 25px;
+  }
+
+  .general-disinfection-card,
+  .general-disinfection-card.reverse {
+    flex-direction: column;
+
+    width: 100%;
+
+    height: auto;
+    min-height: auto;
+  }
+
+  .general-disinfection-image,
+  .general-disinfection-card.reverse .general-disinfection-image {
+    order: 1;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 270px;
+    min-height: 270px;
+  }
+
+  .general-disinfection-image img {
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+  }
+
+  .general-disinfection-text,
+  .general-disinfection-card.reverse .general-disinfection-text {
+    order: 2;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    padding: 30px 25px 35px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 23px;
+
+    margin-bottom: 18px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    margin-bottom: 9px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   400 - 575 PX
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .general-disinfection-banner {
+    height: 240px;
+  }
+
+  .general-disinfection-section {
+    padding: 45px 0 55px;
+  }
+
+  .general-disinfection-container {
+    width: calc(100% - 24px);
+  }
+
+  .general-disinfection-intro {
+    margin-bottom: 35px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 22px;
+
+    line-height: 1.4;
+  }
+
+  .general-disinfection-border {
+    width: 55px;
+    height: 2px;
+
+    margin: 16px auto 20px;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+  }
+
+  .general-disinfection-list {
+    gap: 22px;
+  }
+
+  .general-disinfection-card,
+  .general-disinfection-card.reverse {
+    flex-direction: column;
+
+    height: auto;
+    min-height: auto;
+  }
+
+  .general-disinfection-image,
+  .general-disinfection-card.reverse .general-disinfection-image {
+    order: 1;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .general-disinfection-image img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+  }
+
+  .general-disinfection-text,
+  .general-disinfection-card.reverse .general-disinfection-text {
+    order: 2;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    padding: 26px 20px 30px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    margin-bottom: 16px;
+  }
+
+  .general-disinfection-text ul {
+    padding-left: 19px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 400 PX
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .general-disinfection-banner {
+    height: 210px;
+  }
+
+  .general-disinfection-section {
+    padding: 38px 0 45px;
+  }
+
+  .general-disinfection-container {
+    width: calc(100% - 20px);
+  }
+
+  .general-disinfection-intro {
+    margin-bottom: 30px;
+  }
+
+  .general-disinfection-intro h1 {
+    font-size: 20px;
+
+    line-height: 1.4;
+  }
+
+  .general-disinfection-border {
+    width: 50px;
+    height: 2px;
+
+    margin: 14px auto 18px;
+  }
+
+  .general-disinfection-intro p {
+    font-size: 13.5px;
+
+    line-height: 1.65;
+
+    text-align: justify;
+  }
+
+  .general-disinfection-list {
+    gap: 18px;
+  }
+
+  .general-disinfection-card,
+  .general-disinfection-card.reverse {
+    flex-direction: column;
+
+    height: auto;
+    min-height: auto;
+  }
+
+  .general-disinfection-image,
+  .general-disinfection-card.reverse .general-disinfection-image {
+    order: 1;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 205px;
+    min-height: 205px;
+  }
+
+  .general-disinfection-image img {
+    width: 100%;
+    height: 205px;
+
+    object-fit: cover;
+  }
+
+  .general-disinfection-text,
+  .general-disinfection-card.reverse .general-disinfection-text {
+    order: 2;
+
+    flex: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    padding: 23px 17px 27px;
+  }
+
+  .general-disinfection-text h2 {
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    margin-bottom: 14px;
+  }
+
+  .general-disinfection-text ul {
+    padding-left: 18px;
+  }
+
+  .general-disinfection-text li {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,616 @@
+/* =========================================================
+   GUEST HOUSE MANAGEMENT
+========================================================= */
+
+.guest-house-management-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.guest-house-management-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.guest-house-management-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.guest-house-management-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.guest-house-management-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.guest-house-management-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.guest-house-management-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.guest-house-management-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.guest-house-management-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.guest-house-management-card {
+  width: 100%;
+  min-height: 490px;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.guest-house-management-card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.guest-house-management-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guest-house-management-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.guest-house-management-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.guest-house-management-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.guest-house-management-text li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.guest-house-management-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.guest-house-management-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .guest-house-management-section {
+    padding: 100px 0 115px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .guest-house-management-intro {
+    max-width: 1250px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 40px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 19px;
+  }
+
+  .guest-house-management-list {
+    gap: 50px;
+  }
+
+  .guest-house-management-card {
+    min-height: 460px;
+  }
+
+  .guest-house-management-text {
+    padding: 65px 75px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 32px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 19px;
+  }
+
+  .guest-house-management-image {
+    height: 460px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .guest-house-management-section {
+    padding: 90px 0 105px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 36px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 18px;
+  }
+
+  .guest-house-management-list {
+    gap: 48px;
+  }
+
+  .guest-house-management-card {
+    min-height: 430px;
+  }
+
+  .guest-house-management-text {
+    padding: 55px 65px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 30px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 18px;
+  }
+
+  .guest-house-management-image {
+    height: 430px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .guest-house-management-section {
+    padding: 80px 0 95px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 34px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 17px;
+  }
+
+  .guest-house-management-list {
+    gap: 45px;
+  }
+
+  .guest-house-management-card {
+    min-height: 400px;
+  }
+
+  .guest-house-management-text {
+    padding: 50px 55px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 28px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 17px;
+  }
+
+  .guest-house-management-image {
+    height: 400px;
+  }
+}
+
+
+/* =========================================================
+   768 - 1199
+   SIDE BY SIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .guest-house-management-banner {
+    height: 500px;
+  }
+
+  .guest-house-management-section {
+    padding: 70px 0 80px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .guest-house-management-intro {
+    margin-bottom: 55px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .guest-house-management-border {
+    margin: 18px auto 22px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .guest-house-management-list {
+    gap: 35px;
+  }
+
+  .guest-house-management-card,
+  .guest-house-management-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .guest-house-management-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .guest-house-management-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .guest-house-management-text ul {
+    padding-left: 19px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .guest-house-management-banner {
+    height: 260px;
+  }
+
+  .guest-house-management-section {
+    padding: 50px 0 60px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 30px);
+  }
+
+  .guest-house-management-intro {
+    margin-bottom: 40px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .guest-house-management-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .guest-house-management-list {
+    gap: 25px;
+  }
+
+  .guest-house-management-card,
+  .guest-house-management-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .guest-house-management-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .guest-house-management-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .guest-house-management-banner {
+    height: 240px;
+  }
+
+  .guest-house-management-section {
+    padding: 45px 0 55px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 24px);
+  }
+
+  .guest-house-management-intro {
+    margin-bottom: 35px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .guest-house-management-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .guest-house-management-list {
+    gap: 22px;
+  }
+
+  .guest-house-management-card,
+  .guest-house-management-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .guest-house-management-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .guest-house-management-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .guest-house-management-text ul {
+    padding-left: 18px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* =========================================================
+   BELOW 400
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .guest-house-management-banner {
+    height: 210px;
+  }
+
+  .guest-house-management-section {
+    padding: 38px 0 45px;
+  }
+
+  .guest-house-management-container {
+    width: calc(100% - 20px);
+  }
+
+  .guest-house-management-intro {
+    margin-bottom: 30px;
+  }
+
+  .guest-house-management-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .guest-house-management-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .guest-house-management-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .guest-house-management-list {
+    gap: 18px;
+  }
+
+  .guest-house-management-card,
+  .guest-house-management-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .guest-house-management-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .guest-house-management-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .guest-house-management-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .guest-house-management-text ul {
+    padding-left: 17px;
+  }
+
+  .guest-house-management-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

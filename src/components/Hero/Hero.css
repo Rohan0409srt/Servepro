@@ -1,0 +1,407 @@
+/* =====================================================
+   SERVEPRO HERO SLIDER
+===================================================== */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   SLIDER WRAPPER
+===================================================== */
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   SLIDER TRACK
+===================================================== */
+
+.hero-slider-track {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  will-change: transform;
+}
+
+
+/* =====================================================
+   INDIVIDUAL SLIDE
+===================================================== */
+
+.hero-slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 80%;
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1200px) {
+
+  .hero-slide img {
+    width: 100%;
+    height: 750px;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .hero-slide img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 600;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+/* =====================================================
+   TABLET LANDSCAPE / PORTRAIT
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .hero-slide {
+    min-height: 0;
+  }
+
+  .hero-slide img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 600;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .hero-slider {
+    width: 100%;
+     height: 200px;
+     margin-bottom: 0%;
+     padding-bottom: 0%;
+  }
+
+  .hero-slide {
+    min-height: 0;
+  }
+
+  .hero-slide img {
+    width: 100%;
+     height: 200px;
+    min-height: 0;
+    aspect-ratio: 1920 / 600;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 575px) {
+
+  .hero-slide {
+    min-height: 0;
+  }
+
+  .hero-slide img {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-slide img {
+    height: 520px;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+  .hero-slide {
+    height: 230px;
+  }
+
+  .hero-slide img {
+    height: 230px;
+  }
+}
+/* =====================================================
+   SLIDER ARROWS
+===================================================== */
+
+.hero-slider-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: #ffffff;
+  background: rgba(31, 51, 101, 0.75);
+
+  border: 0;
+  border-radius: 0;
+
+  cursor: pointer;
+
+  transform: translateY(-50%);
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* =====================================================
+   LEFT ARROW
+===================================================== */
+
+.hero-slider-prev {
+  left: 20px;
+}
+
+
+/* =====================================================
+   RIGHT ARROW
+===================================================== */
+
+.hero-slider-next {
+  right: 20px;
+}
+
+
+/* =====================================================
+   ARROW ICON
+===================================================== */
+
+.hero-slider-arrow span {
+  display: block;
+  margin-top: -4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+/* =====================================================
+   HOVER
+   Arrow does NOT become orange
+===================================================== */
+
+.hero-slider-arrow:hover {
+  color: #ffffff;
+  background: rgba(31, 51, 101, 0.75);
+}
+
+
+/* =====================================================
+   ONLY CLICKED ARROW BECOMES ORANGE
+===================================================== */
+
+.hero-slider-arrow.active {
+  color: #ffffff;
+  background: #f79827;
+}
+
+
+/* =====================================================
+   ARROW FOCUS
+===================================================== */
+
+.hero-slider-arrow:focus-visible {
+  outline: 2px solid #f79827;
+  outline-offset: 3px;
+}
+
+
+/* =====================================================
+   TABLET ARROWS
+===================================================== */
+
+@media (max-width: 991px) {
+
+  .hero-slider-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero-slider-prev {
+    left: 15px;
+  }
+
+  .hero-slider-next {
+    right: 15px;
+  }
+
+  .hero-slider-arrow span {
+    font-size: 36px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE ARROWS
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .hero-slider-arrow {
+    width: 38px;
+    height: 38px;
+    background: rgba(31, 51, 101, 0.78);
+  }
+
+  .hero-slider-prev {
+    left: 10px;
+  }
+
+  .hero-slider-next {
+    right: 10px;
+  }
+
+  .hero-slider-arrow span {
+    font-size: 32px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE ARROWS
+===================================================== */
+
+@media (max-width: 575px) {
+
+  .hero-slider-arrow {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-slider-prev {
+    left: 7px;
+  }
+
+  .hero-slider-next {
+    right: 7px;
+  }
+
+  .hero-slider-arrow span {
+    font-size: 29px;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+  .hero-slider-arrow {
+    width: 31px;
+    height: 31px;
+  }
+
+  .hero-slider-prev {
+    left: 5px;
+  }
+
+  .hero-slider-next {
+    right: 5px;
+  }
+
+  .hero-slider-arrow span {
+    font-size: 26px;
+  }
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-slider-track {
+    transition: none !important;
+  }
+
+  .hero-slider-arrow {
+    transition: none !important;
+  }
+}

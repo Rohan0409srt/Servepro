@@ -1,0 +1,1580 @@
+/* =========================================================
+   SERVEPRO - SERVICES PAGE
+   FULL RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   1. BASE
+========================================================= */
+
+.services-page {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.services-page *,
+.services-page *::before,
+.services-page *::after {
+    box-sizing: border-box;
+}
+
+.services-page img {
+    max-width: 100%;
+}
+
+.services-page a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. COMMON
+========================================================= */
+
+.services-page .container {
+    width: 100%;
+}
+
+
+/* =========================================================
+   3. PAGE BANNER
+========================================================= */
+
+.services-page .services-page-banner {
+    width: 100%;
+    min-height: 580px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* =========================================================
+   4. SERVICES INTRO
+========================================================= */
+
+.services-page .services-intro {
+    width: 100%;
+
+    padding: 55px 0 50px;
+
+    background: #ffffff;
+}
+
+.services-page .services-intro .sec-title {
+    width: 100%;
+
+    margin: 0 0 30px;
+
+    text-align: center;
+}
+
+.services-page .services-intro .sec-title h1 {
+    margin: 0;
+
+    color: #1F3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+.services-page .services-intro .sec-title .border {
+    display: block;
+
+    width: 65px;
+    height: 2px;
+
+    margin: 12px auto 0;
+
+    background: #1F3365;
+}
+
+.services-page .services-intro .para-text {
+    max-width: 1000px;
+
+    margin: 0 auto 15px;
+
+    color: #002f75;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 25px;
+
+    text-align: center;
+}
+
+.services-page .services-intro .para-text:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   5. DESKTOP SERVICES
+   995PX AND ABOVE
+========================================================= */
+
+.services-page .desktop-services {
+    display: block;
+
+    width: 100%;
+
+    padding: 55px 0 60px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   DESKTOP SERVICE GRID
+   EXACTLY 5 CARDS
+========================================================= */
+
+.services-page .service-desktop-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   DESKTOP CARD
+========================================================= */
+
+.services-page .desktop-service-card {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+.services-page .desktop-service-card .single-service-item {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   COMMON SERVICE CARD
+========================================================= */
+
+.services-page .service-card-inner {
+    position: relative;
+
+    width: 100%;
+
+    overflow: visible;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 22px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.services-page .desktop-service-card:hover .service-card-inner,
+.services-page .service-slide-card:hover .service-card-inner {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 13px 30px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.services-page .service-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 18px 18px 0 0;
+}
+
+.services-page .service-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    /*
+       Keep complete image visible.
+       No crop.
+    */
+    object-fit: fill;
+
+    object-position: center;
+
+    border-radius: 18px 18px 0 0;
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.services-page .service-content {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 32px 12px 18px;
+
+    background: #ffffff;
+
+    border-radius: 0 0 18px 18px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+   CENTERED AT IMAGE / CONTENT BOUNDARY
+========================================================= */
+
+.services-page .floating-icon {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    padding: 4px;
+
+    background: #F79827;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+.services-page .floating-icon img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.services-page .service-content .title-holder {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.services-page .service-content .title-holder a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 35px;
+}
+
+.services-page .service-content h3 {
+    width: 100%;
+
+    margin: 0;
+
+    color: #082E70;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    transition: color 0.25s ease;
+}
+
+.services-page .service-content a:hover h3 {
+    color: #F79827;
+}
+
+
+/* =========================================================
+   REMOVE OLD BOOTSTRAP GRID BEHAVIOR
+========================================================= */
+
+.services-page .desktop-services .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.services-page .desktop-services [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* =========================================================
+   6. MOBILE / TABLET SERVICES
+   994PX AND BELOW
+========================================================= */
+
+.services-page .mobile-services {
+    display: none;
+
+    width: 100%;
+
+    padding: 50px 0 55px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   MOBILE SERVICES HEADING
+========================================================= */
+
+.services-page .mobile-services .sec-title {
+    width: 100%;
+
+    margin: 0 0 35px;
+
+    text-align: center;
+}
+
+.services-page .mobile-services .sec-title h1 {
+    margin: 0 0 12px;
+
+    color: #1F3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+.services-page .mobile-services .sec-title .para-text {
+    max-width: 700px;
+
+    margin: 0 auto 12px;
+
+    color: #002f75;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 23px;
+
+    text-align: center;
+}
+
+.services-page .mobile-services .sec-title .border {
+    display: block;
+
+    width: 60px;
+    height: 2px;
+
+    margin: 0 auto;
+
+    background: #1F3365;
+}
+
+
+/* =========================================================
+   7. RESPONSIVE SERVICE SLIDER
+========================================================= */
+
+.services-page .responsive-service-slider {
+    position: relative;
+
+    width: 100%;
+
+    padding: 0 50px;
+}
+
+
+/* =========================================================
+   SLIDER VIEWPORT
+========================================================= */
+
+.services-page .service-slider-viewport {
+    width: 100%;
+
+    overflow: hidden;
+
+    touch-action: pan-y;
+
+    border-radius: 18px;
+}
+
+
+/* =========================================================
+   SLIDER TRACK
+========================================================= */
+
+.services-page .service-slider-track {
+    display: flex;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    transition: transform 0.45s ease;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.services-page .service-slider-slide {
+    min-width: 0;
+
+    padding: 0 10px;
+}
+
+
+/* =========================================================
+   SLIDER CARD
+========================================================= */
+
+.services-page .service-slide-card {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SLIDER IMAGE
+========================================================= */
+
+.services-page .service-slide-card .service-image {
+    height: 300px;
+}
+
+
+/* =========================================================
+   SLIDER CONTENT
+========================================================= */
+
+.services-page .service-slide-card .service-content {
+    min-height: 105px;
+
+    padding: 32px 15px 18px;
+}
+
+.services-page .service-slide-card .service-content h3 {
+    font-size: 18px;
+
+    line-height: 24px;
+}
+
+
+/* =========================================================
+   SLIDER ARROWS
+========================================================= */
+
+.services-page .service-slider-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1F3365;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.services-page .service-slider-arrow:hover {
+    background: #F79827;
+
+    transform: translateY(-50%) scale(1.05);
+}
+
+.services-page .service-slider-prev {
+    left: 0;
+}
+
+.services-page .service-slider-next {
+    right: 0;
+}
+
+
+/* =========================================================
+   SLIDER DOTS
+========================================================= */
+
+.services-page .service-slider-dots {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+.services-page .service-slider-dots button {
+    display: block;
+
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #c9c9c9;
+
+    cursor: pointer;
+
+    transition:
+        width 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.services-page .service-slider-dots button.active {
+    width: 25px;
+
+    border-radius: 10px;
+
+    background: #F79827;
+}
+
+
+/* =========================================================
+   8. BRAND AREA
+========================================================= */
+
+.services-page .services-brand-area {
+    width: 100%;
+
+    padding: 35px 0;
+
+    background: #e3eef1;
+
+    overflow: hidden;
+}
+
+.services-page .services-brand-slider {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.services-page .services-brand-track {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    width: max-content;
+
+    animation: servicesBrandSlide 35s linear infinite;
+
+    will-change: transform;
+}
+
+.services-page .services-brand-logo {
+    flex: 0 0 180px;
+
+    width: 180px;
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(31, 51, 101, 0.08);
+}
+
+.services-page .services-brand-logo img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 75px;
+
+    object-fit: contain;
+}
+
+@keyframes servicesBrandSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.services-page .services-brand-slider:hover .services-brand-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================================
+   9. DESKTOP — 1400PX+
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .services-page .services-page-banner {
+        min-height: 720px;
+    }
+
+    .services-page .services-intro {
+        padding: 60px 0 55px;
+    }
+
+    .services-page .service-desktop-grid {
+        gap: 28px;
+    }
+
+    .services-page .service-image {
+        height: 245px;
+    }
+
+    .services-page .service-content {
+        min-height: 110px;
+
+        padding: 34px 15px 20px;
+    }
+
+    .services-page .service-content h3 {
+        font-size: 17px;
+    }
+
+    .services-page .floating-icon {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+
+/* =========================================================
+   10. LARGE LAPTOP — 1200PX - 1399PX
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .services-page .services-page-banner {
+        min-height: 390px;
+    }
+
+    .services-page .services-intro {
+        padding: 55px 0 50px;
+    }
+
+    .services-page .service-desktop-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .services-page .service-image {
+        height: 225px;
+    }
+
+    .services-page .service-content {
+        min-height: 100px;
+
+        padding: 30px 10px 16px;
+    }
+
+    .services-page .floating-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .services-page .service-content h3 {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   11. 995PX - 1199PX
+   NORMAL 5 SERVICES
+========================================================= */
+
+@media (min-width: 995px) and (max-width: 1199px) {
+
+    .services-page .services-page-banner {
+        min-height: 350px;
+    }
+
+    .services-page .services-intro {
+        padding: 50px 0 45px;
+    }
+
+    .services-page .services-intro .sec-title h1 {
+        font-size: 30px;
+    }
+
+    .services-page .services-intro .para-text {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+
+    /* 5 cards */
+
+    .services-page .service-desktop-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+    .services-page .desktop-services {
+        padding: 45px 0 50px;
+    }
+
+    .services-page .service-image {
+        height: 205px;
+    }
+
+    .services-page .service-content {
+        min-height: 92px;
+
+        padding: 28px 7px 14px;
+    }
+
+    .services-page .floating-icon {
+        width: 55px;
+        height: 55px;
+
+        padding: 3px;
+
+        border-width: 2px;
+
+        border-radius: 9px;
+    }
+
+    .services-page .service-content h3 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+
+/* =========================================================
+   12. TABLET — 768PX - 994PX
+   SLIDER / 2 CARDS
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 994px) {
+
+    /* Hide desktop */
+
+    .services-page .desktop-services {
+        display: none;
+    }
+
+
+    /* Show slider */
+
+    .services-page .mobile-services {
+        display: block;
+
+        padding: 50px 0 55px;
+    }
+
+
+    /* Banner */
+
+    .services-page .services-page-banner {
+        min-height: 320px;
+    }
+
+
+    /* Intro */
+
+    .services-page .services-intro {
+        padding: 50px 0 45px;
+    }
+
+    .services-page .services-intro .sec-title h1 {
+        font-size: 30px;
+    }
+
+    .services-page .services-intro .para-text {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+
+    /* Mobile section heading */
+
+    .services-page .mobile-services .sec-title h1 {
+        font-size: 26px;
+    }
+
+    .services-page .mobile-services .sec-title .para-text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    /* Slider */
+
+    .services-page .responsive-service-slider {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .services-page .service-slider-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .services-page .service-slide-card .service-image {
+        height: 285px;
+    }
+
+    .services-page .service-slide-card .service-content {
+        min-height: 100px;
+
+        padding: 31px 12px 17px;
+    }
+
+    .services-page .service-slide-card .service-content h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .services-page .floating-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+
+    /* Arrows */
+
+    .services-page .service-slider-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 18px;
+    }
+
+
+    /* Brand */
+
+    .services-page .services-brand-area {
+        padding: 35px 0;
+    }
+
+    .services-page .services-brand-track {
+        gap: 20px;
+
+        animation-duration: 30s;
+    }
+
+    .services-page .services-brand-logo {
+        flex-basis: 160px;
+
+        width: 160px;
+        height: 90px;
+
+        padding: 10px 15px;
+    }
+
+    .services-page .services-brand-logo img {
+        max-height: 65px;
+    }
+}
+
+
+/* =========================================================
+   13. MOBILE — <= 767PX
+   SLIDER / 1 CARD
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Hide desktop */
+
+    .services-page .desktop-services {
+        display: none;
+    }
+
+
+    /* Show slider */
+
+    .services-page .mobile-services {
+        display: block;
+    }
+
+
+    /* Container */
+
+    .services-page .container {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* Banner */
+
+    .services-page .services-page-banner {
+        min-height: 270px;
+
+        background-position: center center;
+    }
+
+
+    /* Intro */
+
+    .services-page .services-intro {
+        padding: 42px 0 40px;
+    }
+
+    .services-page .services-intro .sec-title {
+        margin-bottom: 25px;
+    }
+
+    .services-page .services-intro .sec-title h1 {
+        font-size: 27px;
+        line-height: 34px;
+    }
+
+    .services-page .services-intro .para-text {
+        font-size: 13px;
+        line-height: 23px;
+
+        text-align: center;
+    }
+
+
+    /* Mobile section */
+
+    .services-page .mobile-services {
+        padding: 40px 0 45px;
+    }
+
+    .services-page .mobile-services .sec-title {
+        margin-bottom: 28px;
+    }
+
+    .services-page .mobile-services .sec-title h1 {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .services-page .mobile-services .sec-title .para-text {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    /* Slider */
+
+    .services-page .responsive-service-slider {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    .services-page .service-slider-slide {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+
+    /* One card */
+
+    .services-page .service-slide-card {
+        width: 100%;
+    }
+
+    .services-page .service-slide-card .service-image {
+        height: 245px;
+
+        border-radius: 16px 16px 0 0;
+    }
+
+    .services-page .service-slide-card .service-image img {
+        border-radius: 16px 16px 0 0;
+    }
+
+
+    /* Content */
+
+    .services-page .service-slide-card .service-content {
+        min-height: 90px;
+
+        padding: 29px 10px 15px;
+
+        border-radius: 0 0 16px 16px;
+    }
+
+    .services-page .service-slide-card .service-content h3 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+
+    /* Icon */
+
+    .services-page .service-slide-card .floating-icon {
+        width: 52px;
+        height: 52px;
+
+        padding: 3px;
+
+        border-width: 2px;
+
+        border-radius: 8px;
+    }
+
+
+    /* Arrows */
+
+    .services-page .service-slider-arrow {
+        width: 36px;
+        height: 36px;
+
+        font-size: 17px;
+    }
+
+
+    /* Dots */
+
+    .services-page .service-slider-dots {
+        margin-top: 22px;
+
+        gap: 7px;
+    }
+
+    .services-page .service-slider-dots button {
+        width: 8px;
+        height: 8px;
+    }
+
+    .services-page .service-slider-dots button.active {
+        width: 22px;
+    }
+
+
+    /* Brand */
+
+    .services-page .services-brand-area {
+        padding: 30px 0;
+    }
+
+    .services-page .services-brand-track {
+        gap: 15px;
+
+        animation-duration: 25s;
+    }
+
+    .services-page .services-brand-logo {
+        flex-basis: 135px;
+
+        width: 135px;
+        height: 80px;
+
+        padding: 8px 12px;
+    }
+
+    .services-page .services-brand-logo img {
+        max-height: 58px;
+    }
+}
+
+
+/* =========================================================
+   14. SMALL MOBILE — <= 480PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .services-page .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    /* Banner */
+
+    .services-page .services-page-banner {
+        min-height: 220px;
+    }
+
+
+    /* Intro */
+
+    .services-page .services-intro {
+        padding: 35px 0 35px;
+    }
+
+    .services-page .services-intro .sec-title h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .services-page .services-intro .para-text {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+
+
+    /* Mobile services */
+
+    .services-page .mobile-services {
+        padding: 35px 0 40px;
+    }
+
+    .services-page .mobile-services .sec-title h1 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .services-page .mobile-services .sec-title .para-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    /* Slider */
+
+    .services-page .responsive-service-slider {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .services-page .service-slider-slide {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+
+    /* Card */
+
+    .services-page .service-slide-card .service-image {
+        height: 210px;
+
+        border-radius: 15px 15px 0 0;
+    }
+
+    .services-page .service-slide-card .service-image img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .services-page .service-slide-card .service-content {
+        min-height: 78px;
+
+        padding: 26px 7px 12px;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    .services-page .service-slide-card .service-content h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    /* Icon */
+
+    .services-page .service-slide-card .floating-icon {
+        width: 46px;
+        height: 46px;
+
+        padding: 2px;
+
+        border-radius: 7px;
+    }
+
+
+    /* Arrows */
+
+    .services-page .service-slider-arrow {
+        width: 32px;
+        height: 32px;
+
+        font-size: 15px;
+    }
+
+
+    /* Brand */
+
+    .services-page .services-brand-track {
+        gap: 10px;
+    }
+
+    .services-page .services-brand-logo {
+        flex-basis: 105px;
+
+        width: 105px;
+        height: 65px;
+
+        padding: 6px 8px;
+    }
+
+    .services-page .services-brand-logo img {
+        max-height: 46px;
+    }
+}
+
+
+/* =========================================================
+   15. VERY SMALL MOBILE — <= 360PX
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .services-page .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    /* Banner */
+
+    .services-page .services-page-banner {
+        min-height: 190px;
+    }
+
+
+    /* Intro */
+
+    .services-page .services-intro {
+        padding: 30px 0;
+    }
+
+    .services-page .services-intro .sec-title h1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .services-page .services-intro .para-text {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+
+    /* Mobile heading */
+
+    .services-page .mobile-services {
+        padding: 30px 0 35px;
+    }
+
+    .services-page .mobile-services .sec-title h1 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .services-page .mobile-services .sec-title .para-text {
+        font-size: 11.5px;
+        line-height: 19px;
+    }
+
+
+    /* Slider */
+
+    .services-page .responsive-service-slider {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+
+    .services-page .service-slider-slide {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+
+    /* Card */
+
+    .services-page .service-slide-card .service-image {
+        height: 180px;
+
+        border-radius: 14px 14px 0 0;
+    }
+
+    .services-page .service-slide-card .service-image img {
+        border-radius: 14px 14px 0 0;
+    }
+
+    .services-page .service-slide-card .service-content {
+        min-height: 70px;
+
+        padding: 23px 5px 9px;
+
+        border-radius: 0 0 14px 14px;
+    }
+
+    .services-page .service-slide-card .service-content h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+    /* Icon */
+
+    .services-page .service-slide-card .floating-icon {
+        width: 40px;
+        height: 40px;
+
+        padding: 2px;
+
+        border-radius: 6px;
+    }
+
+
+    /* Arrows */
+
+    .services-page .service-slider-arrow {
+        width: 29px;
+        height: 29px;
+
+        font-size: 13px;
+    }
+
+
+    /* Dots */
+
+    .services-page .service-slider-dots {
+        margin-top: 18px;
+    }
+
+
+    /* Brand */
+
+    .services-page .services-brand-logo {
+        flex-basis: 95px;
+
+        width: 95px;
+        height: 60px;
+
+        padding: 5px 7px;
+    }
+
+    .services-page .services-brand-logo img {
+        max-height: 42px;
+    }
+}
+
+
+/* =========================================================
+   16. LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-width: 767px) and (orientation: landscape) {
+
+    .services-page .services-page-banner {
+        min-height: 240px;
+    }
+
+    .services-page .service-slide-card .service-image {
+        height: 220px;
+    }
+}
+
+
+/* =========================================================
+   17. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .services-page .service-card-inner,
+    .services-page .service-slider-track,
+    .services-page .service-slider-arrow,
+    .services-page .service-slider-dots button,
+    .services-page .service-content h3 {
+        transition: none;
+    }
+
+    .services-page .services-brand-track {
+        animation: none;
+        transform: translateX(0);
+    }
+}
+/* =========================================================
+   999PX+
+   NORMAL 5 SERVICES
+========================================================= */
+
+@media (min-width: 999px) {
+
+    .services-page .desktop-services {
+        display: block;
+    }
+
+    .services-page .mobile-services {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   768PX - 998PX
+   3 CARD SLIDER
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 998px) {
+
+    .services-page .desktop-services {
+        display: none;
+    }
+
+    .services-page .mobile-services {
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   400PX - 767PX
+   2 CARD SLIDER
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 767px) {
+
+    .services-page .desktop-services {
+        display: none;
+    }
+
+    .services-page .mobile-services {
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   0PX - 399PX
+   1 CARD SLIDER
+========================================================= */
+
+@media (max-width: 399px) {
+
+    .services-page .desktop-services {
+        display: none;
+    }
+
+    .services-page .mobile-services {
+        display: block;
+    }
+}

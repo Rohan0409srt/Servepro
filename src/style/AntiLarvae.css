@@ -1,0 +1,615 @@
+/* =========================================================
+   ANTI-LARVAE TREATMENT PAGE
+   Same responsive structure as existing service pages
+========================================================= */
+
+.anti-larvae-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.anti-larvae-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.anti-larvae-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.anti-larvae-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.anti-larvae-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.anti-larvae-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.anti-larvae-intro h1 {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.anti-larvae-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #222;
+}
+
+.anti-larvae-intro p {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.anti-larvae-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.anti-larvae-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.anti-larvae-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.anti-larvae-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anti-larvae-text h2 {
+  margin: 0 0 28px;
+  color:#0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.anti-larvae-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.anti-larvae-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.anti-larvae-text li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.anti-larvae-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.anti-larvae-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .anti-larvae-section {
+    padding: 100px 0 115px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .anti-larvae-intro {
+    max-width: 1250px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 40px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 19px;
+  }
+
+  .anti-larvae-service-list {
+    gap: 50px;
+  }
+
+  .anti-larvae-card {
+    min-height: 460px;
+  }
+
+  .anti-larvae-text {
+    padding: 65px 75px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 32px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 19px;
+  }
+
+  .anti-larvae-image {
+    height: 460px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .anti-larvae-section {
+    padding: 90px 0 105px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 36px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 18px;
+  }
+
+  .anti-larvae-service-list {
+    gap: 48px;
+  }
+
+  .anti-larvae-card {
+    min-height: 430px;
+  }
+
+  .anti-larvae-text {
+    padding: 55px 65px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 30px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 18px;
+  }
+
+  .anti-larvae-image {
+    height: 430px;
+  }
+}
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .anti-larvae-section {
+    padding: 80px 0 95px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 34px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 17px;
+  }
+
+  .anti-larvae-service-list {
+    gap: 45px;
+  }
+
+  .anti-larvae-card {
+    min-height: 400px;
+  }
+
+  .anti-larvae-text {
+    padding: 50px 55px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 28px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 17px;
+  }
+
+  .anti-larvae-image {
+    height: 400px;
+  }
+}
+
+/* =========================================================
+   768 - 1199
+   IMPORTANT: SIDE BY SIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .anti-larvae-banner {
+    height: 500px;
+  }
+
+  .anti-larvae-section {
+    padding: 70px 0 80px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .anti-larvae-intro {
+    margin-bottom: 55px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .anti-larvae-border {
+    margin: 18px auto 22px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .anti-larvae-service-list {
+    gap: 35px;
+  }
+
+  .anti-larvae-card,
+  .anti-larvae-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .anti-larvae-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .anti-larvae-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .anti-larvae-text ul {
+    padding-left: 19px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+/* =========================================================
+   576 - 767
+   MOBILE / TABLET
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .anti-larvae-banner {
+    height: 260px;
+  }
+
+  .anti-larvae-section {
+    padding: 50px 0 60px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 30px);
+  }
+
+  .anti-larvae-intro {
+    margin-bottom: 40px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .anti-larvae-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .anti-larvae-service-list {
+    gap: 25px;
+  }
+
+  .anti-larvae-card,
+  .anti-larvae-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .anti-larvae-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .anti-larvae-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .anti-larvae-banner {
+    height: 240px;
+  }
+
+  .anti-larvae-section {
+    padding: 45px 0 55px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 24px);
+  }
+
+  .anti-larvae-intro {
+    margin-bottom: 35px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .anti-larvae-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .anti-larvae-service-list {
+    gap: 22px;
+  }
+
+  .anti-larvae-card,
+  .anti-larvae-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .anti-larvae-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .anti-larvae-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .anti-larvae-text ul {
+    padding-left: 18px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+/* =========================================================
+   BELOW 400
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .anti-larvae-banner {
+    height: 210px;
+  }
+
+  .anti-larvae-section {
+    padding: 38px 0 45px;
+  }
+
+  .anti-larvae-container {
+    width: calc(100% - 20px);
+  }
+
+  .anti-larvae-intro {
+    margin-bottom: 30px;
+  }
+
+  .anti-larvae-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .anti-larvae-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .anti-larvae-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .anti-larvae-service-list {
+    gap: 18px;
+  }
+
+  .anti-larvae-card,
+  .anti-larvae-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .anti-larvae-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .anti-larvae-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .anti-larvae-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .anti-larvae-text ul {
+    padding-left: 17px;
+  }
+
+  .anti-larvae-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

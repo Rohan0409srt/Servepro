@@ -1,0 +1,616 @@
+/* =========================================================
+   HOUSEKEEPING PAGE
+========================================================= */
+
+.housekeeping-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.housekeeping-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.housekeeping-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.housekeeping-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.housekeeping-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.housekeeping-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.housekeeping-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.housekeeping-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.housekeeping-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.housekeeping-card {
+  width: 100%;
+  min-height: 490px;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.housekeeping-card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.housekeeping-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.housekeeping-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.housekeeping-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.housekeeping-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.housekeeping-text li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.housekeeping-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.housekeeping-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .housekeeping-section {
+    padding: 100px 0 115px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .housekeeping-intro {
+    max-width: 1250px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 40px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 19px;
+  }
+
+  .housekeeping-list {
+    gap: 50px;
+  }
+
+  .housekeeping-card {
+    min-height: 460px;
+  }
+
+  .housekeeping-text {
+    padding: 65px 75px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 32px;
+  }
+
+  .housekeeping-text li {
+    font-size: 19px;
+  }
+
+  .housekeeping-image {
+    height: 460px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .housekeeping-section {
+    padding: 90px 0 105px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 36px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 18px;
+  }
+
+  .housekeeping-list {
+    gap: 48px;
+  }
+
+  .housekeeping-card {
+    min-height: 430px;
+  }
+
+  .housekeeping-text {
+    padding: 55px 65px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 30px;
+  }
+
+  .housekeeping-text li {
+    font-size: 18px;
+  }
+
+  .housekeeping-image {
+    height: 430px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .housekeeping-section {
+    padding: 80px 0 95px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 34px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 17px;
+  }
+
+  .housekeeping-list {
+    gap: 45px;
+  }
+
+  .housekeeping-card {
+    min-height: 400px;
+  }
+
+  .housekeeping-text {
+    padding: 50px 55px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 28px;
+  }
+
+  .housekeeping-text li {
+    font-size: 17px;
+  }
+
+  .housekeeping-image {
+    height: 400px;
+  }
+}
+
+
+/* =========================================================
+   768 - 1199
+   SIDE BY SIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .housekeeping-banner {
+    height: 500px;
+  }
+
+  .housekeeping-section {
+    padding: 70px 0 80px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .housekeeping-intro {
+    margin-bottom: 55px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .housekeeping-border {
+    margin: 18px auto 22px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .housekeeping-list {
+    gap: 35px;
+  }
+
+  .housekeeping-card,
+  .housekeeping-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .housekeeping-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .housekeeping-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .housekeeping-text ul {
+    padding-left: 19px;
+  }
+
+  .housekeeping-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .housekeeping-banner {
+    height: 260px;
+  }
+
+  .housekeeping-section {
+    padding: 50px 0 60px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 30px);
+  }
+
+  .housekeeping-intro {
+    margin-bottom: 40px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .housekeeping-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .housekeeping-list {
+    gap: 25px;
+  }
+
+  .housekeeping-card,
+  .housekeeping-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .housekeeping-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .housekeeping-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .housekeeping-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .housekeeping-banner {
+    height: 240px;
+  }
+
+  .housekeeping-section {
+    padding: 45px 0 55px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 24px);
+  }
+
+  .housekeeping-intro {
+    margin-bottom: 35px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .housekeeping-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .housekeeping-list {
+    gap: 22px;
+  }
+
+  .housekeeping-card,
+  .housekeeping-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .housekeeping-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .housekeeping-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .housekeeping-text ul {
+    padding-left: 18px;
+  }
+
+  .housekeeping-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* =========================================================
+   BELOW 400
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .housekeeping-banner {
+    height: 210px;
+  }
+
+  .housekeeping-section {
+    padding: 38px 0 45px;
+  }
+
+  .housekeeping-container {
+    width: calc(100% - 20px);
+  }
+
+  .housekeeping-intro {
+    margin-bottom: 30px;
+  }
+
+  .housekeeping-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .housekeeping-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .housekeeping-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .housekeeping-list {
+    gap: 18px;
+  }
+
+  .housekeeping-card,
+  .housekeeping-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .housekeeping-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .housekeeping-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .housekeeping-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .housekeeping-text ul {
+    padding-left: 17px;
+  }
+
+  .housekeeping-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

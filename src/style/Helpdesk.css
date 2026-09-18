@@ -1,0 +1,894 @@
+/* =========================================================
+   HELP DESK SERVICE PAGE
+========================================================= */
+
+.helpdesk-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.helpdesk-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.helpdesk-banner {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.helpdesk-banner-overlay {
+  width: 100%;
+  min-height: 330px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.helpdesk-banner h1 {
+  margin: 20px 0 0;
+
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  text-align: center;
+}
+
+.helpdesk-banner .helpdesk-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.helpdesk-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.helpdesk-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.helpdesk-breadcrumb a:hover {
+  opacity: 0.75;
+}
+
+.helpdesk-breadcrumb span {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.helpdesk-section {
+  padding: 70px 0 90px;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.helpdesk-section-title {
+  max-width: 1050px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.helpdesk-section-title h2 {
+  margin: 0 auto 20px;
+
+  color: #151674;
+
+  font-size: 10 px;
+  font-weight: 600;
+  line-height: 1;
+  font-style:sans-serif;
+}
+
+.helpdesk-title-border {
+  display: block;
+
+  width: 55px;
+  height: 3px;
+
+  margin: 0 auto 25px;
+
+  background: #0b1957;
+  border-radius: 10px;
+}
+
+.helpdesk-section-title p {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.helpdesk-service-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.helpdesk-service-card {
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.helpdesk-service-card .helpdesk-service-image{
+    border-radius: 5%;
+
+}
+
+.helpdesk-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT SIDE
+========================================================= */
+
+.helpdesk-service-content {
+  width: 55%;
+
+  padding: 45px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.helpdesk-service-content h3 {
+  margin: 0 0 25px;
+
+  color: #0b1957;
+
+  font-size: clamp(23px, 2.5vw, 31px);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.helpdesk-service-content ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.helpdesk-service-content li {
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 25px;
+
+  color: #4d4d4d;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.helpdesk-service-content li:last-child {
+  margin-bottom: 0;
+}
+
+.helpdesk-service-content li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #0b1957;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMAGE SIDE
+========================================================= */
+
+.helpdesk-service-image {
+  width: 45%;
+  min-height: 330px;
+
+  overflow: hidden;
+
+  background: #f4f4f4;
+}
+
+.helpdesk-service-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.helpdesk-service-card:hover .helpdesk-service-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   REVERSE CARD
+========================================================= */
+
+.helpdesk-service-card.helpdesk-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .helpdesk-container {
+    width: min(1100px, calc(100% - 40px));
+  }
+
+  .helpdesk-section {
+    padding: 60px 0 75px;
+  }
+
+  .helpdesk-service-content {
+    width: 55%;
+    padding: 38px 40px;
+  }
+
+  .helpdesk-service-image {
+    width: 45%;
+    min-height: 300px;
+  }
+
+  .helpdesk-service-image img {
+    min-height: 300px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 290px;
+  }
+
+  .helpdesk-section {
+    padding: 55px 0 65px;
+  }
+
+  .helpdesk-section-title {
+    margin-bottom: 50px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .helpdesk-service-list {
+    gap: 35px;
+  }
+
+  .helpdesk-service-content {
+    width: 52%;
+    padding: 32px;
+  }
+
+  .helpdesk-service-content h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .helpdesk-service-image {
+    width: 48%;
+    min-height: 290px;
+  }
+
+  .helpdesk-service-image img {
+    min-height: 290px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .helpdesk-container {
+    width: calc(100% - 30px);
+  }
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 250px;
+  }
+
+  .helpdesk-banner {
+    background-position: center center;
+  }
+
+  .helpdesk-breadcrumb {
+    display: none;
+  }
+
+  .helpdesk-banner h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .helpdesk-section {
+    padding: 45px 0 55px;
+  }
+
+  .helpdesk-section-title {
+    margin-bottom: 40px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .helpdesk-service-list {
+    gap: 28px;
+  }
+
+  /*
+    Mobile par image + content
+    vertical ho jayega.
+  */
+  .helpdesk-service-card,
+  .helpdesk-service-card.helpdesk-reverse {
+    flex-direction: column;
+  }
+
+  .helpdesk-service-content {
+    width: 100%;
+    order: 2;
+
+    padding: 28px 24px 32px;
+  }
+
+  .helpdesk-service-image {
+    width: 100%;
+    order: 1;
+
+    min-height: auto;
+    height: 270px;
+  }
+
+  .helpdesk-service-image img {
+    width: 100%;
+    height: 270px;
+    min-height: 0;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .helpdesk-container {
+    width: calc(100% - 24px);
+  }
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 220px;
+  }
+
+  .helpdesk-banner h1 {
+    font-size: 29px;
+  }
+
+  .helpdesk-section {
+    padding: 38px 0 45px;
+  }
+
+  .helpdesk-section-title {
+    margin-bottom: 32px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 21px;
+  }
+
+  .helpdesk-title-border {
+    margin-bottom: 20px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 14px;
+  }
+
+  .helpdesk-service-list {
+    gap: 24px;
+  }
+
+  .helpdesk-service-card {
+    border-radius: 8px;
+  }
+
+  .helpdesk-service-image,
+  .helpdesk-service-image img {
+    height: 230px;
+  }
+
+  .helpdesk-service-content {
+    padding: 24px 20px 28px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .helpdesk-service-content li {
+    padding-left: 22px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+   <= 399px
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 195px;
+  }
+
+  .helpdesk-banner h1 {
+    font-size: 26px;
+  }
+
+  .helpdesk-section {
+    padding: 32px 0 40px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 20px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 13.5px;
+  }
+
+  .helpdesk-service-image,
+  .helpdesk-service-image img {
+    height: 205px;
+  }
+
+  .helpdesk-service-content {
+    padding: 22px 17px 25px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 19px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 13.5px;
+  }
+
+}
+/* =========================================================
+   BIG DESKTOP RESPONSIVE
+   1200px+
+========================================================= */
+
+@media (min-width: 1200px) {
+
+  .helpdesk-container {
+    width: min(1200px, calc(100% - 60px));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* -------------------------
+     Banner
+  ------------------------- */
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 360px;
+  }
+
+  .helpdesk-banner h1 {
+    font-size: 52px;
+  }
+
+
+  /* -------------------------
+     Main Section
+  ------------------------- */
+
+  .helpdesk-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+
+  /* -------------------------
+     Heading
+  ------------------------- */
+
+  .helpdesk-section-title {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 36px;
+    line-height: 1.35;
+  }
+
+  .helpdesk-section-title p {
+    max-width: 1020px;
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+
+  /* -------------------------
+     Service Cards
+  ------------------------- */
+
+  .helpdesk-service-list {
+    gap: 60px;
+  }
+
+  .helpdesk-service-card {
+    min-height: 370px;
+  }
+
+
+  /* -------------------------
+     Service Content
+  ------------------------- */
+
+  .helpdesk-service-content {
+    width: 55%;
+    padding: 50px 55px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 31px;
+    line-height: 1.3;
+    margin-bottom: 28px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+
+  /* -------------------------
+     Service Images
+  ------------------------- */
+
+  .helpdesk-service-image {
+    width: 45%;
+    min-height: 370px;
+  }
+
+  .helpdesk-service-image img {
+    width: 100%;
+    height: 370px;
+    min-height: 370px;
+    object-fit: cover;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA LARGE DESKTOP
+   1440px+
+========================================================= */
+
+@media (min-width: 1440px) {
+
+  .helpdesk-container {
+    width: 1240px;
+  }
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 390px;
+  }
+
+  .helpdesk-section {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .helpdesk-section-title {
+    max-width: 1120px;
+    margin-bottom: 75px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 38px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .helpdesk-service-list {
+    gap: 65px;
+  }
+
+  .helpdesk-service-card {
+    min-height: 400px;
+  }
+
+  .helpdesk-service-content {
+    padding: 55px 60px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 33px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 17px;
+  }
+
+  .helpdesk-service-image,
+  .helpdesk-service-image img {
+    min-height: 400px;
+    height: 400px;
+  }
+
+}
+
+
+/* =========================================================
+   WIDE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .helpdesk-container {
+    width: 1280px;
+  }
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 420px;
+  }
+
+  .helpdesk-banner h1 {
+    font-size: 56px;
+  }
+
+  .helpdesk-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 40px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 17px;
+  }
+
+  .helpdesk-service-card {
+    min-height: 420px;
+  }
+
+  .helpdesk-service-content {
+    padding: 60px 65px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 35px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .helpdesk-service-image,
+  .helpdesk-service-image img {
+    height: 420px;
+    min-height: 420px;
+  }
+
+}
+
+
+/* =========================================================
+   ULTRA WIDE
+   1920px+
+========================================================= */
+
+@media (min-width: 1299px) and (max-width: 1920px){
+
+  .helpdesk-container {
+    width: 1320px;
+  }
+
+  .helpdesk-banner,
+  .helpdesk-banner-overlay {
+    min-height: 650px;
+    height: 750px;
+  }
+
+  .helpdesk-banner h1 {
+    font-size: 60px;
+  }
+
+  .helpdesk-section {
+    padding-top: 110px;
+    padding-bottom: 130px;
+  }
+
+  .helpdesk-section-title {
+    max-width: 1180px;
+    margin-bottom: 85px;
+  }
+
+  .helpdesk-section-title h2 {
+    font-size: 42px;
+  }
+
+  .helpdesk-section-title p {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  .helpdesk-service-list {
+    gap: 75px;
+  }
+
+  .helpdesk-service-card {
+    min-height: 440px;
+  }
+
+  .helpdesk-service-content {
+    padding: 65px 75px;
+  }
+
+  .helpdesk-service-content h3 {
+    font-size: 37px;
+  }
+
+  .helpdesk-service-content li {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .helpdesk-service-image,
+  .helpdesk-service-image img {
+    height: 440px;
+    min-height: 440px;
+  }
+
+}

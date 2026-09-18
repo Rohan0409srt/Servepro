@@ -1,0 +1,356 @@
+.office-deep-cleaning-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.office-deep-cleaning-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.office-deep-cleaning-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.office-deep-cleaning-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.office-deep-cleaning-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.office-deep-cleaning-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.office-deep-cleaning-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.office-deep-cleaning-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.office-deep-cleaning-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.office-deep-cleaning-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.office-deep-cleaning-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.office-deep-cleaning-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.office-deep-cleaning-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.office-deep-cleaning-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.office-deep-cleaning-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.office-deep-cleaning-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.office-deep-cleaning-text li:last-child {
+  margin-bottom: 0;
+}
+
+.office-deep-cleaning-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.office-deep-cleaning-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .office-deep-cleaning-section { padding: 100px 0 115px; }
+  .office-deep-cleaning-container { width: calc(100% - 100px); max-width: 1500px; }
+  .office-deep-cleaning-intro { max-width: 1250px; }
+  .office-deep-cleaning-intro h1 { font-size: 40px; }
+  .office-deep-cleaning-intro p { font-size: 19px; }
+  .office-deep-cleaning-service-list { gap: 50px; }
+  .office-deep-cleaning-card { min-height: 460px; }
+  .office-deep-cleaning-text { padding: 65px 75px; }
+  .office-deep-cleaning-text h2 { font-size: 32px; }
+  .office-deep-cleaning-text li { font-size: 19px; }
+  .office-deep-cleaning-image { height: 460px; }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .office-deep-cleaning-section { padding: 90px 0 105px; }
+  .office-deep-cleaning-container { width: calc(100% - 80px); max-width: 1340px; }
+  .office-deep-cleaning-intro h1 { font-size: 36px; }
+  .office-deep-cleaning-intro p { font-size: 18px; }
+  .office-deep-cleaning-service-list { gap: 48px; }
+  .office-deep-cleaning-card { min-height: 430px; }
+  .office-deep-cleaning-text { padding: 55px 65px; }
+  .office-deep-cleaning-text h2 { font-size: 30px; }
+  .office-deep-cleaning-text li { font-size: 18px; }
+  .office-deep-cleaning-image { height: 430px; }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .office-deep-cleaning-section { padding: 80px 0 95px; }
+  .office-deep-cleaning-container { width: calc(100% - 60px); max-width: 1240px; }
+  .office-deep-cleaning-intro h1 { font-size: 34px; }
+  .office-deep-cleaning-intro p { font-size: 17px; }
+  .office-deep-cleaning-service-list { gap: 45px; }
+  .office-deep-cleaning-card { min-height: 400px; }
+  .office-deep-cleaning-text { padding: 50px 55px; }
+  .office-deep-cleaning-text h2 { font-size: 28px; }
+  .office-deep-cleaning-text li { font-size: 17px; }
+  .office-deep-cleaning-image { height: 400px; }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .office-deep-cleaning-banner { height: 500px; }
+  .office-deep-cleaning-section { padding: 70px 0 80px; }
+  .office-deep-cleaning-container { width: calc(100% - 50px); max-width: none; }
+  .office-deep-cleaning-intro { margin-bottom: 55px; }
+  .office-deep-cleaning-intro h1 { font-size: 30px; line-height: 1.35; }
+  .office-deep-cleaning-border { margin: 18px auto 22px; }
+  .office-deep-cleaning-intro p { font-size: 16px; line-height: 1.7; }
+  .office-deep-cleaning-service-list { gap: 35px; }
+
+  .office-deep-cleaning-card,
+  .office-deep-cleaning-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .office-deep-cleaning-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .office-deep-cleaning-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .office-deep-cleaning-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .office-deep-cleaning-text ul { padding-left: 19px; }
+
+  .office-deep-cleaning-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .office-deep-cleaning-banner { height: 260px; }
+  .office-deep-cleaning-section { padding: 50px 0 60px; }
+  .office-deep-cleaning-container { width: calc(100% - 30px); }
+  .office-deep-cleaning-intro { margin-bottom: 40px; }
+  .office-deep-cleaning-intro h1 { font-size: 25px; line-height: 1.35; }
+  .office-deep-cleaning-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+  .office-deep-cleaning-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  .office-deep-cleaning-service-list { gap: 25px; }
+
+  .office-deep-cleaning-card,
+  .office-deep-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .office-deep-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .office-deep-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .office-deep-cleaning-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .office-deep-cleaning-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .office-deep-cleaning-banner { height: 240px; }
+  .office-deep-cleaning-section { padding: 45px 0 55px; }
+  .office-deep-cleaning-container { width: calc(100% - 24px); }
+  .office-deep-cleaning-intro { margin-bottom: 35px; }
+  .office-deep-cleaning-intro h1 { font-size: 22px; line-height: 1.35; }
+  .office-deep-cleaning-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+  .office-deep-cleaning-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  .office-deep-cleaning-service-list { gap: 22px; }
+
+  .office-deep-cleaning-card,
+  .office-deep-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .office-deep-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .office-deep-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .office-deep-cleaning-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .office-deep-cleaning-text ul { padding-left: 18px; }
+
+  .office-deep-cleaning-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 399px) {
+  .office-deep-cleaning-banner { height: 210px; }
+  .office-deep-cleaning-section { padding: 38px 0 45px; }
+  .office-deep-cleaning-container { width: calc(100% - 20px); }
+  .office-deep-cleaning-intro { margin-bottom: 30px; }
+  .office-deep-cleaning-intro h1 { font-size: 20px; line-height: 1.35; }
+  .office-deep-cleaning-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+  .office-deep-cleaning-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+  .office-deep-cleaning-service-list { gap: 18px; }
+
+  .office-deep-cleaning-card,
+  .office-deep-cleaning-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .office-deep-cleaning-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .office-deep-cleaning-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .office-deep-cleaning-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .office-deep-cleaning-text ul { padding-left: 17px; }
+
+  .office-deep-cleaning-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

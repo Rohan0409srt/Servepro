@@ -1,0 +1,525 @@
+.plumbing-carpentry-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #0b1957;
+}
+
+.plumbing-carpentry-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.plumbing-carpentry-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.plumbing-carpentry-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.plumbing-carpentry-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.plumbing-carpentry-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.plumbing-carpentry-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.plumbing-carpentry-border {
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.plumbing-carpentry-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.plumbing-carpentry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.plumbing-carpentry-card {
+  width: 100%;
+  min-height: 490px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-carpentry-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.plumbing-carpentry-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plumbing-carpentry-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.plumbing-carpentry-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.plumbing-carpentry-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.plumbing-carpentry-text li:last-child {
+  margin-bottom: 0;
+}
+
+.plumbing-carpentry-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.plumbing-carpentry-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .plumbing-carpentry-section {
+    padding: 100px 0 115px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .plumbing-carpentry-intro {
+    max-width: 1250px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 40px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 19px;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 50px;
+  }
+
+  .plumbing-carpentry-card {
+    min-height: 460px;
+  }
+
+  .plumbing-carpentry-text {
+    padding: 65px 75px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 32px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 19px;
+  }
+
+  .plumbing-carpentry-image {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .plumbing-carpentry-section {
+    padding: 90px 0 105px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 36px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 18px;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 48px;
+  }
+
+  .plumbing-carpentry-card {
+    min-height: 430px;
+  }
+
+  .plumbing-carpentry-text {
+    padding: 55px 65px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 30px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 18px;
+  }
+
+  .plumbing-carpentry-image {
+    height: 430px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .plumbing-carpentry-section {
+    padding: 80px 0 95px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 34px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 17px;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 45px;
+  }
+
+  .plumbing-carpentry-card {
+    min-height: 400px;
+  }
+
+  .plumbing-carpentry-text {
+    padding: 50px 55px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 28px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 17px;
+  }
+
+  .plumbing-carpentry-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .plumbing-carpentry-banner {
+    height: 500px;
+  }
+
+  .plumbing-carpentry-section {
+    padding: 70px 0 80px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 50px);
+  }
+
+  .plumbing-carpentry-intro {
+    margin-bottom: 55px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 30px;
+  }
+
+  .plumbing-carpentry-border {
+    margin: 18px auto 22px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 35px;
+  }
+
+  .plumbing-carpentry-card,
+  .plumbing-carpentry-card.reverse {
+    flex-direction: row;
+    min-height: 320px;
+  }
+
+  .plumbing-carpentry-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .plumbing-carpentry-text li {
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .plumbing-carpentry-image {
+    width: 48%;
+    height: 320px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .plumbing-carpentry-banner {
+    height: 260px;
+  }
+
+  .plumbing-carpentry-section {
+    padding: 50px 0 60px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 30px);
+  }
+
+  .plumbing-carpentry-intro {
+    margin-bottom: 40px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 25px;
+  }
+
+  .plumbing-carpentry-border {
+    width: 60px;
+    height: 3px;
+    margin: 16px auto 20px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 25px;
+  }
+
+  .plumbing-carpentry-card,
+  .plumbing-carpentry-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .plumbing-carpentry-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .plumbing-carpentry-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .plumbing-carpentry-banner {
+    height: 240px;
+  }
+
+  .plumbing-carpentry-section {
+    padding: 45px 0 55px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 24px);
+  }
+
+  .plumbing-carpentry-intro {
+    margin-bottom: 35px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 22px;
+  }
+
+  .plumbing-carpentry-border {
+    width: 55px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 22px;
+  }
+
+  .plumbing-carpentry-card,
+  .plumbing-carpentry-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .plumbing-carpentry-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .plumbing-carpentry-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+
+  .plumbing-carpentry-text ul {
+    padding-left: 20px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 399px) {
+  .plumbing-carpentry-banner {
+    height: 210px;
+  }
+
+  .plumbing-carpentry-section {
+    padding: 38px 0 45px;
+  }
+
+  .plumbing-carpentry-container {
+    width: calc(100% - 20px);
+  }
+
+  .plumbing-carpentry-intro {
+    margin-bottom: 30px;
+  }
+
+  .plumbing-carpentry-intro h1 {
+    font-size: 20px;
+  }
+
+  .plumbing-carpentry-border {
+    width: 50px;
+    height: 2px;
+    margin: 12px auto 16px;
+  }
+
+  .plumbing-carpentry-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .plumbing-carpentry-list {
+    gap: 18px;
+  }
+
+  .plumbing-carpentry-card,
+  .plumbing-carpentry-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .plumbing-carpentry-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .plumbing-carpentry-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .plumbing-carpentry-text h2 {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .plumbing-carpentry-text ul {
+    padding-left: 18px;
+  }
+
+  .plumbing-carpentry-text li {
+    font-size: 13px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+}

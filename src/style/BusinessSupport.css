@@ -1,0 +1,614 @@
+/* =========================================================
+   BUSINESS SUPPORT SERVICES
+   GARDENING-STYLE OVERVIEW DESIGN
+========================================================= */
+
+.business-support-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #0b1957;
+}
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.business-support-banner {
+  position: relative;
+  width: 100%;
+  height: 750px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-support-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.02);
+  pointer-events: none;
+}
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.business-support-section {
+  width: 100%;
+  padding: 90px 0 110px;
+  background: #fff;
+}
+
+.business-support-container {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.business-support-intro {
+  max-width: 1180px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.business-support-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.business-support-border {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 22px auto 28px;
+  background: #0b1957;
+  border-radius: 0;
+}
+
+.business-support-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.business-support-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.business-support-card {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+
+  border-radius: 3px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.business-support-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 16px 38px rgba(11, 25, 87, 0.16);
+}
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.business-support-card-image {
+  width: 100%;
+  height: 260px;
+
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.business-support-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.45s ease;
+}
+
+.business-support-card:hover
+.business-support-card-image img {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.business-support-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 30px 32px 34px;
+}
+
+.business-support-card-content h2 {
+  margin: 0 0 18px;
+
+  color: #0b1957;
+
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* =========================================================
+   CARD LIST
+========================================================= */
+
+.business-support-card-content ul {
+  margin: 0 0 26px;
+  padding-left: 20px;
+
+  color: #0b1957;
+}
+
+.business-support-card-content li {
+  margin-bottom: 9px;
+
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.business-support-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   READ MORE BUTTON
+========================================================= */
+
+.business-support-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: flex-start;
+
+  margin-top: auto;
+
+  padding: 12px 26px;
+
+  border: 2px solid #0b1957;
+
+  background: #fff;
+  color: #0b1957;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.business-support-read-more:hover {
+  background: #0b1957;
+  color: #fff;
+}
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .business-support-container {
+    width: min(1480px, calc(100% - 100px));
+  }
+
+  .business-support-grid {
+    gap: 42px;
+  }
+
+  .business-support-card-image {
+    height: 275px;
+  }
+
+  .business-support-card-content {
+    padding: 32px 34px 36px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 23px;
+  }
+
+  .business-support-card-content li {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .business-support-container {
+    width: min(1400px, calc(100% - 80px));
+  }
+
+  .business-support-grid {
+    gap: 40px;
+  }
+
+  .business-support-card-image {
+    height: 260px;
+  }
+}
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .business-support-container {
+    width: min(1320px, calc(100% - 70px));
+  }
+
+  .business-support-intro {
+    max-width: 1120px;
+  }
+
+  .business-support-intro h1 {
+    font-size: 36px;
+  }
+
+  .business-support-intro p {
+    font-size: 17px;
+  }
+
+  .business-support-grid {
+    gap: 32px;
+  }
+
+  .business-support-card-image {
+    height: 250px;
+  }
+
+  .business-support-card-content {
+    padding: 28px 28px 32px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 21px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   768 - 1199
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .business-support-banner {
+    height: 520px;
+  }
+
+  .business-support-section {
+    padding: 75px 0 90px;
+  }
+
+  .business-support-container {
+    width: min(100%, calc(100% - 50px));
+  }
+
+  .business-support-intro {
+    max-width: 900px;
+    margin-bottom: 55px;
+  }
+
+  .business-support-intro h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .business-support-intro p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .business-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .business-support-card-image {
+    height: 240px;
+  }
+
+  .business-support-card-content {
+    padding: 26px 26px 30px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 21px;
+  }
+
+  .business-support-card-content li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .business-support-read-more {
+    padding: 11px 24px;
+  }
+}
+
+/* =========================================================
+   MOBILE LARGE
+   576 - 767
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .business-support-banner {
+    height: 420px;
+
+    background-position: center center;
+  }
+
+  .business-support-section {
+    padding: 60px 0 70px;
+  }
+
+  .business-support-container {
+    width: calc(100% - 36px);
+  }
+
+  .business-support-intro {
+    margin-bottom: 45px;
+  }
+
+  .business-support-intro h1 {
+    font-size: 29px;
+    line-height: 1.3;
+  }
+
+  .business-support-border {
+    width: 65px;
+    margin: 19px auto 25px;
+  }
+
+  .business-support-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .business-support-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .business-support-card-image {
+    height: 250px;
+  }
+
+  .business-support-card-content {
+    padding: 26px 25px 30px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .business-support-card-content li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .business-support-read-more {
+    padding: 11px 23px;
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .business-support-banner {
+    height: 350px;
+
+    background-position: center center;
+  }
+
+  .business-support-section {
+    padding: 50px 0 60px;
+  }
+
+  .business-support-container {
+    width: calc(100% - 30px);
+  }
+
+  .business-support-intro {
+    margin-bottom: 40px;
+  }
+
+  .business-support-intro h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .business-support-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 24px;
+  }
+
+  .business-support-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .business-support-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .business-support-card-image {
+    height: 230px;
+  }
+
+  .business-support-card-content {
+    padding: 24px 22px 28px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .business-support-card-content ul {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .business-support-card-content li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .business-support-read-more {
+    padding: 11px 22px;
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 400
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .business-support-banner {
+    height: 300px;
+
+    background-position: center center;
+  }
+
+  .business-support-section {
+    padding: 45px 0 55px;
+  }
+
+  .business-support-container {
+    width: calc(100% - 24px);
+  }
+
+  .business-support-intro {
+    margin-bottom: 35px;
+  }
+
+  .business-support-intro h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .business-support-border {
+    width: 60px;
+    height: 3px;
+    margin: 17px auto 22px;
+  }
+
+  .business-support-intro p {
+    font-size: 14px;
+    line-height: 1.65;
+    text-align: left;
+  }
+
+  .business-support-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .business-support-card-image {
+    height: 210px;
+  }
+
+  .business-support-card-content {
+    padding: 22px 19px 25px;
+  }
+
+  .business-support-card-content h2 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .business-support-card-content ul {
+    padding-left: 18px;
+    margin-bottom: 22px;
+  }
+
+  .business-support-card-content li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .business-support-read-more {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

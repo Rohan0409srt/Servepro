@@ -1,0 +1,633 @@
+/* =========================================================
+   CARPET SHAMPOOING PAGE
+   SAME STRUCTURE AS ANTI-LARVAE SAMPLE
+========================================================= */
+
+.carpet-shampooing-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.carpet-shampooing-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carpet-shampooing-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.carpet-shampooing-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.carpet-shampooing-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.carpet-shampooing-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.carpet-shampooing-intro h1 {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.carpet-shampooing-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #222;
+}
+
+.carpet-shampooing-intro p {
+  margin: 0;
+  color: #0b1957;
+
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.carpet-shampooing-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.carpet-shampooing-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.carpet-shampooing-card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.carpet-shampooing-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carpet-shampooing-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.carpet-shampooing-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.carpet-shampooing-text li {
+  margin-bottom: 14px;
+  color:#0b1957;
+
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.carpet-shampooing-text li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.carpet-shampooing-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.carpet-shampooing-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   1600 - 1919
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .carpet-shampooing-section {
+    padding: 100px 0 115px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 100px);
+    max-width: 1500px;
+  }
+
+  .carpet-shampooing-intro {
+    max-width: 1250px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 40px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 19px;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 50px;
+  }
+
+  .carpet-shampooing-card {
+    min-height: 460px;
+  }
+
+  .carpet-shampooing-text {
+    padding: 65px 75px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 32px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 19px;
+  }
+
+  .carpet-shampooing-image {
+    height: 460px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .carpet-shampooing-section {
+    padding: 90px 0 105px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 80px);
+    max-width: 1340px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 36px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 18px;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 48px;
+  }
+
+  .carpet-shampooing-card {
+    min-height: 430px;
+  }
+
+  .carpet-shampooing-text {
+    padding: 55px 65px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 30px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 18px;
+  }
+
+  .carpet-shampooing-image {
+    height: 430px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .carpet-shampooing-section {
+    padding: 80px 0 95px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 60px);
+    max-width: 1240px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 34px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 17px;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 45px;
+  }
+
+  .carpet-shampooing-card {
+    min-height: 400px;
+  }
+
+  .carpet-shampooing-text {
+    padding: 50px 55px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 28px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 17px;
+  }
+
+  .carpet-shampooing-image {
+    height: 400px;
+  }
+}
+
+
+/* =========================================================
+   768 - 1199
+   IMPORTANT: SIDE BY SIDE
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .carpet-shampooing-banner {
+    height: 500px;
+  }
+
+  .carpet-shampooing-section {
+    padding: 70px 0 80px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .carpet-shampooing-intro {
+    margin-bottom: 55px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .carpet-shampooing-border {
+    margin: 18px auto 22px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 35px;
+  }
+
+  .carpet-shampooing-card,
+  .carpet-shampooing-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .carpet-shampooing-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .carpet-shampooing-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .carpet-shampooing-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .carpet-shampooing-text ul {
+    padding-left: 19px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767
+   MOBILE / TABLET
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .carpet-shampooing-banner {
+    height: 260px;
+  }
+
+  .carpet-shampooing-section {
+    padding: 50px 0 60px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 30px);
+  }
+
+  .carpet-shampooing-intro {
+    margin-bottom: 40px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .carpet-shampooing-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 25px;
+  }
+
+  .carpet-shampooing-card,
+  .carpet-shampooing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .carpet-shampooing-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .carpet-shampooing-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .carpet-shampooing-banner {
+    height: 240px;
+  }
+
+  .carpet-shampooing-section {
+    padding: 45px 0 55px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 24px);
+  }
+
+  .carpet-shampooing-intro {
+    margin-bottom: 35px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .carpet-shampooing-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 22px;
+  }
+
+  .carpet-shampooing-card,
+  .carpet-shampooing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .carpet-shampooing-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .carpet-shampooing-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .carpet-shampooing-text ul {
+    padding-left: 18px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+
+/* =========================================================
+   BELOW 400
+========================================================= */
+
+@media (max-width: 399px) {
+
+  .carpet-shampooing-banner {
+    height: 210px;
+  }
+
+  .carpet-shampooing-section {
+    padding: 38px 0 45px;
+  }
+
+  .carpet-shampooing-container {
+    width: calc(100% - 20px);
+  }
+
+  .carpet-shampooing-intro {
+    margin-bottom: 30px;
+  }
+
+  .carpet-shampooing-intro h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .carpet-shampooing-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .carpet-shampooing-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .carpet-shampooing-service-list {
+    gap: 18px;
+  }
+
+  .carpet-shampooing-card,
+  .carpet-shampooing-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .carpet-shampooing-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .carpet-shampooing-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .carpet-shampooing-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .carpet-shampooing-text ul {
+    padding-left: 17px;
+  }
+
+  .carpet-shampooing-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

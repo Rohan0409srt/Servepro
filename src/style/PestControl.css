@@ -1,0 +1,995 @@
+/* =========================================================
+   PEST CONTROL OVERVIEW
+   UNIQUE PREFIX: pc-overview-
+   
+   STRUCTURE:
+   IMAGE
+   ↓
+   TITLE
+   ↓
+   POINTS
+   ↓
+   READ MORE AT BOTTOM
+
+   FULLY RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.pc-overview-page {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #0b1957;
+}
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.pc-overview-banner {
+  position: relative;
+
+  width: 100%;
+  height: 750px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pc-overview-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.02);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.pc-overview-section {
+  width: 100%;
+
+  padding: 90px 0 110px;
+
+  background: #ffffff;
+}
+
+.pc-overview-container {
+  width: min(1400px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.pc-overview-intro {
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.pc-overview-intro h1 {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+.pc-overview-intro-border {
+  display: block;
+
+  width: 70px;
+  height: 3px;
+
+  margin: 22px auto 28px;
+
+  background: #0b1957;
+
+  border-radius: 0;
+}
+
+.pc-overview-intro p {
+  margin: 0;
+
+  color: #0b1957;
+
+  font-size: 18px;
+  line-height: 1.8;
+
+  text-align: justify;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   CARD GRID
+========================================================= */
+
+.pc-overview-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 40px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.pc-overview-card {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.pc-overview-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 16px 38px rgba(11, 25, 87, 0.16);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ALWAYS TOP
+========================================================= */
+
+.pc-overview-card-image {
+  position: relative;
+
+  width: 100%;
+  height: 260px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #f5f5f5;
+}
+
+.pc-overview-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  border: 0;
+
+  transition: transform 0.45s ease;
+}
+
+.pc-overview-card:hover
+.pc-overview-card-image img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.pc-overview-card-content {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 30px 32px 34px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.pc-overview-card-content h2 {
+  margin: 0 0 18px;
+
+  color: #0b1957;
+
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   CARD LIST
+========================================================= */
+
+.pc-overview-card-content ul {
+  margin: 0 0 28px;
+
+  padding: 0 0 0 20px;
+
+  color: #0b1957;
+
+  box-sizing: border-box;
+}
+
+.pc-overview-card-content li {
+  margin: 0 0 9px;
+
+  color: #0b1957;
+
+  font-size: 15px;
+  line-height: 1.65;
+
+  overflow-wrap: anywhere;
+}
+
+.pc-overview-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   READ MORE
+   ALWAYS AT CARD BOTTOM
+========================================================= */
+
+.pc-overview-read-more {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  align-self: flex-start;
+
+  width: fit-content;
+  max-width: 100%;
+
+  margin-top: auto;
+
+  padding: 12px 26px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #0b1957;
+
+  background: #ffffff;
+
+  color: #0b1957;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pc-overview-read-more:hover {
+  background: #0b1957;
+
+  color: #ffffff;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   1920px+
+========================================================= */
+
+@media (min-width: 1920px) {
+
+  .pc-overview-section {
+    padding: 110px 0 130px;
+  }
+
+  .pc-overview-container {
+    width: min(1480px, calc(100% - 100px));
+  }
+
+  .pc-overview-intro {
+    max-width: 1250px;
+
+    margin-bottom: 85px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 40px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 19px;
+    line-height: 1.9;
+  }
+
+  .pc-overview-grid {
+    gap: 42px;
+  }
+
+  .pc-overview-card-image {
+    height: 300px;
+  }
+
+  .pc-overview-card-content {
+    padding: 34px 36px 38px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 24px;
+  }
+
+  .pc-overview-card-content li {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .pc-overview-read-more {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   1600 - 1919px
+========================================================= */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+  .pc-overview-container {
+    width: min(1480px, calc(100% - 100px));
+  }
+
+  .pc-overview-grid {
+    gap: 42px;
+  }
+
+  .pc-overview-card-image {
+    height: 275px;
+  }
+
+  .pc-overview-card-content {
+    padding: 32px 34px 36px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 23px;
+  }
+
+  .pc-overview-card-content li {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   1440 - 1599px
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+  .pc-overview-container {
+    width: min(1400px, calc(100% - 80px));
+  }
+
+  .pc-overview-section {
+    padding: 90px 0 110px;
+  }
+
+  .pc-overview-grid {
+    gap: 40px;
+  }
+
+  .pc-overview-card-image {
+    height: 260px;
+  }
+
+  .pc-overview-card-content {
+    padding: 30px 32px 34px;
+  }
+}
+
+
+/* =========================================================
+   1200 - 1439px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  .pc-overview-container {
+    width: min(1320px, calc(100% - 70px));
+  }
+
+  .pc-overview-section {
+    padding: 85px 0 100px;
+  }
+
+  .pc-overview-intro {
+    max-width: 1120px;
+
+    margin-bottom: 65px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 36px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .pc-overview-grid {
+    gap: 32px;
+  }
+
+  .pc-overview-card-image {
+    height: 250px;
+  }
+
+  .pc-overview-card-content {
+    padding: 28px 28px 32px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 21px;
+  }
+
+  .pc-overview-card-content li {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   992 - 1199px
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .pc-overview-section {
+    padding: 75px 0 90px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 50px);
+  }
+
+  .pc-overview-intro {
+    max-width: 900px;
+
+    margin-bottom: 55px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 32px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+  }
+
+  .pc-overview-card-image {
+    height: 240px;
+  }
+
+  .pc-overview-card-content {
+    padding: 26px 26px 30px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 21px;
+  }
+
+  .pc-overview-card-content li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .pc-overview-read-more {
+    padding: 11px 24px;
+  }
+}
+
+
+/* =========================================================
+   768 - 991px
+   TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .pc-overview-section {
+    padding: 65px 0 80px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 40px);
+  }
+
+  .pc-overview-intro {
+    max-width: 850px;
+
+    margin-bottom: 50px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 29px;
+
+    line-height: 1.35;
+  }
+
+  .pc-overview-intro p {
+    font-size: 16px;
+
+    line-height: 1.75;
+  }
+
+  .pc-overview-intro-border {
+    width: 65px;
+
+    margin: 20px auto 25px;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 26px;
+  }
+
+  .pc-overview-card-image {
+    height: 225px;
+  }
+
+  .pc-overview-card-content {
+    padding: 24px 23px 28px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 20px;
+  }
+
+  .pc-overview-card-content ul {
+    padding-left: 19px;
+  }
+
+  .pc-overview-card-content li {
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .pc-overview-read-more {
+    padding: 11px 21px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   576 - 767px
+   LARGE MOBILE
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .pc-overview-section {
+    padding: 60px 0 70px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 36px);
+  }
+
+  .pc-overview-intro {
+    margin-bottom: 45px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 29px;
+
+    line-height: 1.35;
+  }
+
+  .pc-overview-intro-border {
+    width: 65px;
+
+    margin: 19px auto 25px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .pc-overview-card-image {
+    height: 250px;
+  }
+
+  .pc-overview-card-content {
+    padding: 27px 25px 32px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 21px;
+
+    line-height: 1.4;
+  }
+
+  .pc-overview-card-content ul {
+    padding-left: 20px;
+
+    margin-bottom: 27px;
+  }
+
+  .pc-overview-card-content li {
+    margin-bottom: 9px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .pc-overview-read-more {
+    padding: 11px 23px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   400 - 575px
+   MOBILE
+========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+  .pc-overview-section {
+    padding: 50px 0 60px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 30px);
+  }
+
+  .pc-overview-intro {
+    margin-bottom: 40px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 26px;
+
+    line-height: 1.35;
+  }
+
+  .pc-overview-intro-border {
+    width: 60px;
+
+    height: 3px;
+
+    margin: 18px auto 24px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .pc-overview-card-image {
+    height: 230px;
+  }
+
+  .pc-overview-card-content {
+    padding: 24px 22px 30px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 20px;
+
+    line-height: 1.4;
+  }
+
+  .pc-overview-card-content ul {
+    padding-left: 20px;
+
+    margin-bottom: 24px;
+  }
+
+  .pc-overview-card-content li {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .pc-overview-read-more {
+    padding: 11px 22px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   320 - 399px
+   SMALL MOBILE
+========================================================= */
+
+@media (min-width: 320px) and (max-width: 399px) {
+
+  .pc-overview-section {
+    padding: 45px 0 55px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 24px);
+  }
+
+  .pc-overview-intro {
+    margin-bottom: 35px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 23px;
+
+    line-height: 1.35;
+  }
+
+  .pc-overview-intro-border {
+    width: 58px;
+
+    height: 3px;
+
+    margin: 17px auto 22px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    text-align: left;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .pc-overview-card-image {
+    height: 205px;
+  }
+
+  .pc-overview-card-content {
+    padding: 22px 19px 26px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 19px;
+
+    line-height: 1.4;
+  }
+
+  .pc-overview-card-content ul {
+    padding-left: 18px;
+
+    margin-bottom: 22px;
+  }
+
+  .pc-overview-card-content li {
+    margin-bottom: 8px;
+
+    font-size: 13.5px;
+
+    line-height: 1.55;
+  }
+
+  .pc-overview-read-more {
+    padding: 10px 19px;
+
+    font-size: 13.5px;
+  }
+}
+
+
+/* =========================================================
+   BELOW 320px
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 319px) {
+
+  .pc-overview-section {
+    padding: 35px 0 45px;
+  }
+
+  .pc-overview-container {
+    width: calc(100% - 18px);
+  }
+
+  .pc-overview-intro {
+    margin-bottom: 30px;
+  }
+
+  .pc-overview-intro h1 {
+    font-size: 21px;
+
+    line-height: 1.35;
+  }
+
+  .pc-overview-intro-border {
+    width: 55px;
+
+    height: 3px;
+
+    margin: 15px auto 20px;
+  }
+
+  .pc-overview-intro p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    text-align: left;
+  }
+
+  .pc-overview-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .pc-overview-card-image {
+    height: 190px;
+  }
+
+  .pc-overview-card-content {
+    padding: 20px 16px 23px;
+  }
+
+  .pc-overview-card-content h2 {
+    font-size: 18px;
+
+    line-height: 1.4;
+  }
+
+  .pc-overview-card-content ul {
+    padding-left: 17px;
+
+    margin-bottom: 20px;
+  }
+
+  .pc-overview-card-content li {
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .pc-overview-read-more {
+    padding: 9px 17px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+  .pc-overview-card:hover {
+    transform: none;
+
+    box-shadow: 0 8px 30px rgba(11, 25, 87, 0.10);
+  }
+
+  .pc-overview-card:hover
+  .pc-overview-card-image img {
+    transform: none;
+  }
+
+  .pc-overview-read-more:hover {
+    background: #ffffff;
+    color: #0b1957;
+    transform: none;
+  }
+}

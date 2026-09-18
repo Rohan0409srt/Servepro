@@ -1,0 +1,1961 @@
+/* =========================================================
+   SERVEPRO - ABOUT US PAGE
+   FULLY RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   1. BASE
+========================================================= */
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+    box-sizing: border-box;
+}
+
+.about-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-page a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. COMMON SECTION TITLE
+========================================================= */
+
+.about-page .sec-title {
+    position: relative;
+    width: 100%;
+    margin: 0 0 45px;
+    padding: 0;
+    text-align: center;
+}
+
+.about-page .sec-title h1 {
+    margin: 0;
+    color: #1F3365;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+
+.about-page .sec-title .border {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 12px auto 0;
+    background: #1F3365;
+}
+
+
+/* =========================================================
+   3. ABOUT SERVEPRO SECTION
+========================================================= */
+
+.about-page .about-us-section {
+    width: 100%;
+    padding: 60px 0 70px;
+    background: #ffffff;
+}
+
+.about-page .about-us-title {
+    width: 100%;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.about-page .about-us-title h2 {
+    margin: 0;
+    color: #1F3365;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.about-page .about-us-title .title-border {
+    width: 70px;
+    height: 2px;
+    margin: 12px auto 0;
+    background: #1F3365;
+}
+
+.about-page .about-us-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 45px;
+    align-items: start;
+}
+
+.about-page .about-us-left {
+    min-width: 0;
+}
+
+.about-page .about-us-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about-page .about-us-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-page .about-us-description {
+    margin-top: 25px;
+}
+
+.about-page .about-us-description p {
+    margin: 0 0 15px;
+    color: #002f75;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* Feature cards */
+
+.about-page .about-us-features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.about-page .about-us-feature-card {
+    min-width: 0;
+    min-height: 250px;
+    padding: 28px 27px 24px;
+    border: 1px solid #b7dfff;
+    background: #ffffff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-page .about-us-feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(31, 51, 101, 0.08);
+}
+
+.about-page .about-us-feature-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.about-page .about-us-feature-icon img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.about-page .about-us-feature-card h3 {
+    margin: 0 0 12px;
+    color: #082e70;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.about-page .about-us-feature-card p {
+    margin: 0;
+    color: #002f75;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* =========================================================
+   4. SPECIAL SERVICES
+   NEW RESPONSIVE CARD DESIGN
+========================================================= */
+
+.about-page .special-services-area.about-other-service {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding: 55px 0 45px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* ---------------------------------------------------------
+   Service Heading
+--------------------------------------------------------- */
+
+.about-page .special-services-area .top-about-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.about-page .special-services-area .centre-title {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about-page .special-services-area .centre-title h1 {
+    margin: 0 0 10px;
+
+    color: #EE962F;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+.about-page .special-services-area .centre-title .border {
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   Service Grid
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Service Card
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 0;
+    margin: 0;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-page .special-services-area .service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------------------------------------------------------
+   Card Inner
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-card-inner {
+    position: relative;
+
+    width: 100%;
+
+    overflow: visible;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.10);
+
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about-page .special-services-area .service-card:hover .service-card-inner {
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ---------------------------------------------------------
+   Service Image
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.about-page .special-services-area .service-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    /*
+       IMPORTANT:
+       Stretch image to container.
+       No cropping.
+    */
+    object-fit: fill;
+
+    object-position: center;
+
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* ---------------------------------------------------------
+   Service Content
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 32px 20px 20px;
+
+    background: #ffffff;
+
+    border-radius: 0 0 20px 20px;
+
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   Floating Icon
+   CENTERED ON IMAGE / CONTENT BOUNDARY
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-card .floating-icon {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 68px;
+    height: 68px;
+
+    padding: 5px;
+
+    background: #F79827;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 12px;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+.about-page .special-services-area .service-card .floating-icon img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------------------------
+   Service Title
+--------------------------------------------------------- */
+
+.about-page .special-services-area .service-card .title-holder {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+.about-page .special-services-area .service-card .title-holder a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 35px;
+}
+
+.about-page .special-services-area .service-card .title-holder h3 {
+    width: 100%;
+
+    margin: 0;
+
+    color: #082E70;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    transition: color 0.25s ease;
+}
+
+.about-page .special-services-area .service-card:hover .title-holder h3 {
+    color: #F79827;
+}
+
+
+/* ---------------------------------------------------------
+   View More
+--------------------------------------------------------- */
+
+.about-page .special-services-area .view-more-centre {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+.about-page .special-services-area .view-more {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-width: 190px;
+
+    height: 50px;
+
+    padding: 10px 45px;
+
+    margin: 0;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+
+    color: #1F3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.25s ease;
+}
+
+.about-page .special-services-area .view-more:hover {
+    background-color: #F79827;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   VIEW MORE LOGIC
+   MOBILE:
+   First 2 cards visible.
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .about-page .special-services-area:not(.show-all)
+    .service-card:nth-child(n + 3) {
+        display: none;
+    }
+
+    .about-page .special-services-area.show-all
+    .service-card {
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   5. CORE VALUES
+========================================================= */
+
+.about-page .core-values-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 55px 0 45px;
+
+    background-color: #ffffff;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    overflow: hidden;
+}
+
+.about-page .core-values-wrapper {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    column-gap: 80px;
+    row-gap: 35px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    align-items: center;
+}
+
+.about-page .core-value-item {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.about-page .core-value-left {
+    justify-content: flex-start;
+}
+
+.about-page .core-value-right {
+    justify-content: flex-end;
+}
+
+.about-page .core-value-center {
+    grid-column: 1 / 3;
+    justify-content: center;
+}
+
+.about-page .about-even-div {
+    width: 100%;
+    max-width: 350px;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+.about-page .core-values-section .about-even-div .icon {
+    display: block;
+
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 8px;
+
+    object-fit: contain;
+}
+
+.about-page .core-values-section .about-even-div h5 {
+    margin: 5px 0 8px;
+
+    color: #1F3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-align: center;
+}
+
+.about-page .core-values-section .about-even-div p {
+    margin: 0;
+
+    color: #1F3365;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+.about-page .top-value {
+    min-height: 170px;
+}
+
+.about-page .middle-value {
+    min-height: 190px;
+}
+
+.about-page .bottom-value {
+    margin-top: -5px;
+}
+
+
+/* =========================================================
+   6. CLIENT / BRAND SLIDER
+========================================================= */
+
+.about-page .brand-area {
+    width: 100%;
+
+    padding: 35px 0;
+
+    background: #e3eef1;
+
+    overflow: hidden;
+}
+
+.about-page .client-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding-bottom: 0;
+}
+
+.about-page .client-track {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    width: max-content;
+
+    animation: clientSlide 35s linear infinite;
+
+    will-change: transform;
+}
+
+.about-page .client-logo {
+    flex: 0 0 180px;
+
+    width: 180px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(31, 51, 101, 0.08);
+}
+
+.about-page .client-logo img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 75px;
+
+    object-fit: contain;
+}
+
+@keyframes clientSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.about-page .client-slider:hover .client-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================================
+   7. LARGE DESKTOP — 1400px+
+========================================================= */
+
+@media (min-width: 1400px) and (max-width: 1599px)  {
+
+    .about-page .about-other-service .service-grid {
+        gap: 32px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 250px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 110px;
+        padding: 34px 22px 22px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 70px;
+        height: 70px;
+    }
+     .about-page .about-us-feature-card {
+        min-height: 700px;
+        padding: 28px 25px;
+    }
+}
+
+
+/* =========================================================
+   8. LARGE LAPTOP — 1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .about-page .about-us-section {
+        padding: 65px 0 70px;
+    }
+
+    .about-page .about-other-service {
+        padding: 60px 0 50px;
+    }
+
+    .about-page .about-us-content {
+        gap: 30px;
+    }
+
+    /* Services */
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 215px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 100px;
+        padding: 31px 18px 18px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 19px;
+    }
+
+    .about-page .about-us-feature-card {
+        min-height: 500px;
+        padding: 28px 25px;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   9. LAPTOP — 992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-page .about-us-feature-card {
+        min-height: 500px;
+        padding: 28px 25px;
+    }
+    .about-page .about-us-section {
+        padding: 55px 0 65px;
+    }
+
+    .about-page .about-us-content {
+        gap: 30px;
+    }
+
+    .about-page .about-us-image {
+        height: 360px;
+    }
+
+
+    /* Services */
+
+    .about-page .about-other-service {
+        padding: 55px 0 45px;
+    }
+
+    .about-page .about-other-service .top-about-area {
+        margin-bottom: 32px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        font-size: 26px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 285px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 92px;
+
+        padding: 28px 14px 17px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 58px;
+        height: 58px;
+
+        padding: 4px;
+
+        border-width: 2px;
+        border-radius: 10px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    /* Core Values */
+
+    .about-page .core-values-wrapper {
+        column-gap: 50px;
+        max-width: 950px;
+    }
+
+    .about-page .about-even-div {
+        max-width: 320px;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   10. TABLET — 768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* About */
+
+    .about-page .about-us-section {
+        padding: 50px 0 60px;
+    }
+
+    .about-page .about-us-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-page .about-us-image {
+        height: 340px;
+    }
+
+    .about-page .about-us-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* Services */
+
+    .about-page .special-services-area.about-other-service {
+        padding: 50px 0 45px;
+    }
+
+    .about-page .about-other-service .top-about-area {
+        margin-bottom: 30px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 285px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 95px;
+
+        padding: 30px 15px 18px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 58px;
+        height: 58px;
+
+        padding: 4px;
+
+        border-radius: 10px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    /* Core Values */
+
+    .about-page .core-values-section {
+        padding: 50px 20px 45px;
+        background-size: 75%;
+    }
+
+    .about-page .core-values-wrapper {
+        column-gap: 35px;
+        max-width: 850px;
+    }
+
+    .about-page .about-even-div {
+        max-width: 300px;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        font-size: 11px;
+    }
+
+
+    /* Brand */
+
+    .about-page .brand-area {
+        padding: 35px 0;
+    }
+
+    .about-page .client-track {
+        gap: 20px;
+        animation-duration: 30s;
+    }
+
+    .about-page .client-logo {
+        flex-basis: 160px;
+        width: 160px;
+        height: 90px;
+        padding: 10px 15px;
+    }
+
+    .about-page .client-logo img {
+        max-height: 65px;
+    }
+}
+
+
+/* =========================================================
+   11. MOBILE LARGE — 576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .about-page .container {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* About */
+
+    .about-page .about-us-section {
+        padding: 45px 0 50px;
+    }
+
+    .about-page .about-us-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-page .about-us-image {
+        height: 300px;
+    }
+
+    .about-page .about-us-features {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-page .about-us-feature-card {
+        min-height: auto;
+        text-align: center;
+    }
+
+    .about-page .about-us-feature-icon {
+        margin: 0 auto 14px;
+        justify-content: center;
+    }
+
+
+    /* Services */
+
+    .about-page .special-services-area.about-other-service {
+        padding: 45px 0 40px;
+    }
+
+    .about-page .about-other-service .top-about-area {
+        margin-bottom: 28px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 255px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 82px;
+
+        padding: 27px 12px 15px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 54px;
+        height: 54px;
+
+        padding: 4px;
+
+        border-width: 2px;
+
+        border-radius: 9px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    /* Core */
+
+    .about-page .core-values-section {
+        padding: 45px 15px;
+        background-size: 95%;
+    }
+
+    .about-page .core-values-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .about-page .core-value-item,
+    .about-page .core-value-left,
+    .about-page .core-value-right,
+    .about-page .core-value-center {
+        width: 100%;
+        min-height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .about-even-div {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about-page .core-values-section .about-even-div h5 {
+        font-size: 15px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        max-width: 380px;
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+
+    /* Brand */
+
+    .about-page .brand-area {
+        padding: 30px 0;
+    }
+
+    .about-page .client-track {
+        gap: 15px;
+        animation-duration: 25s;
+    }
+
+    .about-page .client-logo {
+        flex-basis: 135px;
+        width: 135px;
+        height: 80px;
+        padding: 8px 12px;
+    }
+
+    .about-page .client-logo img {
+        max-height: 58px;
+    }
+}
+
+
+/* =========================================================
+   12. MOBILE — <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .about-page .container {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* Common heading */
+
+    .about-page .sec-title {
+        margin-bottom: 30px;
+    }
+
+    .about-page .sec-title h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    /* About */
+
+    .about-page .about-us-section {
+        padding: 42px 0 50px;
+    }
+
+    .about-page .about-us-section .container {
+        max-width: calc(100% - 30px);
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-page .about-us-title {
+        margin-bottom: 32px;
+    }
+
+    .about-page .about-us-title h2 {
+        font-size: 26px;
+    }
+
+    .about-page .about-us-title .title-border {
+        width: 65px;
+        margin-top: 13px;
+    }
+
+    .about-page .about-us-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-page .about-us-image {
+        height: 280px;
+    }
+
+    .about-page .about-us-description {
+        margin-top: 22px;
+    }
+
+    .about-page .about-us-description p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .about-page .about-us-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-page .about-us-feature-card {
+        min-height: auto;
+
+        padding: 25px 22px;
+
+        text-align: center;
+    }
+
+    .about-page .about-us-feature-icon {
+        margin: 0 auto 14px;
+        justify-content: center;
+    }
+
+    .about-page .about-us-feature-icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .about-page .about-us-feature-card h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .about-page .about-us-feature-card p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    /* =====================================================
+       SERVICES
+       2 CARDS PER ROW
+       FIRST 2 SHOWN INITIALLY
+    ===================================================== */
+
+    .about-page .special-services-area.about-other-service {
+        padding: 40px 0 35px;
+    }
+
+    .about-page .about-other-service .top-about-area {
+        margin-bottom: 28px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        margin: 0 0 10px;
+
+        padding: 0 8px;
+
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .about-page .about-other-service .centre-title .border {
+        width: 55px;
+        height: 2px;
+    }
+
+
+    /* Grid */
+
+    .about-page .about-other-service .service-grid {
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Card */
+
+    .about-page .about-other-service .service-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* Image */
+
+    .about-page .about-other-service .service-image {
+        width: 100%;
+
+        height: 190px;
+
+        border-radius: 16px 16px 0 0;
+    }
+
+    .about-page .about-other-service .service-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: fill;
+
+        border-radius: 16px 16px 0 0;
+    }
+
+
+    /* Content */
+
+    .about-page .about-other-service .service-content {
+        min-height: 78px;
+
+        padding: 27px 7px 12px;
+
+        border-radius: 0 0 16px 16px;
+    }
+
+
+    /* Icon */
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 46px;
+        height: 46px;
+
+        padding: 3px;
+
+        border-width: 2px;
+
+        border-radius: 8px;
+    }
+
+
+    /* Title */
+
+    .about-page .about-other-service .service-card .title-holder {
+        width: 100%;
+    }
+
+    .about-page .about-other-service .service-card .title-holder a {
+        min-height: 32px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        margin: 0;
+
+        font-size: 13px;
+        line-height: 17px;
+
+        font-weight: 600;
+    }
+
+
+    /* View More */
+
+    .about-page .about-other-service .view-more-centre {
+        margin-top: 25px;
+    }
+
+    .about-page .about-other-service .view-more {
+        width: 174px;
+        min-width: 174px;
+
+        height: 46px;
+
+        padding: 0;
+
+        font-size: 14px;
+
+        border-radius: 5px;
+    }
+
+
+    /* Core */
+
+    .about-page .core-values-section {
+        min-height: auto;
+
+        padding: 40px 12px;
+
+        background-size: 280px auto;
+        background-position: center center;
+    }
+
+    .about-page .core-values-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+
+        max-width: 100%;
+    }
+
+    .about-page .core-value-item,
+    .about-page .core-value-left,
+    .about-page .core-value-right,
+    .about-page .core-value-center {
+        width: 100%;
+        min-height: auto;
+
+        justify-content: center;
+        align-items: center;
+
+        grid-column: auto;
+    }
+
+    .about-page .about-even-div {
+        max-width: 390px;
+
+        margin: 0 auto;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 8px;
+    }
+
+    .about-page .core-values-section .about-even-div h5 {
+        font-size: 14px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        max-width: 380px;
+
+        margin: 0 auto;
+
+        padding: 0 5px;
+
+        font-size: 10px;
+        line-height: 1.45;
+    }
+
+
+    /* Brand */
+
+    .about-page .brand-area {
+        padding: 28px 0;
+    }
+
+    .about-page .client-track {
+        gap: 12px;
+
+        animation-duration: 22s;
+    }
+
+    .about-page .client-logo {
+        flex-basis: 115px;
+
+        width: 115px;
+        height: 70px;
+
+        padding: 7px 10px;
+    }
+
+    .about-page .client-logo img {
+        max-height: 50px;
+    }
+}
+
+
+/* =========================================================
+   13. SMALL MOBILE — <= 480px
+========================================================= */
+
+@media (min-width: 318px) and (max-width: 824px) {
+
+    .about-page .about-us-section {
+        padding: 38px 0 45px;
+    }
+
+    .about-page .sec-title h1 {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+
+    /* About */
+
+    .about-page .about-us-title {
+        margin-bottom: 28px;
+    }
+
+    .about-page .about-us-title h2 {
+        font-size: 24px;
+    }
+
+    .about-page .about-us-image {
+        height: 240px;
+    }
+
+    .about-page .about-us-description {
+        margin-top: 20px;
+    }
+
+    .about-page .about-us-description p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .about-page .about-us-features {
+        gap: 18px;
+    }
+
+    .about-page .about-us-feature-card {
+        padding: 22px 18px;
+      
+    }
+
+    .about-page .about-us-feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-page .about-us-feature-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .about-page .about-us-feature-card h3 {
+        margin-bottom: 15px;
+
+        font-size: 19px;
+    }
+
+    .about-page .about-us-feature-card p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .about-page .special-services-area.about-other-service {
+        padding: 35px 0 30px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 175px;
+
+        border-radius: 15px 15px 0 0;
+    }
+
+    .about-page .about-other-service .service-image img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 73px;
+
+        padding: 25px 6px 10px;
+
+        border-radius: 0 0 15px 15px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 43px;
+        height: 43px;
+
+        padding: 3px;
+
+        border-radius: 7px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .about-page .about-other-service .service-card{
+        height: 350px;
+    }
+
+    .about-page .about-other-service .view-more {
+        width: 170px;
+        min-width: 170px;
+
+        height: 46px;
+    }
+
+
+    /* Core */
+
+    .about-page .core-values-section {
+        padding: 35px 12px;
+
+        background-size: 280px auto;
+    }
+
+    .about-page .core-values-wrapper {
+        gap: 25px;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .about-page .core-values-section .about-even-div h5 {
+        font-size: 14px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        font-size: 10px;
+        line-height: 1.45;
+    }
+
+
+    /* Brand */
+
+    .about-page .client-track {
+        gap: 10px;
+    }
+
+    .about-page .client-logo {
+        flex-basis: 105px;
+
+        width: 105px;
+        height: 65px;
+
+        padding: 6px 8px;
+    }
+
+    .about-page .client-logo img {
+        max-height: 46px;
+    }
+}
+
+
+/* =========================================================
+   14. VERY SMALL MOBILE — <= 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .about-page .about-us-section {
+        padding: 30px 0 35px;
+    }
+
+    .about-page .sec-title h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    /* About */
+
+    .about-page .about-us-image {
+        height: 215px;
+    }
+
+    .about-page .about-us-description p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .about-page .about-us-feature-card {
+        padding: 20px 15px;
+    }
+
+    .about-page .about-us-feature-card h3 {
+        font-size: 18px;
+    }
+
+    .about-page .about-us-feature-card p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .about-page .special-services-area.about-other-service {
+        padding: 30px 0 28px;
+    }
+
+    .about-page .about-other-service .centre-title h1 {
+        font-size: 19px;
+        line-height: 25px;
+
+        padding: 0 5px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 155px;
+
+        border-radius: 14px 14px 0 0;
+    }
+
+    .about-page .about-other-service .service-image img {
+        border-radius: 14px 14px 0 0;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 67px;
+
+        padding: 23px 4px 9px;
+
+        border-radius: 0 0 14px 14px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 38px;
+        height: 38px;
+
+        padding: 2px;
+
+        border-width: 2px;
+
+        border-radius: 6px;
+    }
+    .about-page .about-other-service .service-card{
+        height: 200px;
+    } 
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .about-page .about-other-service .view-more {
+        width: 165px;
+        min-width: 165px;
+
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+
+    /* Core */
+
+    .about-page .core-values-section {
+        padding: 30px 10px;
+
+        background-size: 250px auto;
+    }
+
+    .about-page .core-values-wrapper {
+        gap: 22px;
+    }
+
+    .about-page .core-values-section .about-even-div .icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .about-page .core-values-section .about-even-div h5 {
+        font-size: 13px;
+    }
+
+    .about-page .core-values-section .about-even-div p {
+        font-size: 9.5px;
+        line-height: 1.45;
+    }
+
+
+    /* Brand */
+
+    .about-page .client-logo {
+        flex-basis: 95px;
+
+        width: 95px;
+        height: 60px;
+
+        padding: 5px 7px;
+    }
+
+    .about-page .client-logo img {
+        max-height: 42px;
+    }
+}
+
+
+/* =========================================================
+   15. EXTRA SMALL DEVICES — <= 320px
+========================================================= */
+
+@media (max-width: 320px) {
+
+    .about-page .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about-page .about-other-service .service-grid {
+        gap: 8px;
+    }
+
+    .about-page .about-other-service .service-image {
+        height: 145px;
+    }
+
+    .about-page .about-other-service .service-content {
+        min-height: 64px;
+
+        padding-top: 22px;
+    }
+
+    .about-page .about-other-service .service-card .floating-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .about-page .about-other-service .service-card .title-holder h3 {
+        font-size: 10.5px;
+        line-height: 13px;
+    }
+}
+
+
+/* =========================================================
+   16. ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-page .about-us-feature-card,
+    .about-page .about-other-service .service-card,
+    .about-page .about-other-service .service-card-inner,
+    .about-page .about-other-service .view-more {
+        transition: none;
+    }
+
+    .about-page .client-track {
+        animation: none;
+        transform: translateX(0);
+    }
+}

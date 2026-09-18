@@ -1,0 +1,365 @@
+.upholstery-steaming-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.upholstery-steaming-banner {
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.upholstery-steaming-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.upholstery-steaming-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.upholstery-steaming-container {
+  width: calc(100% - 120px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.upholstery-steaming-intro {
+  max-width: 1350px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.upholstery-steaming-intro h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.upholstery-steaming-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 25px;
+  background: #0b1957;
+}
+
+.upholstery-steaming-intro p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.upholstery-steaming-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.upholstery-steaming-card {
+  width: 100%;
+  display: flex;
+  min-height: 490px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+}
+
+.upholstery-steaming-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.upholstery-steaming-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upholstery-steaming-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.upholstery-steaming-text ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.upholstery-steaming-text li {
+  margin-bottom: 14px;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.upholstery-steaming-text li:last-child {
+  margin-bottom: 0;
+}
+
+.upholstery-steaming-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.upholstery-steaming-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .upholstery-steaming-section { padding: 100px 0 115px; }
+  .upholstery-steaming-container { width: calc(100% - 100px); max-width: 1500px; }
+  .upholstery-steaming-intro { max-width: 1250px; }
+  .upholstery-steaming-intro h1 { font-size: 40px; }
+  .upholstery-steaming-intro p { font-size: 19px; }
+  .upholstery-steaming-service-list { gap: 50px; }
+  .upholstery-steaming-card { min-height: 460px; }
+  .upholstery-steaming-text { padding: 65px 75px; }
+  .upholstery-steaming-text h2 { font-size: 32px; }
+  .upholstery-steaming-text li { font-size: 19px; }
+  .upholstery-steaming-image { height: 460px; }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .upholstery-steaming-section { padding: 90px 0 105px; }
+  .upholstery-steaming-container { width: calc(100% - 80px); max-width: 1340px; }
+  .upholstery-steaming-intro h1 { font-size: 36px; }
+  .upholstery-steaming-intro p { font-size: 18px; }
+  .upholstery-steaming-service-list { gap: 48px; }
+  .upholstery-steaming-card { min-height: 430px; }
+  .upholstery-steaming-text { padding: 55px 65px; }
+  .upholstery-steaming-text h2 { font-size: 30px; }
+  .upholstery-steaming-text li { font-size: 18px; }
+  .upholstery-steaming-image { height: 430px; }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .upholstery-steaming-section { padding: 80px 0 95px; }
+  .upholstery-steaming-container { width: calc(100% - 60px); max-width: 1240px; }
+  .upholstery-steaming-intro h1 { font-size: 34px; }
+  .upholstery-steaming-intro p { font-size: 17px; }
+  .upholstery-steaming-service-list { gap: 45px; }
+  .upholstery-steaming-card { min-height: 400px; }
+  .upholstery-steaming-text { padding: 50px 55px; }
+  .upholstery-steaming-text h2 { font-size: 28px; }
+  .upholstery-steaming-text li { font-size: 17px; }
+  .upholstery-steaming-image { height: 400px; }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .upholstery-steaming-banner { height: 500px; }
+  .upholstery-steaming-section { padding: 70px 0 80px; }
+  .upholstery-steaming-container { width: calc(100% - 50px); max-width: none; }
+  .upholstery-steaming-intro { margin-bottom: 55px; }
+  .upholstery-steaming-intro h1 { font-size: 30px; line-height: 1.35; }
+  .upholstery-steaming-border { margin: 18px auto 22px; }
+  .upholstery-steaming-intro p { font-size: 16px; line-height: 1.7; }
+  .upholstery-steaming-service-list { gap: 35px; }
+
+  .upholstery-steaming-card,
+  .upholstery-steaming-card.reverse {
+    height: 320px;
+    min-height: 320px;
+    flex-direction: row;
+  }
+
+  .upholstery-steaming-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .upholstery-steaming-image {
+    width: 48%;
+    height: 320px;
+  }
+
+  .upholstery-steaming-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .upholstery-steaming-text ul { padding-left: 19px; }
+
+  .upholstery-steaming-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .upholstery-steaming-banner { height: 260px; }
+  .upholstery-steaming-section { padding: 50px 0 60px; }
+  .upholstery-steaming-container { width: calc(100% - 30px); }
+  .upholstery-steaming-intro { margin-bottom: 40px; }
+  .upholstery-steaming-intro h1 { font-size: 25px; line-height: 1.35; }
+
+  .upholstery-steaming-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .upholstery-steaming-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .upholstery-steaming-service-list { gap: 25px; }
+
+  .upholstery-steaming-card,
+  .upholstery-steaming-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .upholstery-steaming-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .upholstery-steaming-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .upholstery-steaming-text h2 {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .upholstery-steaming-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+  .upholstery-steaming-banner { height: 240px; }
+  .upholstery-steaming-section { padding: 45px 0 55px; }
+  .upholstery-steaming-container { width: calc(100% - 24px); }
+  .upholstery-steaming-intro { margin-bottom: 35px; }
+  .upholstery-steaming-intro h1 { font-size: 22px; line-height: 1.35; }
+
+  .upholstery-steaming-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .upholstery-steaming-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .upholstery-steaming-service-list { gap: 22px; }
+
+  .upholstery-steaming-card,
+  .upholstery-steaming-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .upholstery-steaming-image {
+    order: 1;
+    width: 100%;
+    height: 230px;
+  }
+
+  .upholstery-steaming-text {
+    order: 2;
+    width: 100%;
+    padding: 26px 20px 30px;
+  }
+
+  .upholstery-steaming-text h2 {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+
+  .upholstery-steaming-text ul { padding-left: 18px; }
+
+  .upholstery-steaming-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 399px) {
+  .upholstery-steaming-banner { height: 210px; }
+  .upholstery-steaming-section { padding: 38px 0 45px; }
+  .upholstery-steaming-container { width: calc(100% - 20px); }
+  .upholstery-steaming-intro { margin-bottom: 30px; }
+  .upholstery-steaming-intro h1 { font-size: 20px; line-height: 1.35; }
+
+  .upholstery-steaming-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .upholstery-steaming-intro p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    text-align: justify;
+  }
+
+  .upholstery-steaming-service-list { gap: 18px; }
+
+  .upholstery-steaming-card,
+  .upholstery-steaming-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .upholstery-steaming-image {
+    order: 1;
+    width: 100%;
+    height: 205px;
+  }
+
+  .upholstery-steaming-text {
+    order: 2;
+    width: 100%;
+    padding: 23px 17px 27px;
+  }
+
+  .upholstery-steaming-text h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+
+  .upholstery-steaming-text ul { padding-left: 17px; }
+
+  .upholstery-steaming-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}

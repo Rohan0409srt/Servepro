@@ -1,0 +1,348 @@
+/* =========================================================
+   BRAND / CLIENT SECTION
+========================================================= */
+
+.brand-area {
+  width: 100%;
+  padding: 35px 0 80px;
+
+  overflow: hidden;
+
+  background-color: rgb(209, 232, 243);
+  background-image: url("../../assets/images/1servepro/home/brand-bg.png");
+  background-repeat: repeat;
+}
+
+
+/* =========================================================
+   VIEWPORT
+========================================================= */
+
+.client-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTINUOUS TRACK
+========================================================= */
+
+.client-slider-track {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+
+  gap: 25px;
+
+  margin: 0;
+  padding: 0;
+
+  animation: serveproBrandSlide 35s linear infinite;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.client-slider-item {
+  flex: 0 0 auto;
+
+  width: 200px;
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGO BOX
+========================================================= */
+
+.brand-logo-holder {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.brand-logo-holder img {
+  display: block;
+
+  width: 100%;
+  max-width: 180px;
+
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   SEAMLESS INFINITE ANIMATION
+========================================================= */
+
+@keyframes serveproBrandSlide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+   1200px - 1399px
+========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+  .client-slider-track {
+    gap: 22px;
+  }
+
+  .client-slider-item {
+    width: 195px;
+  }
+
+  .brand-logo-holder {
+    height: 100px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 175px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .brand-area {
+    padding: 35px 0 70px;
+  }
+
+  .client-slider-track {
+    gap: 20px;
+    animation-duration: 32s;
+  }
+
+  .client-slider-item {
+    width: 190px;
+    padding: 0 8px;
+  }
+
+  .brand-logo-holder {
+    height: 100px;
+    padding: 18px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 170px;
+    height: 78px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .brand-area {
+    padding: 32px 0 70px;
+  }
+
+  .client-slider-track {
+    gap: 20px;
+    animation-duration: 32s;
+  }
+
+  .client-slider-item {
+    width: 185px;
+    padding: 0 7px;
+  }
+
+  .brand-logo-holder {
+    height: 100px;
+    padding: 17px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 165px;
+    height: 76px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE LARGE
+   576px - 767px
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .brand-area {
+    padding: 30px 0 60px;
+  }
+
+  .client-slider-track {
+    gap: 17px;
+    animation-duration: 28s;
+  }
+
+  .client-slider-item {
+    width: 180px;
+    padding: 0 5px;
+  }
+
+  .brand-logo-holder {
+    height: 100px;
+    padding: 15px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 155px;
+    height: 75px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+  .brand-area {
+    padding: 30px 0 60px;
+  }
+
+  .client-slider-track {
+    gap: 15px;
+    animation-duration: 25s;
+  }
+
+  .client-slider-item {
+    width: 175px;
+    padding: 0 5px;
+  }
+
+  .brand-logo-holder {
+    height: 100px;
+    padding: 15px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 150px;
+    height: 75px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .brand-area {
+    padding: 28px 0 55px;
+  }
+
+  .client-slider-track {
+    gap: 13px;
+    animation-duration: 23s;
+  }
+
+  .client-slider-item {
+    width: 165px;
+    padding: 0 4px;
+  }
+
+  .brand-logo-holder {
+    height: 95px;
+    padding: 13px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 142px;
+    height: 72px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .brand-area {
+    padding: 25px 0 50px;
+  }
+
+  .client-slider-track {
+    gap: 12px;
+    animation-duration: 21s;
+  }
+
+  .client-slider-item {
+    width: 155px;
+    padding: 0 3px;
+  }
+
+  .brand-logo-holder {
+    height: 90px;
+    padding: 12px;
+  }
+
+  .brand-logo-holder img {
+    max-width: 135px;
+    height: 68px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .client-slider-track {
+    animation: none !important;
+    transform: translate3d(0, 0, 0);
+  }
+}

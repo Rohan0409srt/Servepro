@@ -1,0 +1,624 @@
+/* =========================================
+   WAREHOUSE MANAGEMENT PAGE
+   ========================================= */
+
+.warehouse-management-page {
+  width: 100%;
+  overflow: hidden;
+  color: #0b1957;
+}
+
+/* =========================================
+   BANNER
+   ========================================= */
+
+.warehouse-banner {
+  width: 100%;
+  height: 750px;
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;}
+
+/* =========================================
+   MAIN SECTION
+   ========================================= */
+
+.warehouse-service-section {
+  width: 100%;
+  padding: 110px 0 125px;
+  background: #fff;
+}
+
+.warehouse-container {
+  width: calc(100% - 60px);
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.warehouse-section-title {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.warehouse-section-title h1 {
+  margin: 0;
+  color: #0b1957;
+  font-size: 43px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.warehouse-border {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0b1957;
+  margin: 25px auto 30px;
+}
+
+.warehouse-section-title p {
+  margin: 0;
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.85;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* =========================================
+   SERVICE LIST
+   ========================================= */
+
+.warehouse-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* =========================================
+   SERVICE CARD
+   ========================================= */
+
+.warehouse-service-card {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.warehouse-service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================
+   CARD TEXT
+   ========================================= */
+
+.warehouse-card-text {
+  width: 55%;
+  padding: 70px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+.warehouse-card-text h2 {
+  margin: 0 0 28px;
+  color: #0b1957;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.warehouse-card-text ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.warehouse-card-text li {
+  color: #0b1957;
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.warehouse-card-text li::marker {
+  color: #0b1957;
+}
+
+/* =========================================
+   CARD IMAGE
+   ========================================= */
+
+.warehouse-card-image {
+  width: 45%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.warehouse-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================
+   1600px - 1919px
+   ========================================= */
+
+@media (max-width: 1919px) {
+  .warehouse-service-section {
+    padding: 100px 0 115px;
+  }
+
+  .warehouse-container {
+    max-width: 1500px;
+  }
+
+  .warehouse-section-title {
+    max-width: 1250px;
+    margin-bottom: 60px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 40px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 19px;
+  }
+
+  .warehouse-service-list {
+    gap: 50px;
+  }
+
+  .warehouse-service-card {
+    min-height: 460px;
+  }
+
+  .warehouse-card-text {
+    padding: 65px 75px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 32px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 19px;
+  }
+
+  .warehouse-card-image {
+    height: 460px;
+  }
+  .warehouse-banner {
+    height: 650px;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/* =========================================
+   1440px - 1599px
+   ========================================= */
+
+@media (max-width: 1599px) {
+  .warehouse-service-section {
+    padding: 90px 0 105px;
+  }
+   .warehouse-banner {
+    height: 600px;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .warehouse-container {
+    max-width: 1340px;
+  }
+
+  .warehouse-section-title {
+    max-width: 1200px;
+    margin-bottom: 55px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 36px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 18px;
+  }
+
+  .warehouse-border {
+    width: 75px;
+    height: 4px;
+    margin: 22px auto 27px;
+  }
+
+  .warehouse-service-list {
+    gap: 48px;
+  }
+
+  .warehouse-service-card {
+    min-height: 430px;
+  }
+
+  .warehouse-card-text {
+    padding: 55px 65px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .warehouse-card-image {
+    height: 430px;
+  }
+}
+
+/* =========================================
+   1200px - 1439px
+   ========================================= */
+
+@media (max-width: 1439px) {
+  .warehouse-service-section {
+    padding: 80px 0 95px;
+  }
+
+  .warehouse-container {
+    max-width: 1240px;
+  }
+  .warehouse-banner {
+    height: 500px;
+    background-size: cover;
+    background-position: center top;
+    background-position: center 20%;
+  }
+
+  .warehouse-section-title {
+    max-width: 1100px;
+    margin-bottom: 50px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 34px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 17px;
+  }
+
+  .warehouse-border {
+    width: 70px;
+    height: 3px;
+    margin: 20px auto 25px;
+  }
+
+  .warehouse-service-list {
+    gap: 45px;
+  }
+
+  .warehouse-service-card {
+    min-height: 400px;
+  }
+
+  .warehouse-card-text {
+    padding: 50px 55px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .warehouse-card-image {
+    height: 400px;
+  }
+}
+
+/* =========================================
+   TABLET
+   768px - 1199px
+   ========================================= */
+
+@media (max-width: 1199px) {
+ .warehouse-banner {
+    height: 500px;
+    background-size: cover;
+    background-position: center top;
+    background-position: center 20%;
+  }
+  .warehouse-service-section {
+    padding: 70px 0 80px;
+  }
+
+  .warehouse-container {
+    width: calc(100% - 50px);
+    max-width: none;
+  }
+
+  .warehouse-section-title {
+    max-width: 950px;
+    margin-bottom: 55px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .warehouse-border {
+    width: 65px;
+    height: 3px;
+    margin: 18px auto 24px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .warehouse-service-list {
+    gap: 35px;
+  }
+
+  .warehouse-service-card,
+  .warehouse-service-card.reverse {
+    flex-direction: row;
+    min-height: 320px;
+  }
+
+  .warehouse-card-text {
+    width: 52%;
+    padding: 40px 38px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .warehouse-card-text ul {
+    padding-left: 20px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .warehouse-card-image {
+    width: 48%;
+    height: 320px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   576px - 767px
+   ========================================= */
+
+@media (max-width: 767px) {
+  .warehouse-banner {
+    height: 500px;
+    
+    
+  }
+
+  .warehouse-service-section {
+    padding: 50px 0 60px;
+  }
+
+  .warehouse-container {
+    width: calc(100% - 30px);
+  }
+
+  .warehouse-section-title {
+    margin-bottom: 40px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .warehouse-border {
+    width: 60px;
+    height: 3px;
+    margin: 18px auto 22px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .warehouse-service-list {
+    gap: 25px;
+  }
+
+  .warehouse-service-card,
+  .warehouse-service-card.reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .warehouse-card-image {
+    order: 1;
+    width: 100%;
+    height: 270px;
+  }
+
+  .warehouse-card-text {
+    order: 2;
+    width: 100%;
+    padding: 30px 25px 35px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .warehouse-card-text ul {
+    padding-left: 20px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+}
+
+/* =========================================
+   400px - 575px
+   ========================================= */
+
+@media (max-width: 575px) {
+  .warehouse-banner {
+    height: 240px;
+  }
+
+  .warehouse-service-section {
+    padding: 45px 0 55px;
+  }
+
+  .warehouse-container {
+    width: calc(100% - 24px);
+  }
+
+  .warehouse-section-title {
+    margin-bottom: 35px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .warehouse-border {
+    width: 55px;
+    height: 2px;
+    margin: 16px auto 20px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .warehouse-service-list {
+    gap: 22px;
+  }
+
+  .warehouse-card-image {
+    height: 230px;
+  }
+
+  .warehouse-card-text {
+    padding: 26px 20px 30px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+}
+
+/* =========================================
+   BELOW 400px
+   ========================================= */
+
+@media (max-width: 399px) {
+  .warehouse-banner {
+    height: 210px;
+  }
+
+  .warehouse-service-section {
+    padding: 38px 0 45px;
+  }
+
+  .warehouse-container {
+    width: calc(100% - 20px);
+  }
+
+  .warehouse-section-title {
+    margin-bottom: 30px;
+  }
+
+  .warehouse-section-title h1 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .warehouse-border {
+    width: 50px;
+    height: 2px;
+    margin: 14px auto 18px;
+  }
+
+  .warehouse-section-title p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .warehouse-service-list {
+    gap: 18px;
+  }
+
+  .warehouse-card-image {
+    height: 205px;
+  }
+
+  .warehouse-card-text {
+    padding: 23px 17px 27px;
+  }
+
+  .warehouse-card-text h2 {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  .warehouse-card-text ul {
+    padding-left: 18px;
+  }
+
+  .warehouse-card-text li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+}
