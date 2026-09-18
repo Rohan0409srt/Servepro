@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../style/HelpDesk.css";
+import "../../../style/Helpdesk.css";
 
 import bannerImg from "../../../assets/images/1servepro/Business_Support_Services/help-desk/Banner.jpg";
 
