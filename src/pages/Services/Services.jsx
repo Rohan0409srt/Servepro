@@ -11,7 +11,7 @@ import warehouseImg from '../../assets/images/1servepro/soft-service/Warehouse-M
 import eventManagementImg from '../../assets/images/1servepro/soft-service/Event-Management-services/web 2.png';
 import landscapingImg from '../../assets/images/1servepro/garden-service/Landscaping/1Lawn Cutting & Turf Management.jpg';
 
-import '../../style/services.css';
+import '../../style/Services.css';
 import OtherService from "../../components/OtherServices/OtherServices.jsx";
 
 // =========================================================
