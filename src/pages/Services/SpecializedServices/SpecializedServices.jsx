@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../style/SpecializedServices.css";
+import "../../../style/specializedServices.css";
 
 import bannerImg from "../../../assets/images/1servepro/service-main-banner/special-main-banner.jpeg";
 
