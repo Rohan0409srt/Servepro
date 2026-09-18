@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+
+    <meta
+      name="description"
+      content="ServePro Hospitality and Facility Management Services providing professional soft services, technical services, pest control, gardening, cleaning and business support solutions."
+    />
+
+    <title>ServePro Hospitality & Facility Management Services</title>
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/new-final-logo.jpeg"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/new-final-logo.jpeg"
+    />
+
+
+    <!-- =====================================================
+         MASTER STYLES
+         Keep temporarily while legacy CSS is being audited.
+    ====================================================== -->
+
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/css/responsive.css"
+    />
+
+
+    <!-- =====================================================
+         GOOGLE ANALYTICS / ADS
+    ====================================================== -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BNRTS3YBVL"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag(
+        "config",
+        "G-BNRTS3YBVL"
+      );
+
+      gtag(
+        "config",
+        "AW-705275342"
+      );
+
+
+      /* =====================================================
+         GOOGLE ADS CONVERSION
+      ====================================================== */
+
+      function gtag_report_conversion(url) {
+
+        function callback() {
+          if (typeof url !== "undefined") {
+            window.location = url;
+          }
+        }
+
+        gtag("event", "conversion", {
+          send_to: "AW-705275342",
+          event_callback: callback,
+        });
+
+        return false;
+      }
+
+      window.gtag_report_conversion =
+        gtag_report_conversion;
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-D-v0pGpX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-PJgvzgVk.css">
+  </head>
+
+
+  <body>
+
+    <!-- ===================================================
+         REACT ROOT
+    ==================================================== -->
+
+    <div id="root"></div>
+
+
+    <!-- ===================================================
+         VITE / REACT ENTRY
+    ==================================================== -->
+
+
+  </body>
+</html>
