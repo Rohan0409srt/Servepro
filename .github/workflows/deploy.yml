@@ -39,6 +39,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Fix refresh 404 for React Router pages
+      - name: Create SPA fallback
+        run: cp dist/index.html dist/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
