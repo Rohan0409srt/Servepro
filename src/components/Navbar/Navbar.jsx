@@ -333,49 +333,44 @@ export default function Navbar() {
                           {/* Main service page */}
 
                           <Link
-  to={service.path}
-  onClick={(event) => {
-
-    if (
-      window.innerWidth < 992 &&
-      service.submenu?.length > 0
-    ) {
-      event.preventDefault();
-      event.stopPropagation();
-
-      // Services menu ko open rakho
-      setOpenMobileMenu("Services");
-
-      // Selected service ko active karo
-      setHoveredService(service.label);
-
-      return;
-    }
-
-    // Desktop ya submenu-less service
-    closeMobileMenu();
-
-  }}
->
-
-
+                            to={service.path}
+                            className="service-menu-link"
+                            onClick={closeMobileMenu}
+                          >
                             <span className="service-menu-text">
                               {service.label}
                             </span>
-
-
-                            {/* Arrow only if submenu exists */}
-
-                            {service.submenu?.length > 0 && (
-                              <span
-                                className="services-mega-arrow"
-                                aria-hidden="true"
-                              >
-                                ›
-                              </span>
-                            )}
-
                           </Link>
+
+
+                          {/* Mobile submenu toggle */}
+
+                          {service.submenu?.length > 0 && (
+                            <button
+                              type="button"
+                              className="services-mega-arrow"
+                              aria-label={`Open ${service.label} submenu`}
+                              aria-expanded={
+                                hoveredService === service.label
+                              }
+                              onClick={(event) => {
+                                event.preventDefault();
+                                event.stopPropagation();
+
+                                if (window.innerWidth < 992) {
+                                  setOpenMobileMenu("Services");
+
+                                  setHoveredService((previous) =>
+                                    previous === service.label
+                                      ? null
+                                      : service.label
+                                  );
+                                }
+                              }}
+                            >
+                              ›
+                            </button>
+                          )}
 
 
                           {/* =================================================

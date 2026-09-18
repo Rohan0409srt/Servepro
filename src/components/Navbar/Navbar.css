@@ -506,6 +506,14 @@
 
     line-height: 1;
 
+    /* Arrow is a real button in the updated Navbar.jsx */
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+
     transition: color 0.16s ease;
   }
 
@@ -1426,14 +1434,19 @@
   }
 
 
-  .services-mega-item > a {
+  .services-mega-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 
-    width: 100%;
+  .services-mega-item > .service-menu-link {
+    width: calc(100% - 52px);
     min-height: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     margin: 0;
     padding: 0 20px;
@@ -1452,9 +1465,14 @@
     text-decoration: none;
   }
 
+  .services-mega-item > .service-menu-link:hover {
+    color: #1f3365;
+    background: #f3fbff;
+  }
 
-  .services-mega-item:hover > a,
-  .services-mega-item.active > a {
+
+  .services-mega-item:hover > .service-menu-link,
+  .services-mega-item.active > .service-menu-link {
 
     color: #1f3365;
 
@@ -1462,11 +1480,45 @@
   }
 
 
-  .services-mega-arrow {
+  .services-mega-item > .services-mega-arrow {
+    width: 52px;
+    min-width: 52px;
+    height: 50px;
+
+    flex: 0 0 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
 
     color: #1f3365;
+    background: #f3fbff;
 
-    flex: 0 0 20px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .services-mega-item > .services-mega-arrow:hover,
+  .services-mega-item > .services-mega-arrow:focus-visible {
+    color: #ee962f;
+    background: #f3fbff;
+    outline: none;
+  }
+
+  .services-mega-item.active > .services-mega-arrow {
+    color: #1f3365;
+    background: #f3fbff;
   }
 
 
@@ -1789,12 +1841,19 @@
   }
 
 
-  .services-mega-item > a {
+  .services-mega-item > .service-menu-link {
 
     padding-left: 17px;
     padding-right: 17px;
 
     font-size: 13px;
+  }
+
+  .services-mega-item > .services-mega-arrow {
+    width: 48px;
+    min-width: 48px;
+    flex-basis: 48px;
+    height: 50px;
   }
 
 
@@ -1847,6 +1906,16 @@
   .navigation > li > a {
 
     font-size: 12.5px;
+  }
+
+  .services-mega-item > .services-mega-arrow {
+    width: 46px;
+    min-width: 46px;
+    flex-basis: 46px;
+  }
+
+  .services-mega-item > .service-menu-link {
+    width: calc(100% - 46px);
   }
 
 }
