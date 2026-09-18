@@ -2125,36 +2125,89 @@
   }
 
 }
-.header-logo {
-  animation: headerLogoZoom 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-  transform-origin: center center;
-  will-change: transform;
+
+/* =========================================================
+   LOGO ZOOM EFFECT
+   DESKTOP + MOBILE
+   ========================================================= */
+
+@media (min-width: 992px) {
+  .header-logo {
+    animation: headerLogoZoom 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center center;
+    will-change: transform;
+  }
 }
 
 @keyframes headerLogoZoom {
+  0% { transform: scale(0.3); opacity: 0; }
+  35% { transform: scale(1.25); opacity: 1; }
+  55% { transform: scale(0.92); }
+  72% { transform: scale(1.10); }
+  88% { transform: scale(0.97); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* =========================================================
+   MOBILE LOGO
+   Wrapper stays EXACTLY in center.
+   Only the image gets zoom animation.
+   ========================================================= */
+
+@media (max-width: 991px) {
+  .header-logo,
+  .mainmenu-area.sticky-header .header-logo {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    transform-origin: center center !important;
+    animation: none !important;
+    z-index: 10002;
+  }
+
+  .header-logo a,
+  .mainmenu-area.sticky-header .header-logo a {
+    transform: none !important;
+    animation: none !important;
+    transform-origin: center center !important;
+  }
+
+  .header-logo img {
+    display: block;
+    transform-origin: center center !important;
+    animation: mobileLogoZoom 1.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    will-change: transform, opacity;
+  }
+}
+
+/* =========================================================
+   MOBILE LOGO ZOOM
+   Image zooms from its own exact center.
+   Wrapper position NEVER changes.
+   ========================================================= */
+
+@keyframes mobileLogoZoom {
   0% {
     transform: scale(0.3);
     opacity: 0;
   }
-
   35% {
     transform: scale(1.25);
     opacity: 1;
   }
-
   55% {
     transform: scale(0.92);
   }
-
   72% {
     transform: scale(1.10);
   }
-
   88% {
     transform: scale(0.97);
   }
-
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
